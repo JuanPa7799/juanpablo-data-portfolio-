@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clasificacion de sentimiento en resenas IMDB con NLP, TF-IDF y modelos supervisados.">
+  <title>Sentimiento IMDB NLP | Juan Pablo Garcia</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="project-page">
+  <header class="site-header"><nav class="nav container"><a class="brand" href="../../index.html"><span class="brand-mark">JP</span><span>Data Science Dashboard</span></a><div class="nav-links"><a href="../../index.html#proyectos">Proyectos</a><a href="../../index.html#contacto">Contacto</a></div></nav></header>
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">NLP | Clasificacion de texto</p><h1>Deteccion de resenas negativas IMDB</h1><p class="hero-lead">Modelos para clasificar resenas de peliculas como positivas o negativas usando vectorizacion de texto y aprendizaje supervisado.</p><div class="tag-list"><span>NLP</span><span>TF-IDF</span><span>Logistic Regression</span><span>LightGBM</span></div></div></section>
+    <section class="section-pad section-band"><div class="container page-grid"><div class="content-stack">
+      <section class="content-block"><h2>Resumen ejecutivo</h2><p>Los modelos basados en TF-IDF y regresion logistica fueron los mas solidos para el problema por balance entre calidad y tiempo. El umbral del proyecto fue F1 >= 0.85.</p><div class="stats-grid"><div class="stat"><span>Meta</span><strong>F1 >= 0.85</strong></div><div class="stat"><span>Enfoque fuerte</span><strong>TF-IDF + LR</strong></div><div class="stat"><span>Extra</span><strong>BERT muestra</strong></div></div></section>
+      <section class="project-dashboard-panel"><h2>Flujo NLP</h2><div class="comparison-bars"><div class="metric-line"><span>Baseline</span><div class="bar-track"><i class="bar-fill" style="width:50%"></i></div><strong>Base</strong></div><div class="metric-line"><span>TF-IDF LR</span><div class="bar-track"><i class="bar-fill" style="width:88%"></i></div><strong>Solido</strong></div><div class="metric-line"><span>LGBM</span><div class="bar-track"><i class="bar-fill" style="width:84%"></i></div><strong>Boosting</strong></div></div></section>
+      <section class="content-block"><h2>Metodologia</h2><ol><li>EDA de resenas y balance de clases.</li><li>Preprocesamiento y vectorizacion TF-IDF.</li><li>Entrenamiento de modelos lineales y boosting.</li><li>Pruebas con resenas propias para comparar comportamiento.</li></ol></section>
+      <section class="content-block"><h2>Aprendizaje</h2><p>El proyecto muestra que modelos lineales bien vectorizados pueden ser muy competitivos en texto, especialmente frente a frases cortas.</p></section>
+    </div><aside class="side-panel"><a class="btn primary" href="../../index.html#proyectos">Volver al dashboard</a><a class="btn" href="../../assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">Ver CV PDF</a></aside></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>Juan Pablo Garcia Chavez</span><span>IMDB NLP</span></div></footer>
+</body>
+</html>

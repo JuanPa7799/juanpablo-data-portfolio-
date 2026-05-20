@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto de churn bancario con clases desbalanceadas y optimizacion de F1.">
+  <title>Churn bancario balanceado | Juan Pablo Garcia</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="project-page">
+  <header class="site-header"><nav class="nav container"><a class="brand" href="../../index.html"><span class="brand-mark">JP</span><span>Data Science Dashboard</span></a><div class="nav-links"><a href="../../index.html#proyectos">Proyectos</a><a href="../../index.html#contacto">Contacto</a></div></nav></header>
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">Business ML | Churn</p><h1>Churn bancario con clases desbalanceadas</h1><p class="hero-lead">Clasificacion de clientes con riesgo de abandono usando balanceo de clases, ajuste de umbral y metricas robustas.</p><div class="tag-list"><span>Python</span><span>Random Forest</span><span>F1</span><span>AUC-ROC</span></div></div></section>
+    <section class="section-pad section-band"><div class="container page-grid"><div class="content-stack">
+      <section class="content-block"><h2>Resumen ejecutivo</h2><p>El objetivo fue superar el minimo F1 requerido en test y comparar AUC-ROC para evaluar separabilidad de clases.</p><div class="stats-grid"><div class="stat"><span>Modelo final</span><strong>RF balanced</strong></div><div class="stat"><span>F1 test</span><strong>0.6365</strong></div><div class="stat"><span>AUC-ROC test</span><strong>0.865</strong></div></div></section>
+      <section class="project-dashboard-panel"><h2>Senal de negocio</h2><div class="comparison-bars"><div class="metric-line"><span>Clase positiva</span><div class="bar-track"><i class="bar-fill" style="width:20.35%"></i></div><strong>20.35%</strong></div><div class="metric-line"><span>Recall churn</span><div class="bar-track"><i class="bar-fill" style="width:69.04%"></i></div><strong>0.6904</strong></div><div class="metric-line"><span>Precision churn</span><div class="bar-track"><i class="bar-fill" style="width:59.03%"></i></div><strong>0.5903</strong></div></div></section>
+      <section class="content-block"><h2>Metodologia</h2><ol><li>Revision del desbalance de clases.</li><li>Separacion estratificada train, validacion y test.</li><li>Pruebas con regresion logistica, Random Forest y sobremuestreo.</li><li>Seleccion por F1 y ajuste de umbral.</li></ol></section>
+      <section class="content-block"><h2>Aprendizaje</h2><p>La exactitud no era suficiente para este problema; F1 y AUC-ROC dieron una evaluacion mas honesta del modelo.</p></section>
+    </div><aside class="side-panel"><a class="btn primary" href="../../index.html#proyectos">Volver al dashboard</a><a class="btn" href="../../assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">Ver CV PDF</a></aside></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>Juan Pablo Garcia Chavez</span><span>Bank churn</span></div></footer>
+</body>
+</html>

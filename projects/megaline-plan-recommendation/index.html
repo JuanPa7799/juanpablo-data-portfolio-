@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto Megaline: recomendacion de planes moviles con modelos de clasificacion.">
+  <title>Recomendacion de planes moviles | Juan Pablo Garcia</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="project-page">
+  <header class="site-header">
+    <nav class="nav container"><a class="brand" href="../../index.html"><span class="brand-mark">JP</span><span>Data Science Dashboard</span></a><div class="nav-links"><a href="../../index.html#proyectos">Proyectos</a><a href="../../index.html#contacto">Contacto</a></div></nav>
+  </header>
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">ML | Clasificacion</p><h1>Recomendacion de planes moviles</h1><p class="hero-lead">Modelo para recomendar el plan Smart o Ultra de Megaline a partir del comportamiento mensual de usuarios.</p><div class="tag-list"><span>Python</span><span>Scikit-learn</span><span>Random Forest</span><span>Accuracy</span></div></div></section>
+    <section class="section-pad section-band"><div class="container page-grid"><div class="content-stack">
+      <section class="content-block"><h2>Resumen ejecutivo</h2><p>Se probaron arboles de decision, bosque aleatorio y regresion logistica para seleccionar el modelo con mejor exactitud en validacion y prueba.</p><div class="stats-grid"><div class="stat"><span>Modelo final</span><strong>Random Forest</strong></div><div class="stat"><span>Accuracy test</span><strong>0.8149</strong></div><div class="stat"><span>Sanity check</span><strong>0.6967</strong></div></div></section>
+      <section class="project-dashboard-panel"><h2>Comparacion de modelos</h2><div class="comparison-bars"><div class="metric-line"><span>Decision Tree</span><div class="bar-track"><i class="bar-fill" style="width:79.63%"></i></div><strong>0.7963</strong></div><div class="metric-line"><span>Random Forest</span><div class="bar-track"><i class="bar-fill" style="width:81.49%"></i></div><strong>0.8149</strong></div><div class="metric-line"><span>Logistic Reg.</span><div class="bar-track"><i class="bar-fill" style="width:72.01%"></i></div><strong>0.7201</strong></div><div class="metric-line"><span>Dummy</span><div class="bar-track"><i class="bar-fill" style="width:69.67%"></i></div><strong>0.6967</strong></div></div></section>
+      <section class="content-block"><h2>Metodologia</h2><ol><li>Exploracion del comportamiento de usuarios.</li><li>Separacion train, validacion y test.</li><li>Ajuste de hiperparametros para Decision Tree y Random Forest.</li><li>Comparacion contra regresion logistica y prueba de cordura.</li></ol></section>
+      <section class="content-block"><h2>Aprendizaje</h2><p>El proyecto demuestra seleccion de modelos, validacion separada y comprobacion contra baseline para evitar conclusiones artificiales.</p></section>
+    </div><aside class="side-panel"><a class="btn primary" href="../../index.html#proyectos">Volver al dashboard</a><a class="btn" href="../../assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">Ver CV PDF</a></aside></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>Juan Pablo Garcia Chavez</span><span>Megaline</span></div></footer>
+</body>
+</html>

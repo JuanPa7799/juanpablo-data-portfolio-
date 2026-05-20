@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prediccion de precio de autos usados comparando calidad y velocidad de modelos.">
+  <title>Precio de autos usados | Juan Pablo Garcia</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="project-page">
+  <header class="site-header"><nav class="nav container"><a class="brand" href="../../index.html"><span class="brand-mark">JP</span><span>Data Science Dashboard</span></a><div class="nav-links"><a href="../../index.html#proyectos">Proyectos</a><a href="../../index.html#contacto">Contacto</a></div></nav></header>
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">ML | Regresion</p><h1>Prediccion de precio de autos usados</h1><p class="hero-lead">Comparacion de modelos para estimar valor de mercado de autos, considerando calidad predictiva, tiempo de entrenamiento y velocidad de prediccion.</p><div class="tag-list"><span>LightGBM</span><span>Random Forest</span><span>RMSE</span><span>Python</span></div></div></section>
+    <section class="section-pad section-band"><div class="container page-grid"><div class="content-stack">
+      <section class="content-block"><h2>Resumen ejecutivo</h2><p>Random Forest logro menor RMSE, pero LightGBM ofrecio mejor balance entre calidad y velocidad para una app de consulta rapida.</p><div class="stats-grid"><div class="stat"><span>RF RMSE</span><strong>1747.77</strong></div><div class="stat"><span>LightGBM RMSE</span><strong>1776.60</strong></div><div class="stat"><span>LightGBM train</span><strong>16.61s</strong></div></div></section>
+      <section class="project-dashboard-panel"><h2>Calidad vs velocidad</h2><div class="comparison-bars"><div class="metric-line"><span>Linear RMSE</span><div class="bar-track"><i class="bar-fill" style="width:42%"></i></div><strong>3209.98</strong></div><div class="metric-line"><span>RF RMSE</span><div class="bar-track"><i class="bar-fill" style="width:84%"></i></div><strong>1747.77</strong></div><div class="metric-line"><span>LGBM RMSE</span><div class="bar-track"><i class="bar-fill" style="width:82%"></i></div><strong>1776.60</strong></div></div></section>
+      <section class="content-block"><h2>Metodologia</h2><ol><li>Limpieza y preparacion de variables de autos.</li><li>Baseline con regresion lineal.</li><li>Comparacion con Random Forest y LightGBM.</li><li>Analisis conjunto de calidad, entrenamiento y prediccion.</li></ol></section>
+      <section class="content-block"><h2>Aprendizaje</h2><p>La eleccion del modelo no depende solo del error: una aplicacion real tambien exige latencia y costo de entrenamiento.</p></section>
+    </div><aside class="side-panel"><a class="btn primary" href="../../index.html#proyectos">Volver al dashboard</a><a class="btn" href="../../assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">Ver CV PDF</a></aside></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>Juan Pablo Garcia Chavez</span><span>Rusty Bargain</span></div></footer>
+</body>
+</html>

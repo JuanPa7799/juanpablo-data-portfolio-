@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio profesional de Juan Pablo Garcia Chavez, Data Scientist enfocado en machine learning, analitica predictiva y datos aplicados a ingenieria.">
-  <title>Juan Pablo Garcia Chavez | Data Scientist</title>
+  <meta name="description" content="Portafolio dashboard de Juan Pablo Garcia Chavez: proyectos de Data Science, Machine Learning, NLP, forecasting, vision computacional y analitica aplicada.">
+  <title>Juan Pablo Garcia Chavez | Data Science Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <nav class="nav container" aria-label="Navegacion principal">
       <a class="brand" href="#inicio" aria-label="Inicio">
         <span class="brand-mark">JP</span>
-        <span>Data Portfolio</span>
+        <span>Data Science Dashboard</span>
       </a>
       <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
         <span></span>
@@ -20,6 +20,7 @@
         <span></span>
       </button>
       <div class="nav-links" data-nav-links>
+        <a href="#dashboard">Dashboard</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#sobre-mi">Sobre mi</a>
         <a href="#contacto">Contacto</a>
@@ -29,152 +30,118 @@
 
   <main id="inicio">
     <section class="hero section-pad">
-      <div class="container hero-grid">
+      <div class="container hero-dashboard">
         <div class="hero-copy">
-          <p class="eyebrow">Data Scientist | Machine Learning | Analitica Predictiva</p>
-          <h1>Juan Pablo Garcia Chavez</h1>
+          <p class="eyebrow">Data Scientist | ML aplicado | Analitica predictiva</p>
+          <h1>Portafolio de proyectos Data Science</h1>
           <p class="hero-lead">
-            Data Scientist con formacion en Ingenieria Mecatronica y Maestria en Ingenieria Electronica,
-            enfocado en machine learning, analitica predictiva y datos aplicados a problemas reales de ingenieria.
+            Soy Juan Pablo Garcia Chavez, Data Scientist con base en ingenieria mecatronica y maestria en ingenieria electronica.
+            Construyo modelos, pipelines y analisis que conectan datos tecnicos con decisiones claras.
           </p>
-          <div class="tag-list" aria-label="Stack principal">
-            <span>Python</span>
-            <span>SQL</span>
-            <span>Pandas</span>
-            <span>Scikit-learn</span>
-            <span>TensorFlow</span>
-            <span>Power BI</span>
-          </div>
           <div class="actions">
-            <a class="btn primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn primary" href="#proyectos">Explorar proyectos</a>
             <a class="btn" data-contact-link="github" href="https://github.com/JuanPa7799" target="_blank" rel="noreferrer">GitHub</a>
             <a class="btn" data-contact-link="linkedin" href="https://www.linkedin.com/in/juan-pablo-garcia-chavez/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a class="btn" data-contact-link="cv" href="assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">CV PDF</a>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Visualizacion decorativa de senales y metricas">
-          <div class="signal-card">
-            <div class="signal-head">
-              <span>modelo_final.py</span>
-              <strong>AUC 0.8963</strong>
+        <section class="hero-panel" aria-label="Resumen visual del portafolio">
+          <div class="panel-top">
+            <div>
+              <span class="panel-label">Portfolio health</span>
+              <strong>11 proyectos curados</strong>
             </div>
-            <div class="wave">
-              <span style="height: 34%"></span>
-              <span style="height: 72%"></span>
-              <span style="height: 46%"></span>
-              <span style="height: 88%"></span>
-              <span style="height: 58%"></span>
-              <span style="height: 76%"></span>
-              <span style="height: 42%"></span>
-              <span style="height: 66%"></span>
-              <span style="height: 92%"></span>
-              <span style="height: 50%"></span>
-              <span style="height: 70%"></span>
-              <span style="height: 40%"></span>
-            </div>
-            <div class="metric-grid">
-              <div>
-                <span>Precision</span>
-                <strong>96%+</strong>
-              </div>
-              <div>
-                <span>Pipeline</span>
-                <strong>-80%</strong>
-              </div>
-              <div>
-                <span>Churn</span>
-                <strong>0.8538</strong>
-              </div>
-            </div>
+            <span class="status-pill">GitHub Pages ready</span>
           </div>
-        </div>
+          <div class="kpi-row">
+            <article>
+              <span>Mejor AUC</span>
+              <strong data-count="0.8963" data-decimals="4">0</strong>
+              <small>Interconnect churn</small>
+            </article>
+            <article>
+              <span>Forecast RMSE</span>
+              <strong data-count="43.21" data-decimals="2">0</strong>
+              <small>Objetivo <= 48</small>
+            </article>
+            <article>
+              <span>Vision MAE</span>
+              <strong data-count="7.03" data-decimals="2">0</strong>
+              <small>ResNet50</small>
+            </article>
+          </div>
+          <div class="dashboard-chart" data-hero-chart aria-label="Mini ranking visual"></div>
+        </section>
       </div>
     </section>
 
-    <section id="proyectos" class="section-pad section-band">
-      <div class="container">
+    <section id="dashboard" class="section-pad section-band">
+      <div class="container dashboard-grid">
         <div class="section-heading">
-          <p class="eyebrow">Trabajo seleccionado</p>
-          <h2>Proyectos destacados</h2>
-          <p>Casos curados para mostrar modelado, procesamiento de datos, interpretacion tecnica y comunicacion de resultados.</p>
+          <p class="eyebrow">Portfolio Dashboard</p>
+          <h2>Vista rapida de capacidades</h2>
+          <p>
+            Un resumen visual de proyectos de clasificacion, regresion, riesgo, series temporales, NLP, vision computacional e ingenieria.
+          </p>
         </div>
-
-        <div class="project-grid">
-          <article class="project-card featured">
-            <div class="project-visual power-quality" aria-hidden="true">
-              <span></span><span></span><span></span><span></span><span></span>
-            </div>
-            <div class="project-body">
-              <p class="project-type">Machine Learning aplicado a ingenieria</p>
-              <h3>Clasificacion de perturbaciones electricas</h3>
-              <p>
-                Modelos de machine learning para identificar perturbaciones en senales electricas y apoyar sistemas de monitoreo energetico.
-              </p>
-              <div class="tag-list compact">
-                <span>Python</span>
-                <span>TensorFlow</span>
-                <span>Scikit-learn</span>
-                <span>NumPy</span>
-              </div>
-              <div class="card-actions">
-                <a href="projects/calidad-energia/">Ver caso</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-visual churn" aria-hidden="true">
-              <span></span><span></span><span></span><span></span>
-            </div>
-            <div class="project-body">
-              <p class="project-type">Data Science end-to-end</p>
-              <h3>Prediccion de churn | Interconnect</h3>
-              <p>
-                Pipeline de integracion, limpieza, modelado y evaluacion para detectar clientes con riesgo de cancelacion.
-              </p>
-              <div class="tag-list compact">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>Scikit-learn</span>
-                <span>AUC-ROC</span>
-              </div>
-              <div class="card-actions">
-                <a href="projects/interconnect-churn/">Ver caso</a>
-              </div>
-            </div>
-          </article>
-        </div>
+        <aside class="stack-panel" aria-label="Stack tecnico">
+          <h3>Stack principal</h3>
+          <div class="skill-bars">
+            <div><span>Python / Pandas</span><strong style="width: 96%"></strong></div>
+            <div><span>Scikit-learn</span><strong style="width: 92%"></strong></div>
+            <div><span>TensorFlow / Keras</span><strong style="width: 76%"></strong></div>
+            <div><span>SQL / BI</span><strong style="width: 72%"></strong></div>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section id="sobre-mi" class="section-pad">
+    <section id="proyectos" class="section-pad">
+      <div class="container">
+        <div class="section-heading wide">
+          <p class="eyebrow">Proyectos seleccionados</p>
+          <h2>Casos con metricas, enfoque y resultados</h2>
+          <p>Filtra por area para revisar el tipo de problemas que he resuelto durante el bootcamp, investigacion y proyectos aplicados.</p>
+        </div>
+
+        <div class="filters" role="list" aria-label="Filtros de proyectos">
+          <button class="filter-btn active" type="button" data-filter="All">Todos</button>
+          <button class="filter-btn" type="button" data-filter="ML">ML</button>
+          <button class="filter-btn" type="button" data-filter="Business">Business</button>
+          <button class="filter-btn" type="button" data-filter="Forecasting">Forecasting</button>
+          <button class="filter-btn" type="button" data-filter="NLP">NLP</button>
+          <button class="filter-btn" type="button" data-filter="Computer Vision">Computer Vision</button>
+          <button class="filter-btn" type="button" data-filter="Engineering">Engineering</button>
+        </div>
+
+        <div class="project-grid dashboard-project-grid" data-project-grid></div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section-pad section-band">
       <div class="container split">
         <div>
           <p class="eyebrow">Sobre mi</p>
-          <h2>Datos, ingenieria y modelos que se pueden explicar.</h2>
+          <h2>Un perfil tecnico que traduce modelos en decisiones.</h2>
         </div>
         <div class="about-copy">
           <p>
-            Combino una base de ingenieria con ciencia de datos aplicada: procesamiento de senales, aprendizaje automatico,
-            analisis exploratorio, modelado predictivo y comunicacion de resultados para audiencias tecnicas y de negocio.
-          </p>
-          <p>
-            Mi foco actual esta en construir soluciones reproducibles con Python, evaluar modelos con criterio estadistico
-            y convertir resultados complejos en decisiones claras.
+            Combino ingenieria, investigacion aplicada y ciencia de datos para trabajar con senales, datos tabulares,
+            texto, series temporales e imagenes. Me interesa que cada modelo sea reproducible, evaluable y explicable.
           </p>
           <div class="experience-list">
             <div>
-              <strong>Investigacion aplicada</strong>
-              <span>IA, calidad de energia y procesamiento de senales.</span>
+              <strong>Machine Learning aplicado</strong>
+              <span>Clasificacion, regresion, forecasting, NLP y vision computacional.</span>
             </div>
             <div>
-              <strong>Formacion en datos</strong>
-              <span>TripleTen, Platzi, Python, SQL, ML y visualizacion.</span>
+              <strong>Analitica de negocio</strong>
+              <span>Riesgo, rentabilidad, churn, recomendacion y optimizacion.</span>
             </div>
             <div>
-              <strong>Comunicacion tecnica</strong>
-              <span>Reportes, docencia, dashboards y storytelling con datos.</span>
+              <strong>Ingenieria y comunicacion</strong>
+              <span>Procesamiento de senales, reportes tecnicos y storytelling con datos.</span>
             </div>
           </div>
         </div>
@@ -185,8 +152,8 @@
       <div class="container contact-box">
         <div>
           <p class="eyebrow">Contacto</p>
-          <h2>Hablemos de datos, modelos o proyectos aplicados.</h2>
-          <p>Estoy abierto a oportunidades y colaboraciones donde pueda aportar analisis, criterio tecnico y ejecucion.</p>
+          <h2>Listo para colaborar en proyectos con datos.</h2>
+          <p>Si necesitas alguien que analice, modele, explique y ejecute con criterio tecnico, aqui estan mis canales principales.</p>
         </div>
         <div class="actions contact-actions">
           <a class="btn primary" data-contact-link="email" href="mailto:juanpablogarciachavez7799@gmail.com">Enviar correo</a>
@@ -200,7 +167,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <span>Juan Pablo Garcia Chavez</span>
-      <span>Data Scientist Portfolio</span>
+      <span>Data Science Portfolio | GitHub Pages</span>
     </div>
   </footer>
 

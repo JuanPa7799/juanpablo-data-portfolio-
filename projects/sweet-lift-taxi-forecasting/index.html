@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Forecasting de demanda de taxis con series temporales y Random Forest.">
+  <title>Forecast de taxis | Juan Pablo Garcia</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="project-page">
+  <header class="site-header"><nav class="nav container"><a class="brand" href="../../index.html"><span class="brand-mark">JP</span><span>Data Science Dashboard</span></a><div class="nav-links"><a href="../../index.html#proyectos">Proyectos</a><a href="../../index.html#contacto">Contacto</a></div></nav></header>
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">Forecasting | Series temporales</p><h1>Prediccion horaria de pedidos de taxi</h1><p class="hero-lead">Modelo para anticipar demanda de taxis en aeropuertos y apoyar asignacion de conductores en horas pico.</p><div class="tag-list"><span>Series temporales</span><span>Lags</span><span>Random Forest</span><span>RMSE</span></div></div></section>
+    <section class="section-pad section-band"><div class="container page-grid"><div class="content-stack">
+      <section class="content-block"><h2>Resumen ejecutivo</h2><p>Se crearon variables de rezago, media movil, dia de semana y hora; el modelo final cumplio el objetivo de RMSE menor o igual a 48.</p><div class="stats-grid"><div class="stat"><span>Modelo final</span><strong>Random Forest</strong></div><div class="stat"><span>RMSE test</span><strong>43.21</strong></div><div class="stat"><span>Features</span><strong>27</strong></div></div></section>
+      <section class="project-dashboard-panel"><h2>Comparacion RMSE</h2><div class="comparison-bars"><div class="metric-line"><span>Linear Reg.</span><div class="bar-track"><i class="bar-fill" style="width:78%"></i></div><strong>45.22</strong></div><div class="metric-line"><span>Random Forest</span><div class="bar-track"><i class="bar-fill" style="width:90%"></i></div><strong>43.21</strong></div><div class="metric-line"><span>Gradient Boost.</span><div class="bar-track"><i class="bar-fill" style="width:89%"></i></div><strong>43.33</strong></div></div></section>
+      <section class="content-block"><h2>Metodologia</h2><ol><li>Remuestreo horario de la serie.</li><li>Analisis de tendencia y patrones horarios.</li><li>Creacion de 24 lags, media movil, dia y hora.</li><li>Entrenamiento y prueba con el 10% final como test.</li></ol></section>
+      <section class="content-block"><h2>Aprendizaje</h2><p>El proyecto muestra feature engineering temporal y validacion respetando el orden cronologico.</p></section>
+    </div><aside class="side-panel"><a class="btn primary" href="../../index.html#proyectos">Volver al dashboard</a><a class="btn" href="../../assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">Ver CV PDF</a></aside></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>Juan Pablo Garcia Chavez</span><span>Sweet Lift Taxi</span></div></footer>
+</body>
+</html>

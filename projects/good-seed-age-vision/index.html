@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estimacion de edad con vision computacional y ResNet50.">
+  <title>Estimacion de edad con vision | Juan Pablo Garcia</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="project-page">
+  <header class="site-header"><nav class="nav container"><a class="brand" href="../../index.html"><span class="brand-mark">JP</span><span>Data Science Dashboard</span></a><div class="nav-links"><a href="../../index.html#proyectos">Proyectos</a><a href="../../index.html#contacto">Contacto</a></div></nav></header>
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">Computer Vision | Deep Learning</p><h1>Estimacion de edad para Good Seed</h1><p class="hero-lead">Evaluacion de vision artificial para estimar edad desde imagenes y apoyar el cumplimiento en venta de alcohol.</p><div class="tag-list"><span>TensorFlow</span><span>Keras</span><span>ResNet50</span><span>MAE</span></div></div></section>
+    <section class="section-pad section-band"><div class="container page-grid"><div class="content-stack">
+      <section class="content-block"><h2>Resumen ejecutivo</h2><p>Se entreno una arquitectura ResNet50 con pooling global y capa densa para regresion de edad. El modelo se plantea como apoyo a decision, no como sustituto total de verificacion humana.</p><div class="stats-grid"><div class="stat"><span>Arquitectura</span><strong>ResNet50</strong></div><div class="stat"><span>MAE validacion</span><strong>7.03</strong></div><div class="stat"><span>Dataset</span><strong>7600 fotos</strong></div></div></section>
+      <section class="project-dashboard-panel"><h2>Entrenamiento GPU</h2><div class="comparison-bars"><div class="metric-line"><span>Epoch 1 MAE</span><div class="bar-track"><i class="bar-fill" style="width:58%"></i></div><strong>8.42</strong></div><div class="metric-line"><span>Epoch 2 MAE</span><div class="bar-track"><i class="bar-fill" style="width:72%"></i></div><strong>6.71</strong></div><div class="metric-line"><span>Val MAE</span><div class="bar-track"><i class="bar-fill" style="width:87%"></i></div><strong>7.03</strong></div></div></section>
+      <section class="content-block"><h2>Metodologia</h2><ol><li>EDA de etiquetas de edad y validacion de calidad.</li><li>Preparacion de generadores de imagenes.</li><li>Modelo ResNet50 preentrenado con cabeza de regresion.</li><li>Evaluacion con MAE y conclusiones de uso responsable.</li></ol></section>
+      <section class="content-block"><h2>Aprendizaje</h2><p>La vision artificial puede reducir riesgo operativo, pero debe integrarse con criterio humano y politicas claras.</p></section>
+    </div><aside class="side-panel"><a class="btn primary" href="../../index.html#proyectos">Volver al dashboard</a><a class="btn" href="../../assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">Ver CV PDF</a></aside></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>Juan Pablo Garcia Chavez</span><span>Good Seed Vision</span></div></footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seleccion de region petrolera con regresion, bootstrapping, beneficio y riesgo.">
+  <title>Riesgo y rentabilidad petrolera | Juan Pablo Garcia</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="project-page">
+  <header class="site-header"><nav class="nav container"><a class="brand" href="../../index.html"><span class="brand-mark">JP</span><span>Data Science Dashboard</span></a><div class="nav-links"><a href="../../index.html#proyectos">Proyectos</a><a href="../../index.html#contacto">Contacto</a></div></nav></header>
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">Business | Riesgo</p><h1>Seleccion de region para pozos petroleros</h1><p class="hero-lead">Analisis de beneficio y riesgo para recomendar una region de desarrollo con 200 pozos nuevos.</p><div class="tag-list"><span>Regresion lineal</span><span>Bootstrapping</span><span>Riesgo</span><span>Python</span></div></div></section>
+    <section class="section-pad section-band"><div class="container page-grid"><div class="content-stack">
+      <section class="content-block"><h2>Resumen ejecutivo</h2><p>Aunque region_0 tenia mayor ganancia puntual top-200, el criterio de negocio priorizo riesgo menor al 2.5%; region_1 fue la recomendada.</p><div class="stats-grid"><div class="stat"><span>Region recomendada</span><strong>region_1</strong></div><div class="stat"><span>Beneficio promedio</span><strong>4.52M USD</strong></div><div class="stat"><span>Riesgo perdida</span><strong>1.5%</strong></div></div></section>
+      <section class="project-dashboard-panel"><h2>Riesgo por region</h2><div class="comparison-bars"><div class="metric-line"><span>region_0</span><div class="bar-track"><i class="bar-fill" style="width:60%"></i></div><strong>6.0%</strong></div><div class="metric-line"><span>region_1</span><div class="bar-track"><i class="bar-fill" style="width:15%"></i></div><strong>1.5%</strong></div><div class="metric-line"><span>region_2</span><div class="bar-track"><i class="bar-fill" style="width:80%"></i></div><strong>8.0%</strong></div></div></section>
+      <section class="content-block"><h2>Metodologia</h2><ol><li>Modelo de regresion por region.</li><li>Calculo de umbral de equilibrio.</li><li>Seleccion top-200 por prediccion.</li><li>Bootstrap de 1000 muestras para beneficio, intervalo y riesgo.</li></ol></section>
+      <section class="content-block"><h2>Aprendizaje</h2><p>El proyecto muestra decision analytics: no gana solo el mayor retorno puntual, sino la alternativa que cumple restricciones de riesgo.</p></section>
+    </div><aside class="side-panel"><a class="btn primary" href="../../index.html#proyectos">Volver al dashboard</a><a class="btn" href="../../assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">Ver CV PDF</a></aside></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>Juan Pablo Garcia Chavez</span><span>OilyGiant</span></div></footer>
+</body>
+</html>

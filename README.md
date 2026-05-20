@@ -6,7 +6,7 @@ Portafolio profesional enfocado en ciencia de datos, machine learning, analitica
 
 Cuando GitHub Pages este activo, el sitio quedara en:
 
-https://JuanPa7799.github.io/juanpablo-data-portfolio/
+https://JuanPa7799.github.io/juanpablo-data-portfolio-/
 
 ## Stack principal
 
@@ -28,6 +28,10 @@ Proyecto de investigacion aplicado a senales electricas y calidad de energia. Mu
 ### Prediccion de churn | Interconnect
 
 Caso end-to-end de Data Science para integrar cuatro fuentes de datos, construir un pipeline reproducible y seleccionar un modelo de clasificacion con AUC-ROC de 0.8963 en test.
+
+### Dashboard de proyectos TripleTen
+
+La Home incluye proyectos curados de recomendacion, churn bancario, riesgo petrolero, recuperacion de oro, algebra lineal, pricing de autos, forecasting de taxis, NLP y vision computacional.
 
 ## Contacto
 
