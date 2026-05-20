@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+.env
+.env.*
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+node_modules/
+dist/
+build/
+.cache/
+PLAN_PORTAFOLIO.md
+PROMPTS_CODEX_PORTAFOLIO.md
+pasos.md

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Caso end-to-end de prediccion de churn para Interconnect con Python, Pandas, Scikit-learn y Gradient Boosting.">
+  <title>Prediccion de churn | Interconnect</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="project-page">
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegacion del proyecto">
+      <a class="brand" href="../../index.html">
+        <span class="brand-mark">JP</span>
+        <span>Data Portfolio</span>
+      </a>
+      <div class="nav-links">
+        <a href="../../index.html#proyectos">Proyectos</a>
+        <a href="../../index.html#sobre-mi">Sobre mi</a>
+        <a href="../../index.html#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Data Science end-to-end | Clasificacion</p>
+        <h1>Prediccion de churn para Interconnect</h1>
+        <p class="hero-lead">
+          Solucion de punta a punta para identificar clientes con riesgo de cancelacion, integrando multiples fuentes,
+          preparando datos, comparando modelos y comunicando resultados para toma de decisiones.
+        </p>
+        <div class="tag-list">
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>Scikit-learn</span>
+          <span>Gradient Boosting</span>
+          <span>AUC-ROC</span>
+          <span>EDA</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad section-band">
+      <div class="container page-grid">
+        <div class="content-stack">
+          <section class="content-block">
+            <h2>Resumen ejecutivo</h2>
+            <p>
+              El caso busca detectar clientes con alta probabilidad de abandonar el servicio para apoyar estrategias
+              de retencion. La solucion integra cuatro fuentes de datos y selecciona un modelo supervisado con foco en AUC-ROC.
+            </p>
+            <div class="stats-grid">
+              <div class="stat">
+                <span>Modelo final</span>
+                <strong>Gradient Boosting</strong>
+              </div>
+              <div class="stat">
+                <span>AUC-ROC test</span>
+                <strong>0.8963</strong>
+              </div>
+              <div class="stat">
+                <span>Accuracy test</span>
+                <strong>0.8538</strong>
+              </div>
+            </div>
+          </section>
+
+          <section class="content-block">
+            <h2>Datos</h2>
+            <p>
+              Se integraron 7043 filas usando `customerID` como llave. Las fuentes originales del ejercicio fueron:
+              `contract.csv`, `personal.csv`, `internet.csv` y `phone.csv`.
+            </p>
+            <p>
+              Los datasets completos no se publican en esta version del portafolio para mantener una publicacion limpia.
+            </p>
+          </section>
+
+          <section class="content-block">
+            <h2>Metodologia</h2>
+            <ol>
+              <li>Carga y validacion inicial de calidad de cada fuente.</li>
+              <li>Integracion de datasets por cliente.</li>
+              <li>Definicion de la variable objetivo a partir de cancelacion.</li>
+              <li>Limpieza, imputacion y codificacion de variables categoricas.</li>
+              <li>Comparacion de baseline, Logistic Regression, Random Forest y Gradient Boosting.</li>
+              <li>Seleccion final por AUC-ROC en test, con accuracy como metrica secundaria.</li>
+            </ol>
+          </section>
+
+          <section class="content-block">
+            <h2>Resultados</h2>
+            <ul>
+              <li>Gradient Boosting fue el modelo seleccionado.</li>
+              <li>AUC-ROC en test: 0.8963.</li>
+              <li>Accuracy en test: 0.8538.</li>
+              <li>El flujo genera una base reproducible para segmentacion de riesgo y priorizacion de retencion.</li>
+            </ul>
+          </section>
+
+          <section class="content-block">
+            <h2>Aprendizajes</h2>
+            <p>
+              El valor principal del proyecto esta en conectar un problema de negocio con una solucion tecnica completa:
+              preparar datos de distintas fuentes, entrenar modelos comparables y explicar el resultado en terminos
+              utiles para retencion de clientes.
+            </p>
+          </section>
+        </div>
+
+        <aside class="side-panel" aria-label="Recursos del proyecto">
+          <a class="btn primary" href="../../index.html#proyectos">Volver a proyectos</a>
+          <a class="btn" href="../../assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">Ver evidencia PDF</a>
+          <a class="btn" href="https://github.com/JuanPa7799" target="_blank" rel="noreferrer">GitHub</a>
+          <section class="content-block">
+            <h2>Nota de publicacion</h2>
+            <p>
+              Los notebooks y HTML exportados existen localmente, pero esta pagina usa una version curada porque los
+              archivos originales contienen salidas con rutas locales que no deben publicarse.
+            </p>
+          </section>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Juan Pablo Garcia Chavez</span>
+      <span>Prediccion de churn | Interconnect</span>
+    </div>
+  </footer>
+</body>
+</html>
