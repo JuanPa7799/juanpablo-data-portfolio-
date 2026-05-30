@@ -9,6 +9,7 @@ Este directorio organiza la planeacion antes de convertirla a paginas publicas. 
 - [Especificacion del sitio publico](07_PUBLIC_SITE_SPEC.md)
 - [Mapa de proyectos por rol](08_PROJECTS_BY_ROLE.md)
 - [Checklist antes de HTML](09_APPROVAL_BEFORE_HTML.md)
+- [Plan maestro de ejecucion](10_EXECUTION_PLAN.md)
 - [Sistema privado diario](05_PRIVATE_DAILY_SYSTEM.md)
 - [Reglas de seguridad](04_SECURITY_AND_PUBLICATION_RULES.md)
 
