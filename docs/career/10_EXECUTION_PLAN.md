@@ -76,7 +76,7 @@ Tener claro que mostrar segun el tipo de vacante.
 
 ## Fase 3 - Dashboard publico principal
 
-Estado: primera version creada, falta pulir.
+Estado: primera version creada y conectada a dashboards por rol.
 
 Objetivo:
 
@@ -101,14 +101,14 @@ Esa pagina debe tener:
 
 Pendiente:
 
-- traducir completamente el home a ingles;
-- mejorar copy para que suene mas natural;
+- revisar visualmente en navegador;
+- ajustar copy fino despues de ver la pagina renderizada;
 - ajustar responsive visual;
-- probar localmente en navegador.
+- reemplazar fallback de CV por PDFs finales.
 
 ## Fase 4 - Dashboards por rol
 
-Estado: primera version creada.
+Estado: primera version creada con selector ES/EN, KPIs, proyectos, flujo visual, estado de CV y navegacion entre rutas.
 
 ### Data Analyst Jr
 
@@ -187,7 +187,7 @@ Pendientes:
 
 ## Fase 5 - CVs y portafolios ES/EN
 
-Estado: pendiente.
+Estado: estructura preparada; PDFs finales pendientes.
 
 Se necesitan seis CVs:
 
@@ -211,6 +211,8 @@ Correcciones obligatorias segun feedback:
 Resultado esperado:
 
 Cada dashboard debe descargar el CV correcto segun rol e idioma.
+
+Mientras los PDFs finales no existan, los dashboards usan `Portafolio_de_evidencias_V2.pdf` como fallback seguro.
 
 ## Fase 6 - Proyectos publicos
 
@@ -311,16 +313,14 @@ Tambien probar:
 
 ## Orden inmediato de trabajo
 
-1. Revisar este plan.
-2. Aprobar o corregir los tres enfoques de rol.
-3. Mejorar visualmente los tres dashboards HTML.
-4. Traducir home y dashboards completos ES/EN.
-5. Crear CVs por rol en markdown.
-6. Convertir CVs a PDF.
-7. Linkear PDFs correctos.
-8. Mejorar paginas de proyectos prioritarios.
-9. Crear sistema privado diario.
-10. Publicar en GitHub Pages.
+1. Revisar visualmente Home y dashboards por rol.
+2. Ajustar copy fino si algo se siente generico.
+3. Crear CVs por rol en markdown.
+4. Convertir CVs a PDF.
+5. Linkear PDFs correctos.
+6. Mejorar paginas de proyectos prioritarios.
+7. Crear sistema privado diario.
+8. Publicar en GitHub Pages.
 
 ## Que necesito de ti
 

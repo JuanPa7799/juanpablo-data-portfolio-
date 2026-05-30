@@ -14,7 +14,13 @@ const roleDashboards = {
     },
     cv: {
       es: "../../assets/pdf/Portafolio_de_evidencias_V2.pdf",
-      en: "../../assets/pdf/Portafolio_de_evidencias_V2.pdf"
+      en: "../../assets/pdf/Portafolio_de_evidencias_V2.pdf",
+      plannedEs: "cv-data-analyst-es.pdf",
+      plannedEn: "cv-data-analyst-en.pdf"
+    },
+    workflow: {
+      es: ["Consulta", "KPI", "Dashboard", "Decision"],
+      en: ["Query", "KPI", "Dashboard", "Decision"]
     },
     kpis: [
       ["Business cases", "4"],
@@ -73,7 +79,8 @@ const roleDashboards = {
       "Dashboard BI de KPIs comerciales",
       "Caso SQL con consultas avanzadas",
       "Reporte automatizado semanal con Python"
-    ]
+    ],
+    accent: "Business analytics"
   },
   "data-scientist": {
     title: {
@@ -90,7 +97,13 @@ const roleDashboards = {
     },
     cv: {
       es: "../../assets/pdf/Portafolio_de_evidencias_V2.pdf",
-      en: "../../assets/pdf/Portafolio_de_evidencias_V2.pdf"
+      en: "../../assets/pdf/Portafolio_de_evidencias_V2.pdf",
+      plannedEs: "cv-data-scientist-es.pdf",
+      plannedEn: "cv-data-scientist-en.pdf"
+    },
+    workflow: {
+      es: ["Problema", "EDA", "Modelo", "Validacion"],
+      en: ["Problem", "EDA", "Model", "Validation"]
     },
     kpis: [
       ["End-to-end", "5"],
@@ -160,7 +173,8 @@ const roleDashboards = {
       "Interpretabilidad con permutation importance o SHAP",
       "Proyecto SQL + ML con datos publicos",
       "Caso de experimentacion o A/B testing"
-    ]
+    ],
+    accent: "Predictive modeling"
   },
   "machine-learning": {
     title: {
@@ -177,7 +191,13 @@ const roleDashboards = {
     },
     cv: {
       es: "../../assets/pdf/Portafolio_de_evidencias_V2.pdf",
-      en: "../../assets/pdf/Portafolio_de_evidencias_V2.pdf"
+      en: "../../assets/pdf/Portafolio_de_evidencias_V2.pdf",
+      plannedEs: "cv-machine-learning-es.pdf",
+      plannedEn: "cv-machine-learning-en.pdf"
+    },
+    workflow: {
+      es: ["Modelo", "Pipeline", "API", "Monitoreo"],
+      en: ["Model", "Pipeline", "API", "Monitoring"]
     },
     kpis: [
       ["Proyecto estrella", "96%+"],
@@ -248,7 +268,8 @@ const roleDashboards = {
       "Pipeline sklearn serializado con joblib",
       "Dockerfile y demo local",
       "Monitoreo simple con datos simulados"
-    ]
+    ],
+    accent: "Applied ML"
   }
 };
 
@@ -264,7 +285,15 @@ const languageLabels = {
     score: "Score visual",
     roleSwitch: "Cambiar ruta",
     contact: "Contacto",
-    note: "Los CVs por rol ES/EN se enlazaran cuando esten aprobados. Por ahora se usa el PDF publico actual."
+    note: "Los CVs por rol ES/EN se enlazaran cuando esten aprobados. Por ahora se usa el PDF publico actual.",
+    flow: "Flujo de trabajo",
+    cvStatus: "Estado de CV",
+    currentCv: "Fallback publico activo",
+    plannedCv: "PDF final reservado",
+    otherPaths: "Otras rutas",
+    dataAnalyst: "Data Analyst",
+    dataScientist: "Data Scientist",
+    machineLearning: "Machine Learning"
   },
   en: {
     cv: "Download EN CV",
@@ -277,9 +306,23 @@ const languageLabels = {
     score: "Visual score",
     roleSwitch: "Switch path",
     contact: "Contact",
-    note: "Role-specific ES/EN CVs will be linked once approved. For now, the current public PDF is used."
+    note: "Role-specific ES/EN CVs will be linked once approved. For now, the current public PDF is used.",
+    flow: "Workflow",
+    cvStatus: "CV status",
+    currentCv: "Active public fallback",
+    plannedCv: "Reserved final PDF",
+    otherPaths: "Other paths",
+    dataAnalyst: "Data Analyst",
+    dataScientist: "Data Scientist",
+    machineLearning: "Machine Learning"
   }
 };
+
+const roleRoutes = [
+  ["data-analyst", "../data-analyst/"],
+  ["data-scientist", "../data-scientist/"],
+  ["machine-learning", "../machine-learning/"]
+];
 
 function getLanguage() {
   return localStorage.getItem("portfolio-language") || "es";
@@ -313,6 +356,7 @@ function renderRoleDashboard() {
     <section class="role-hero section-pad">
       <div class="container role-hero-grid">
         <div>
+          <span class="role-accent">${data.accent}</span>
           <p class="eyebrow">${data.eyebrow[lang]}</p>
           <h1>${data.title[lang]}</h1>
           <p class="hero-lead">${data.lead[lang]}</p>
@@ -341,6 +385,9 @@ function renderRoleDashboard() {
           </div>
           <div class="dashboard-chart role-main-chart" aria-hidden="true">
             ${data.projects.slice(0, 4).map((project) => `<span class="chart-bar" data-label="${project.metric.split(" ")[0]}" style="height:${project.score}%"></span>`).join("")}
+          </div>
+          <div class="workflow-strip" aria-label="${copy.flow}">
+            ${data.workflow[lang].map((step) => `<span>${step}</span>`).join("")}
           </div>
         </aside>
       </div>
@@ -379,6 +426,17 @@ function renderRoleDashboard() {
         </section>
 
         <aside class="role-sidebar">
+          <section class="content-block cv-status-card">
+            <h2>${copy.cvStatus}</h2>
+            <div class="cv-status-row">
+              <span>${copy.currentCv}</span>
+              <strong>Portafolio_de_evidencias_V2.pdf</strong>
+            </div>
+            <div class="cv-status-row">
+              <span>${copy.plannedCv}</span>
+              <strong>${lang === "es" ? data.cv.plannedEs : data.cv.plannedEn}</strong>
+            </div>
+          </section>
           <section class="content-block">
             <h2>${copy.stack}</h2>
             <div class="tag-list">${tags(data.stack)}</div>
@@ -388,6 +446,15 @@ function renderRoleDashboard() {
             <ul class="insight-list">
               ${data.roadmap.map((item) => `<li>${item}</li>`).join("")}
             </ul>
+          </section>
+          <section class="content-block role-switch-card">
+            <h2>${copy.otherPaths}</h2>
+            <div class="role-switch-list">
+              ${roleRoutes
+                .filter(([key]) => key !== roleKey)
+                .map(([key, href]) => `<a href="${href}">${roleDashboards[key].title[lang]}</a>`)
+                .join("")}
+            </div>
           </section>
         </aside>
       </div>

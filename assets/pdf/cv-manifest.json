@@ -1,0 +1,41 @@
+{
+  "fallback": "Portafolio_de_evidencias_V2.pdf",
+  "roles": {
+    "data-analyst": {
+      "es": {
+        "planned": "cv-data-analyst-es.pdf",
+        "current": "Portafolio_de_evidencias_V2.pdf",
+        "status": "fallback"
+      },
+      "en": {
+        "planned": "cv-data-analyst-en.pdf",
+        "current": "Portafolio_de_evidencias_V2.pdf",
+        "status": "fallback"
+      }
+    },
+    "data-scientist": {
+      "es": {
+        "planned": "cv-data-scientist-es.pdf",
+        "current": "Portafolio_de_evidencias_V2.pdf",
+        "status": "fallback"
+      },
+      "en": {
+        "planned": "cv-data-scientist-en.pdf",
+        "current": "Portafolio_de_evidencias_V2.pdf",
+        "status": "fallback"
+      }
+    },
+    "machine-learning": {
+      "es": {
+        "planned": "cv-machine-learning-es.pdf",
+        "current": "Portafolio_de_evidencias_V2.pdf",
+        "status": "fallback"
+      },
+      "en": {
+        "planned": "cv-machine-learning-en.pdf",
+        "current": "Portafolio_de_evidencias_V2.pdf",
+        "status": "fallback"
+      }
+    }
+  }
+}

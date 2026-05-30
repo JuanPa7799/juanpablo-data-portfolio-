@@ -5,6 +5,103 @@ const contactoData = {
   cv: "assets/pdf/Portafolio_de_evidencias_V2.pdf"
 };
 
+const homeCopy = {
+  es: {
+    "nav.dashboard": "Dashboard",
+    "nav.paths": "Rutas",
+    "nav.projects": "Proyectos",
+    "nav.about": "Sobre mi",
+    "nav.contact": "Contacto",
+    "hero.eyebrow": "Data Scientist | ML aplicado | Analitica predictiva",
+    "hero.title": "Portafolio de proyectos Data Science",
+    "hero.lead": "Soy Juan Pablo Garcia Chavez, Data Scientist con base en ingenieria mecatronica y maestria en ingenieria electronica. Construyo modelos, pipelines y analisis que conectan datos tecnicos con decisiones claras.",
+    "hero.projectsCta": "Explorar proyectos",
+    "hero.panelLabel": "Portfolio health",
+    "hero.panelStrong": "11 proyectos curados",
+    "hero.status": "GitHub Pages ready",
+    "hero.kpiAuc": "Mejor AUC",
+    "hero.kpiRmse": "Objetivo <= 48",
+    "paths.eyebrow": "Rutas profesionales",
+    "paths.title": "Elige el dashboard segun el rol",
+    "paths.lead": "Desde LinkedIn, esta sera la entrada principal: una vista clara que dirige a Data Analyst Jr, Data Scientist Jr o Machine Learning Jr con proyectos, metricas y CVs alineados.",
+    "paths.analystText": "SQL, KPIs, dashboards, decision analytics y comunicacion ejecutiva para convertir datos en acciones.",
+    "paths.scientistText": "Proyectos end-to-end con Python, validacion, metricas, feature engineering y lectura tecnica.",
+    "paths.mlText": "Senales, vision, NLP, forecasting y camino hacia pipelines, APIs ligeras y modelos reutilizables.",
+    "paths.cases": "Casos",
+    "paths.focus": "Foco",
+    "paths.bestAuc": "Mejor AUC",
+    "paths.flagship": "Estrella",
+    "paths.domains": "Dominios",
+    "paths.open": "Abrir dashboard",
+    "dashboard.title": "Vista rapida de capacidades",
+    "dashboard.lead": "Un resumen visual de proyectos de clasificacion, regresion, riesgo, series temporales, NLP, vision computacional e ingenieria.",
+    "dashboard.stack": "Stack principal",
+    "projects.eyebrow": "Proyectos seleccionados",
+    "projects.title": "Casos con metricas, enfoque y resultados",
+    "projects.lead": "Filtra por area para revisar el tipo de problemas que he resuelto durante el bootcamp, investigacion y proyectos aplicados.",
+    "projects.all": "Todos",
+    "projects.view": "Ver proyecto",
+    "projects.difficulty": "Dificultad",
+    "about.eyebrow": "Sobre mi",
+    "about.title": "Un perfil tecnico que traduce modelos en decisiones.",
+    "about.lead": "Combino ingenieria, investigacion aplicada y ciencia de datos para trabajar con senales, datos tabulares, texto, series temporales e imagenes. Me interesa que cada modelo sea reproducible, evaluable y explicable.",
+    "about.mlText": "Clasificacion, regresion, forecasting, NLP y vision computacional.",
+    "about.businessText": "Riesgo, rentabilidad, churn, recomendacion y optimizacion.",
+    "about.engineeringText": "Procesamiento de senales, reportes tecnicos y storytelling con datos.",
+    "contact.eyebrow": "Contacto",
+    "contact.title": "Listo para colaborar en proyectos con datos.",
+    "contact.lead": "Si necesitas alguien que analice, modele, explique y ejecute con criterio tecnico, aqui estan mis canales principales.",
+    "contact.email": "Enviar correo"
+  },
+  en: {
+    "nav.dashboard": "Dashboard",
+    "nav.paths": "Paths",
+    "nav.projects": "Projects",
+    "nav.about": "About",
+    "nav.contact": "Contact",
+    "hero.eyebrow": "Data Scientist | Applied ML | Predictive analytics",
+    "hero.title": "Data Science Project Portfolio",
+    "hero.lead": "I am Juan Pablo Garcia Chavez, a Data Scientist with a mechatronics engineering background and a master's degree in electronic engineering. I build models, pipelines, and analyses that connect technical data with clear decisions.",
+    "hero.projectsCta": "Explore projects",
+    "hero.panelLabel": "Portfolio health",
+    "hero.panelStrong": "11 curated projects",
+    "hero.status": "GitHub Pages ready",
+    "hero.kpiAuc": "Best AUC",
+    "hero.kpiRmse": "Target <= 48",
+    "paths.eyebrow": "Professional paths",
+    "paths.title": "Choose the dashboard by role",
+    "paths.lead": "From LinkedIn, this will be the main entry point: a clear view leading to Junior Data Analyst, Junior Data Scientist, or Junior Machine Learning paths with aligned projects, metrics, and CVs.",
+    "paths.analystText": "SQL, KPIs, dashboards, decision analytics, and executive communication to turn data into action.",
+    "paths.scientistText": "End-to-end projects with Python, validation, metrics, feature engineering, and technical interpretation.",
+    "paths.mlText": "Signals, vision, NLP, forecasting, and the path toward pipelines, lightweight APIs, and reusable models.",
+    "paths.cases": "Cases",
+    "paths.focus": "Focus",
+    "paths.bestAuc": "Best AUC",
+    "paths.flagship": "Flagship",
+    "paths.domains": "Domains",
+    "paths.open": "Open dashboard",
+    "dashboard.title": "Quick capability view",
+    "dashboard.lead": "A visual summary of classification, regression, risk, time series, NLP, computer vision, and engineering projects.",
+    "dashboard.stack": "Main stack",
+    "projects.eyebrow": "Selected projects",
+    "projects.title": "Cases with metrics, approach, and results",
+    "projects.lead": "Filter by area to review the kinds of problems I have solved through bootcamp, research, and applied projects.",
+    "projects.all": "All",
+    "projects.view": "View project",
+    "projects.difficulty": "Difficulty",
+    "about.eyebrow": "About",
+    "about.title": "A technical profile that translates models into decisions.",
+    "about.lead": "I combine engineering, applied research, and data science to work with signals, tabular data, text, time series, and images. I care that each model is reproducible, measurable, and explainable.",
+    "about.mlText": "Classification, regression, forecasting, NLP, and computer vision.",
+    "about.businessText": "Risk, profitability, churn, recommendation, and optimization.",
+    "about.engineeringText": "Signal processing, technical reports, and data storytelling.",
+    "contact.eyebrow": "Contact",
+    "contact.title": "Ready to collaborate on data projects.",
+    "contact.lead": "If you need someone who can analyze, model, explain, and execute with technical judgment, these are my main channels.",
+    "contact.email": "Send email"
+  }
+};
+
 const projectsData = [
   {
     title: "Clasificacion de perturbaciones electricas",
@@ -14,6 +111,7 @@ const projectsData = [
     metricValue: "96%+",
     metricScore: 96,
     summary: "Modelos de ML para clasificar perturbaciones en senales electricas y apoyar monitoreo energetico.",
+    summaryEn: "ML models to classify electrical signal disturbances and support energy quality monitoring.",
     stack: ["Python", "TensorFlow", "Scikit-learn", "Senales"],
     difficulty: "Avanzado",
     featured: true,
@@ -27,6 +125,7 @@ const projectsData = [
     metricValue: "0.8963",
     metricScore: 89.63,
     summary: "Pipeline end-to-end para detectar cancelacion de clientes con Gradient Boosting.",
+    summaryEn: "End-to-end pipeline to detect customer cancellation risk with Gradient Boosting.",
     stack: ["Python", "Pandas", "Scikit-learn", "AUC"],
     difficulty: "Avanzado",
     featured: true,
@@ -40,6 +139,7 @@ const projectsData = [
     metricValue: "0.8149",
     metricScore: 81.49,
     summary: "Modelo para recomendar planes moviles Megaline a partir del comportamiento de usuarios.",
+    summaryEn: "Model to recommend Megaline mobile plans from user behavior.",
     stack: ["Python", "Random Forest", "EDA", "Accuracy"],
     difficulty: "Intermedio",
     featured: false,
@@ -53,6 +153,7 @@ const projectsData = [
     metricValue: "0.6365",
     metricScore: 63.65,
     summary: "Clasificacion de abandono bancario con balanceo, umbral optimizado y AUC-ROC de apoyo.",
+    summaryEn: "Bank churn classification with balancing, optimized threshold, and supporting AUC-ROC.",
     stack: ["Python", "Random Forest", "F1", "AUC-ROC"],
     difficulty: "Avanzado",
     featured: false,
@@ -66,6 +167,7 @@ const projectsData = [
     metricValue: "1.5%",
     metricScore: 98.5,
     summary: "Seleccion de region para 200 pozos con regresion lineal, beneficio esperado y bootstrapping.",
+    summaryEn: "Region selection for 200 wells with linear regression, expected profit, and bootstrapping.",
     stack: ["Python", "Regresion", "Bootstrap", "Riesgo"],
     difficulty: "Avanzado",
     featured: false,
@@ -79,6 +181,7 @@ const projectsData = [
     metricValue: "8.49%",
     metricScore: 91.51,
     summary: "Modelo industrial para predecir recuperacion de oro y validar consistencia de proceso.",
+    summaryEn: "Industrial model to predict gold recovery and validate process consistency.",
     stack: ["Python", "Regresion", "sMAPE", "Mineria"],
     difficulty: "Avanzado",
     featured: false,
@@ -92,6 +195,7 @@ const projectsData = [
     metricValue: "4 tareas",
     metricScore: 74,
     summary: "Similitud de clientes, prediccion, regresion y ofuscacion de datos con algebra lineal.",
+    summaryEn: "Customer similarity, prediction, regression, and data obfuscation with linear algebra.",
     stack: ["Python", "Algebra lineal", "KNN", "Privacidad"],
     difficulty: "Intermedio",
     featured: false,
@@ -105,6 +209,7 @@ const projectsData = [
     metricValue: "1776.60",
     metricScore: 82,
     summary: "Comparacion de modelos para estimar precio de autos con foco en calidad y velocidad.",
+    summaryEn: "Model comparison for used car pricing with focus on quality and speed.",
     stack: ["Python", "LightGBM", "Random Forest", "RMSE"],
     difficulty: "Avanzado",
     featured: false,
@@ -118,6 +223,7 @@ const projectsData = [
     metricValue: "43.21",
     metricScore: 90,
     summary: "Prediccion horaria de demanda de taxis con lags, medias moviles y modelos supervisados.",
+    summaryEn: "Hourly taxi demand forecasting with lags, rolling means, and supervised models.",
     stack: ["Python", "Series temporales", "Random Forest", "RMSE"],
     difficulty: "Avanzado",
     featured: false,
@@ -131,6 +237,7 @@ const projectsData = [
     metricValue: "F1 >= 0.85",
     metricScore: 85,
     summary: "Clasificacion de resenas negativas con TF-IDF, regresion logistica, LightGBM y prueba BERT.",
+    summaryEn: "Negative review classification with TF-IDF, logistic regression, LightGBM, and a BERT test.",
     stack: ["NLP", "TF-IDF", "LogReg", "LightGBM"],
     difficulty: "Avanzado",
     featured: false,
@@ -144,6 +251,7 @@ const projectsData = [
     metricValue: "7.03",
     metricScore: 87,
     summary: "ResNet50 para estimar edad desde imagenes y apoyar control de venta de alcohol.",
+    summaryEn: "ResNet50 to estimate age from images and support alcohol sale control.",
     stack: ["TensorFlow", "ResNet50", "Keras", "Vision"],
     difficulty: "Avanzado",
     featured: false,
@@ -189,11 +297,26 @@ function setupLanguageToggle() {
 
   setPortfolioLanguage(getPortfolioLanguage());
   syncLabel();
+  applyHomeLanguage();
 
   languageToggle.addEventListener("click", () => {
     const nextLanguage = getPortfolioLanguage() === "es" ? "en" : "es";
     setPortfolioLanguage(nextLanguage);
     syncLabel();
+    applyHomeLanguage();
+    const activeFilter = document.querySelector("[data-filter].active")?.dataset.filter || "All";
+    renderProjects(activeFilter);
+  });
+}
+
+function applyHomeLanguage() {
+  const language = getPortfolioLanguage();
+  const dictionary = homeCopy[language] || homeCopy.es;
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.dataset.i18n;
+    if (dictionary[key]) {
+      element.textContent = dictionary[key];
+    }
   });
 }
 
@@ -220,6 +343,8 @@ function renderBars(container, values, labels = []) {
 }
 
 function createProjectCard(project) {
+  const language = getPortfolioLanguage();
+  const dictionary = homeCopy[language] || homeCopy.es;
   const tags = project.stack.map((item) => `<span>${item}</span>`).join("");
   const bars = project.chartData.map((value) => {
     const safeValue = Math.max(8, Math.min(100, Number(value)));
@@ -234,20 +359,20 @@ function createProjectCard(project) {
       <div class="project-body">
         <p class="project-type">${project.category}</p>
         <h3>${project.title}</h3>
-        <p>${project.summary}</p>
+        <p>${language === "en" ? project.summaryEn : project.summary}</p>
         <div class="project-meta">
           <div>
             <span>${project.metricLabel}</span>
             <strong>${project.metricValue}</strong>
           </div>
           <div>
-            <span>Dificultad</span>
+            <span>${dictionary["projects.difficulty"]}</span>
             <strong>${project.difficulty}</strong>
           </div>
         </div>
         <div class="tag-list">${tags}</div>
         <div class="card-actions">
-          <a href="projects/${project.slug}/">Ver proyecto</a>
+          <a href="projects/${project.slug}/">${dictionary["projects.view"]}</a>
         </div>
       </div>
     </article>

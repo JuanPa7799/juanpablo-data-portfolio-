@@ -65,7 +65,7 @@ Cuando este checklist este aprobado, se puede pasar a:
 1. crear `dashboards/data-analyst/index.html` - primera version creada;
 2. crear `dashboards/data-scientist/index.html` - primera version creada;
 3. crear `dashboards/machine-learning/index.html` - primera version creada;
-4. implementar selector ES/EN - primera version creada en dashboards por rol;
-5. enlazar CVs finales - pendiente;
+4. implementar selector ES/EN - primera version creada en Home y dashboards por rol;
+5. enlazar CVs finales - estructura preparada, PDFs finales pendientes;
 6. probar localmente - pendiente de revision visual;
 7. publicar en GitHub Pages - pendiente.

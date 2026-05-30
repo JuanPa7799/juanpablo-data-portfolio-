@@ -20,11 +20,11 @@
         <span></span>
       </button>
       <div class="nav-links" data-nav-links>
-        <a href="#dashboard">Dashboard</a>
-        <a href="#rutas">Rutas</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#sobre-mi">Sobre mi</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#dashboard" data-i18n="nav.dashboard">Dashboard</a>
+        <a href="#rutas" data-i18n="nav.paths">Rutas</a>
+        <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+        <a href="#sobre-mi" data-i18n="nav.about">Sobre mi</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
         <button class="language-toggle" type="button" data-language-toggle>ES / EN</button>
       </div>
     </nav>
@@ -34,14 +34,14 @@
     <section class="hero section-pad">
       <div class="container hero-dashboard">
         <div class="hero-copy">
-          <p class="eyebrow">Data Scientist | ML aplicado | Analitica predictiva</p>
-          <h1>Portafolio de proyectos Data Science</h1>
-          <p class="hero-lead">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Data Scientist | ML aplicado | Analitica predictiva</p>
+          <h1 data-i18n="hero.title">Portafolio de proyectos Data Science</h1>
+          <p class="hero-lead" data-i18n="hero.lead">
             Soy Juan Pablo Garcia Chavez, Data Scientist con base en ingenieria mecatronica y maestria en ingenieria electronica.
             Construyo modelos, pipelines y analisis que conectan datos tecnicos con decisiones claras.
           </p>
           <div class="actions">
-            <a class="btn primary" href="#proyectos">Explorar proyectos</a>
+            <a class="btn primary" href="#proyectos" data-i18n="hero.projectsCta">Explorar proyectos</a>
             <a class="btn" href="dashboards/data-analyst/">Data Analyst</a>
             <a class="btn" href="dashboards/data-scientist/">Data Scientist</a>
             <a class="btn" href="dashboards/machine-learning/">Machine Learning</a>
@@ -54,21 +54,21 @@
         <section class="hero-panel" aria-label="Resumen visual del portafolio">
           <div class="panel-top">
             <div>
-              <span class="panel-label">Portfolio health</span>
-              <strong>11 proyectos curados</strong>
+              <span class="panel-label" data-i18n="hero.panelLabel">Portfolio health</span>
+              <strong data-i18n="hero.panelStrong">11 proyectos curados</strong>
             </div>
-            <span class="status-pill">GitHub Pages ready</span>
+            <span class="status-pill" data-i18n="hero.status">GitHub Pages ready</span>
           </div>
           <div class="kpi-row">
             <article>
-              <span>Mejor AUC</span>
+              <span data-i18n="hero.kpiAuc">Mejor AUC</span>
               <strong data-count="0.8963" data-decimals="4">0</strong>
               <small>Interconnect churn</small>
             </article>
             <article>
               <span>Forecast RMSE</span>
               <strong data-count="43.21" data-decimals="2">0</strong>
-              <small>Objetivo <= 48</small>
+              <small data-i18n="hero.kpiRmse">Objetivo <= 48</small>
             </article>
             <article>
               <span>Vision MAE</span>
@@ -84,9 +84,9 @@
     <section id="rutas" class="section-pad">
       <div class="container">
         <div class="section-heading wide">
-          <p class="eyebrow">Rutas profesionales</p>
-          <h2>Elige el dashboard segun el rol</h2>
-          <p>
+          <p class="eyebrow" data-i18n="paths.eyebrow">Rutas profesionales</p>
+          <h2 data-i18n="paths.title">Elige el dashboard segun el rol</h2>
+          <p data-i18n="paths.lead">
             Desde LinkedIn, esta sera la entrada principal: una vista clara que dirige a Data Analyst Jr,
             Data Scientist Jr o Machine Learning Jr con proyectos, metricas y CVs alineados.
           </p>
@@ -96,39 +96,39 @@
           <article class="role-entry-card">
             <p class="eyebrow">Business analytics</p>
             <h3>Data Analyst Jr</h3>
-            <p>SQL, KPIs, dashboards, decision analytics y comunicacion ejecutiva para convertir datos en acciones.</p>
+            <p data-i18n="paths.analystText">SQL, KPIs, dashboards, decision analytics y comunicacion ejecutiva para convertir datos en acciones.</p>
             <div class="role-entry-metrics">
-              <div><span>Casos</span><strong>4</strong></div>
-              <div><span>Foco</span><strong>KPIs</strong></div>
+              <div><span data-i18n="paths.cases">Casos</span><strong>4</strong></div>
+              <div><span data-i18n="paths.focus">Foco</span><strong>KPIs</strong></div>
             </div>
             <div class="card-actions">
-              <a href="dashboards/data-analyst/">Abrir dashboard</a>
+              <a href="dashboards/data-analyst/" data-i18n="paths.open">Abrir dashboard</a>
             </div>
           </article>
 
           <article class="role-entry-card">
             <p class="eyebrow">Predictive modeling</p>
             <h3>Data Scientist Jr</h3>
-            <p>Proyectos end-to-end con Python, validacion, metricas, feature engineering y lectura tecnica.</p>
+            <p data-i18n="paths.scientistText">Proyectos end-to-end con Python, validacion, metricas, feature engineering y lectura tecnica.</p>
             <div class="role-entry-metrics">
-              <div><span>Mejor AUC</span><strong>0.8963</strong></div>
-              <div><span>Casos</span><strong>5</strong></div>
+              <div><span data-i18n="paths.bestAuc">Mejor AUC</span><strong>0.8963</strong></div>
+              <div><span data-i18n="paths.cases">Casos</span><strong>5</strong></div>
             </div>
             <div class="card-actions">
-              <a href="dashboards/data-scientist/">Abrir dashboard</a>
+              <a href="dashboards/data-scientist/" data-i18n="paths.open">Abrir dashboard</a>
             </div>
           </article>
 
           <article class="role-entry-card">
             <p class="eyebrow">Applied ML</p>
             <h3>Machine Learning Jr</h3>
-            <p>Senales, vision, NLP, forecasting y camino hacia pipelines, APIs ligeras y modelos reutilizables.</p>
+            <p data-i18n="paths.mlText">Senales, vision, NLP, forecasting y camino hacia pipelines, APIs ligeras y modelos reutilizables.</p>
             <div class="role-entry-metrics">
-              <div><span>Estrella</span><strong>96%+</strong></div>
-              <div><span>Dominios</span><strong>5</strong></div>
+              <div><span data-i18n="paths.flagship">Estrella</span><strong>96%+</strong></div>
+              <div><span data-i18n="paths.domains">Dominios</span><strong>5</strong></div>
             </div>
             <div class="card-actions">
-              <a href="dashboards/machine-learning/">Abrir dashboard</a>
+              <a href="dashboards/machine-learning/" data-i18n="paths.open">Abrir dashboard</a>
             </div>
           </article>
         </div>
@@ -139,13 +139,13 @@
       <div class="container dashboard-grid">
         <div class="section-heading">
           <p class="eyebrow">Portfolio Dashboard</p>
-          <h2>Vista rapida de capacidades</h2>
-          <p>
+          <h2 data-i18n="dashboard.title">Vista rapida de capacidades</h2>
+          <p data-i18n="dashboard.lead">
             Un resumen visual de proyectos de clasificacion, regresion, riesgo, series temporales, NLP, vision computacional e ingenieria.
           </p>
         </div>
         <aside class="stack-panel" aria-label="Stack tecnico">
-          <h3>Stack principal</h3>
+          <h3 data-i18n="dashboard.stack">Stack principal</h3>
           <div class="skill-bars">
             <div><span>Python / Pandas</span><strong style="width: 96%"></strong></div>
             <div><span>Scikit-learn</span><strong style="width: 92%"></strong></div>
@@ -159,13 +159,13 @@
     <section id="proyectos" class="section-pad">
       <div class="container">
         <div class="section-heading wide">
-          <p class="eyebrow">Proyectos seleccionados</p>
-          <h2>Casos con metricas, enfoque y resultados</h2>
-          <p>Filtra por area para revisar el tipo de problemas que he resuelto durante el bootcamp, investigacion y proyectos aplicados.</p>
+          <p class="eyebrow" data-i18n="projects.eyebrow">Proyectos seleccionados</p>
+          <h2 data-i18n="projects.title">Casos con metricas, enfoque y resultados</h2>
+          <p data-i18n="projects.lead">Filtra por area para revisar el tipo de problemas que he resuelto durante el bootcamp, investigacion y proyectos aplicados.</p>
         </div>
 
         <div class="filters" role="list" aria-label="Filtros de proyectos">
-          <button class="filter-btn active" type="button" data-filter="All">Todos</button>
+          <button class="filter-btn active" type="button" data-filter="All" data-i18n="projects.all">Todos</button>
           <button class="filter-btn" type="button" data-filter="ML">ML</button>
           <button class="filter-btn" type="button" data-filter="Business">Business</button>
           <button class="filter-btn" type="button" data-filter="Forecasting">Forecasting</button>
@@ -181,26 +181,26 @@
     <section id="sobre-mi" class="section-pad section-band">
       <div class="container split">
         <div>
-          <p class="eyebrow">Sobre mi</p>
-          <h2>Un perfil tecnico que traduce modelos en decisiones.</h2>
+          <p class="eyebrow" data-i18n="about.eyebrow">Sobre mi</p>
+          <h2 data-i18n="about.title">Un perfil tecnico que traduce modelos en decisiones.</h2>
         </div>
         <div class="about-copy">
-          <p>
+          <p data-i18n="about.lead">
             Combino ingenieria, investigacion aplicada y ciencia de datos para trabajar con senales, datos tabulares,
             texto, series temporales e imagenes. Me interesa que cada modelo sea reproducible, evaluable y explicable.
           </p>
           <div class="experience-list">
             <div>
               <strong>Machine Learning aplicado</strong>
-              <span>Clasificacion, regresion, forecasting, NLP y vision computacional.</span>
+              <span data-i18n="about.mlText">Clasificacion, regresion, forecasting, NLP y vision computacional.</span>
             </div>
             <div>
               <strong>Analitica de negocio</strong>
-              <span>Riesgo, rentabilidad, churn, recomendacion y optimizacion.</span>
+              <span data-i18n="about.businessText">Riesgo, rentabilidad, churn, recomendacion y optimizacion.</span>
             </div>
             <div>
               <strong>Ingenieria y comunicacion</strong>
-              <span>Procesamiento de senales, reportes tecnicos y storytelling con datos.</span>
+              <span data-i18n="about.engineeringText">Procesamiento de senales, reportes tecnicos y storytelling con datos.</span>
             </div>
           </div>
         </div>
@@ -210,12 +210,12 @@
     <section id="contacto" class="section-pad contact-section">
       <div class="container contact-box">
         <div>
-          <p class="eyebrow">Contacto</p>
-          <h2>Listo para colaborar en proyectos con datos.</h2>
-          <p>Si necesitas alguien que analice, modele, explique y ejecute con criterio tecnico, aqui estan mis canales principales.</p>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+          <h2 data-i18n="contact.title">Listo para colaborar en proyectos con datos.</h2>
+          <p data-i18n="contact.lead">Si necesitas alguien que analice, modele, explique y ejecute con criterio tecnico, aqui estan mis canales principales.</p>
         </div>
         <div class="actions contact-actions">
-          <a class="btn primary" data-contact-link="email" href="mailto:juanpablogarciachavez7799@gmail.com">Enviar correo</a>
+          <a class="btn primary" data-contact-link="email" href="mailto:juanpablogarciachavez7799@gmail.com" data-i18n="contact.email">Enviar correo</a>
           <a class="btn" data-contact-link="github" href="https://github.com/JuanPa7799" target="_blank" rel="noreferrer">GitHub</a>
           <a class="btn" data-contact-link="linkedin" href="https://www.linkedin.com/in/juan-pablo-garcia-chavez/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>

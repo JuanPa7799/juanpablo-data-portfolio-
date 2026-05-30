@@ -14,6 +14,8 @@ https://JuanPa7799.github.io/juanpablo-data-portfolio-/
 - Data Scientist Jr: `dashboards/data-scientist/`
 - Machine Learning Jr: `dashboards/machine-learning/`
 
+Los dashboards ya usan selector ES/EN y mantienen `Portafolio_de_evidencias_V2.pdf` como fallback mientras se generan los CVs finales por rol.
+
 ## Stack principal
 
 - Python

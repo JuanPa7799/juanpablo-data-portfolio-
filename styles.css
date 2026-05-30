@@ -398,7 +398,7 @@ h3 {
   border-radius: var(--radius);
   padding: 22px;
   background:
-    linear-gradient(180deg, rgba(16, 43, 92, 0.92), rgba(7, 20, 43, 0.92));
+    linear-gradient(180deg, rgba(21, 54, 111, 0.94), rgba(7, 20, 43, 0.94));
   box-shadow: var(--shadow);
   transition: transform 180ms ease, border-color 180ms ease;
 }
@@ -635,6 +635,18 @@ h3 {
   align-items: center;
 }
 
+.role-accent {
+  display: inline-flex;
+  margin-bottom: 14px;
+  border: 1px solid rgba(103, 232, 249, 0.45);
+  border-radius: 999px;
+  padding: 7px 11px;
+  color: var(--cyan);
+  background: rgba(103, 232, 249, 0.08);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
 .role-hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
@@ -646,8 +658,41 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.role-scoreboard {
+  position: relative;
+  overflow: hidden;
+}
+
+.role-scoreboard::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, var(--cyan), var(--royal), var(--purple));
+}
+
 .role-main-chart {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.workflow-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 34px;
+}
+
+.workflow-strip span {
+  min-height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.055);
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-align: center;
 }
 
 .role-note {
@@ -676,7 +721,14 @@ h3 {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 18px;
-  background: rgba(255, 255, 255, 0.04);
+  background:
+    linear-gradient(135deg, rgba(21, 54, 111, 0.7), rgba(255, 255, 255, 0.035));
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.role-project-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(103, 232, 249, 0.62);
 }
 
 .role-project-card .mini-chart {
@@ -690,6 +742,54 @@ h3 {
   top: 92px;
   display: grid;
   gap: 14px;
+}
+
+.cv-status-card,
+.role-switch-card {
+  box-shadow: none;
+}
+
+.cv-status-row {
+  display: grid;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.cv-status-row + .cv-status-row {
+  margin-top: 10px;
+}
+
+.cv-status-row span {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.cv-status-row strong {
+  color: var(--cyan);
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+
+.role-switch-list {
+  display: grid;
+  gap: 10px;
+}
+
+.role-switch-list a {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.045);
+  font-weight: 850;
+}
+
+.role-switch-list a:hover {
+  border-color: rgba(103, 232, 249, 0.62);
+  background: rgba(37, 99, 235, 0.2);
 }
 
 .detail-hero {
