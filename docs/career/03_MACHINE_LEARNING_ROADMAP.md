@@ -78,7 +78,7 @@ Python, TensorFlow, Keras, scikit-learn pipeline, model deployment, FastAPI, Doc
 ### Ajustes del CV Machine Learning
 
 - Headline orientado a ML, TensorFlow, pipelines y deployment.
-- Subir proyectos de senales, vision y NLP.
+- Subir proyectos de señales, vision y NLP.
 - Mantener experiencia embedded como diferenciador tecnico.
 - Agregar seccion de proyectos productizados cuando existan APIs.
 
