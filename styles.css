@@ -117,6 +117,21 @@ input {
   color: var(--text);
 }
 
+.language-toggle {
+  min-height: 38px;
+  border: 1px solid rgba(103, 232, 249, 0.5);
+  border-radius: var(--radius);
+  padding: 7px 10px;
+  color: var(--cyan);
+  background: rgba(103, 232, 249, 0.08);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.language-toggle:hover {
+  background: rgba(37, 99, 235, 0.22);
+}
+
 .nav-toggle {
   display: none;
   width: 42px;
@@ -368,6 +383,61 @@ h3 {
   align-items: start;
 }
 
+.role-entry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.role-entry-card {
+  display: grid;
+  gap: 16px;
+  min-height: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+  background:
+    linear-gradient(180deg, rgba(16, 43, 92, 0.92), rgba(7, 20, 43, 0.92));
+  box-shadow: var(--shadow);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.role-entry-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(103, 232, 249, 0.62);
+}
+
+.role-entry-card p {
+  color: var(--muted);
+}
+
+.role-entry-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.role-entry-metrics div {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.role-entry-metrics span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.role-entry-metrics strong {
+  display: block;
+  margin-top: 2px;
+  color: var(--cyan);
+  font-size: 1.12rem;
+}
+
 .section-heading {
   max-width: 760px;
 }
@@ -557,6 +627,69 @@ h3 {
 
 .project-page .page-hero {
   padding: 84px 0 52px;
+}
+
+.role-page .role-hero {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+}
+
+.role-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
+  gap: 42px;
+  align-items: center;
+}
+
+.role-scoreboard .kpi-row {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.role-main-chart {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.role-note {
+  max-width: 720px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.role-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(290px, 0.34fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.role-project-list {
+  display: grid;
+  gap: 16px;
+}
+
+.role-project-card {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.role-project-card .mini-chart {
+  min-height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  box-shadow: none;
+}
+
+.role-sidebar {
+  position: sticky;
+  top: 92px;
+  display: grid;
+  gap: 14px;
 }
 
 .detail-hero {
@@ -801,6 +934,10 @@ h3 {
 }
 
 @media (max-width: 980px) {
+  .role-entry-grid {
+    grid-template-columns: 1fr;
+  }
+
   .project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -846,6 +983,8 @@ h3 {
 
   .hero-dashboard,
   .detail-hero-grid,
+  .role-hero-grid,
+  .role-layout,
   .dashboard-grid,
   .split,
   .project-page .page-grid,
@@ -854,6 +993,10 @@ h3 {
   }
 
   .side-panel {
+    position: static;
+  }
+
+  .role-sidebar {
     position: static;
   }
 
@@ -872,6 +1015,8 @@ h3 {
   }
 
   .project-grid,
+  .role-entry-metrics,
+  .role-project-card,
   .stats-grid,
   .kpi-row {
     grid-template-columns: 1fr;

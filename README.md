@@ -8,6 +8,12 @@ Cuando GitHub Pages este activo, el sitio quedara en:
 
 https://JuanPa7799.github.io/juanpablo-data-portfolio-/
 
+## Dashboards por rol
+
+- Data Analyst Jr: `dashboards/data-analyst/`
+- Data Scientist Jr: `dashboards/data-scientist/`
+- Machine Learning Jr: `dashboards/machine-learning/`
+
 ## Stack principal
 
 - Python

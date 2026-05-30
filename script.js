@@ -168,6 +168,35 @@ if (navToggle && navLinks) {
   });
 }
 
+function getPortfolioLanguage() {
+  return localStorage.getItem("portfolio-language") || "es";
+}
+
+function setPortfolioLanguage(language) {
+  localStorage.setItem("portfolio-language", language);
+  document.documentElement.lang = language;
+}
+
+function setupLanguageToggle() {
+  const languageToggle = document.querySelector("[data-language-toggle]");
+  if (!languageToggle) return;
+
+  const syncLabel = () => {
+    const language = getPortfolioLanguage();
+    languageToggle.textContent = language === "es" ? "ES / EN" : "EN / ES";
+    languageToggle.setAttribute("aria-label", language === "es" ? "Cambiar a ingles" : "Switch to Spanish");
+  };
+
+  setPortfolioLanguage(getPortfolioLanguage());
+  syncLabel();
+
+  languageToggle.addEventListener("click", () => {
+    const nextLanguage = getPortfolioLanguage() === "es" ? "en" : "es";
+    setPortfolioLanguage(nextLanguage);
+    syncLabel();
+  });
+}
+
 document.querySelectorAll("[data-contact-link]").forEach((link) => {
   const type = link.dataset.contactLink;
 
@@ -274,6 +303,7 @@ function animateCounters() {
 
 renderProjects();
 setupFilters();
+setupLanguageToggle();
 animateCounters();
 renderBars(
   document.querySelector("[data-hero-chart]"),

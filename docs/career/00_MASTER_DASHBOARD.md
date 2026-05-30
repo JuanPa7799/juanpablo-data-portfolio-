@@ -82,7 +82,9 @@ Ese dashboard debe dejar claro en menos de 10 segundos:
 - Home publica inicial: creada.
 - Dashboard general de proyectos: creado.
 - Paginas individuales de proyectos: creadas con contenido curado.
-- Falta: dashboards por rol, idioma ES/EN, CVs por rol, roadmap visible y sistema privado de seguimiento diario.
+- Dashboards HTML por rol: primera version creada.
+- Selector ES/EN: primera version funcional en dashboards por rol.
+- Falta: CVs por rol ES/EN, traduccion completa del home, PDFs finales y activacion de GitHub Pages.
 
 ## Regla de seguridad
 

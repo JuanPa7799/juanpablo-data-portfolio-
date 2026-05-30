@@ -21,9 +21,11 @@
       </button>
       <div class="nav-links" data-nav-links>
         <a href="#dashboard">Dashboard</a>
+        <a href="#rutas">Rutas</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#sobre-mi">Sobre mi</a>
         <a href="#contacto">Contacto</a>
+        <button class="language-toggle" type="button" data-language-toggle>ES / EN</button>
       </div>
     </nav>
   </header>
@@ -40,6 +42,9 @@
           </p>
           <div class="actions">
             <a class="btn primary" href="#proyectos">Explorar proyectos</a>
+            <a class="btn" href="dashboards/data-analyst/">Data Analyst</a>
+            <a class="btn" href="dashboards/data-scientist/">Data Scientist</a>
+            <a class="btn" href="dashboards/machine-learning/">Machine Learning</a>
             <a class="btn" data-contact-link="github" href="https://github.com/JuanPa7799" target="_blank" rel="noreferrer">GitHub</a>
             <a class="btn" data-contact-link="linkedin" href="https://www.linkedin.com/in/juan-pablo-garcia-chavez/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a class="btn" data-contact-link="cv" href="assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">CV PDF</a>
@@ -73,6 +78,60 @@
           </div>
           <div class="dashboard-chart" data-hero-chart aria-label="Mini ranking visual"></div>
         </section>
+      </div>
+    </section>
+
+    <section id="rutas" class="section-pad">
+      <div class="container">
+        <div class="section-heading wide">
+          <p class="eyebrow">Rutas profesionales</p>
+          <h2>Elige el dashboard segun el rol</h2>
+          <p>
+            Desde LinkedIn, esta sera la entrada principal: una vista clara que dirige a Data Analyst Jr,
+            Data Scientist Jr o Machine Learning Jr con proyectos, metricas y CVs alineados.
+          </p>
+        </div>
+
+        <div class="role-entry-grid">
+          <article class="role-entry-card">
+            <p class="eyebrow">Business analytics</p>
+            <h3>Data Analyst Jr</h3>
+            <p>SQL, KPIs, dashboards, decision analytics y comunicacion ejecutiva para convertir datos en acciones.</p>
+            <div class="role-entry-metrics">
+              <div><span>Casos</span><strong>4</strong></div>
+              <div><span>Foco</span><strong>KPIs</strong></div>
+            </div>
+            <div class="card-actions">
+              <a href="dashboards/data-analyst/">Abrir dashboard</a>
+            </div>
+          </article>
+
+          <article class="role-entry-card">
+            <p class="eyebrow">Predictive modeling</p>
+            <h3>Data Scientist Jr</h3>
+            <p>Proyectos end-to-end con Python, validacion, metricas, feature engineering y lectura tecnica.</p>
+            <div class="role-entry-metrics">
+              <div><span>Mejor AUC</span><strong>0.8963</strong></div>
+              <div><span>Casos</span><strong>5</strong></div>
+            </div>
+            <div class="card-actions">
+              <a href="dashboards/data-scientist/">Abrir dashboard</a>
+            </div>
+          </article>
+
+          <article class="role-entry-card">
+            <p class="eyebrow">Applied ML</p>
+            <h3>Machine Learning Jr</h3>
+            <p>Senales, vision, NLP, forecasting y camino hacia pipelines, APIs ligeras y modelos reutilizables.</p>
+            <div class="role-entry-metrics">
+              <div><span>Estrella</span><strong>96%+</strong></div>
+              <div><span>Dominios</span><strong>5</strong></div>
+            </div>
+            <div class="card-actions">
+              <a href="dashboards/machine-learning/">Abrir dashboard</a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 

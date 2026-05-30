@@ -62,10 +62,10 @@ rg -n "C:\\Users|C:/Users|TOKEN|API_KEY|password|contrase|secret|private_key|Ope
 
 Cuando este checklist este aprobado, se puede pasar a:
 
-1. crear `dashboards/data-analyst/index.html`;
-2. crear `dashboards/data-scientist/index.html`;
-3. crear `dashboards/machine-learning/index.html`;
-4. implementar selector ES/EN;
-5. enlazar CVs finales;
-6. probar localmente;
-7. publicar en GitHub Pages.
+1. crear `dashboards/data-analyst/index.html` - primera version creada;
+2. crear `dashboards/data-scientist/index.html` - primera version creada;
+3. crear `dashboards/machine-learning/index.html` - primera version creada;
+4. implementar selector ES/EN - primera version creada en dashboards por rol;
+5. enlazar CVs finales - pendiente;
+6. probar localmente - pendiente de revision visual;
+7. publicar en GitHub Pages - pendiente.
