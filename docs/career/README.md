@@ -6,6 +6,9 @@ Este directorio organiza la planeacion antes de convertirla a paginas publicas. 
 
 - [Master Dashboard](00_MASTER_DASHBOARD.md)
 - [Flujo LinkedIn -> Portafolio](06_LINKEDIN_MASTER_FLOW.md)
+- [Especificacion del sitio publico](07_PUBLIC_SITE_SPEC.md)
+- [Mapa de proyectos por rol](08_PROJECTS_BY_ROLE.md)
+- [Checklist antes de HTML](09_APPROVAL_BEFORE_HTML.md)
 - [Sistema privado diario](05_PRIVATE_DAILY_SYSTEM.md)
 - [Reglas de seguridad](04_SECURITY_AND_PUBLICATION_RULES.md)
 
@@ -37,10 +40,11 @@ Este directorio organiza la planeacion antes de convertirla a paginas publicas. 
 1. Revisar los tres CVs.
 2. Revisar los tres planes de busqueda.
 3. Revisar los tres dashboards.
-4. Confirmar que proyectos entran en cada ruta.
+4. Revisar el mapa de proyectos por rol.
 5. Aprobar copy ES/EN.
-6. Convertir a HTML.
-7. Generar PDFs finales de CV.
+6. Completar checklist antes de HTML.
+7. Convertir a HTML.
+8. Generar PDFs finales de CV.
 
 ## Pendiente antes de HTML
 

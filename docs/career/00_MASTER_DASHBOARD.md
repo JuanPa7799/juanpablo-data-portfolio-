@@ -46,6 +46,9 @@ docs/career/
 - `docs/career/data-scientist/`: CV, job search y dashboard del rol.
 - `docs/career/machine-learning/`: CV, job search y dashboard del rol.
 - `docs/career/06_LINKEDIN_MASTER_FLOW.md`: ruta desde LinkedIn.
+- `docs/career/07_PUBLIC_SITE_SPEC.md`: especificacion de la experiencia web.
+- `docs/career/08_PROJECTS_BY_ROLE.md`: asignacion de proyectos por dashboard.
+- `docs/career/09_APPROVAL_BEFORE_HTML.md`: checklist antes de codificar HTML.
 - `docs/career/05_PRIVATE_DAILY_SYSTEM.md`: panel privado diario, no publico.
 
 ## Entrada recomendada desde LinkedIn
