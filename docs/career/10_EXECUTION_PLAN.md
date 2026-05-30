@@ -76,7 +76,7 @@ Tener claro que mostrar segun el tipo de vacante.
 
 ## Fase 3 - Dashboard publico principal
 
-Estado: primera version creada y conectada a dashboards por rol.
+Estado: version visual friendly creada y conectada a dashboards por rol.
 
 Objetivo:
 
@@ -103,12 +103,12 @@ Pendiente:
 
 - revisar visualmente en navegador;
 - ajustar copy fino despues de ver la pagina renderizada;
-- ajustar responsive visual;
+- ajustar responsive visual si en celular algun bloque se siente pesado;
 - reemplazar fallback de CV por PDFs finales.
 
 ## Fase 4 - Dashboards por rol
 
-Estado: primera version creada con selector ES/EN, KPIs, proyectos, flujo visual, estado de CV y navegacion entre rutas.
+Estado: primera version creada con selector ES/EN, KPIs, proyectos, flujo visual, estado de CV, navegacion entre rutas e identidad visual diferenciada por rol.
 
 ### Data Analyst Jr
 
@@ -216,7 +216,7 @@ Mientras los PDFs finales no existan, los dashboards usan `Portafolio_de_evidenc
 
 ## Fase 6 - Proyectos publicos
 
-Estado: hay paginas curadas, falta mejorar algunas.
+Estado: hay paginas curadas y tarjetas publicas con visuales diferenciados; falta mejorar algunas paginas individuales.
 
 Regla:
 

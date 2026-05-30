@@ -342,6 +342,32 @@ function bars(score) {
   return values.map((value) => `<span class="chart-bar" style="height:${Math.min(100, value)}%"></span>`).join("");
 }
 
+function roleVisual(roleKey, score) {
+  if (roleKey === "data-analyst") {
+    return `
+      <div class="role-card-visual kpi-tiles role-detail-visual">
+        <span>KPI</span><span>SQL</span><span>BI</span>
+      </div>
+    `;
+  }
+
+  if (roleKey === "data-scientist") {
+    return `
+      <div class="role-card-visual model-curve role-detail-visual">
+        <i style="width:${Math.max(42, score - 28)}%"></i>
+        <i style="width:${Math.max(58, score - 10)}%"></i>
+        <i style="width:${score}%"></i>
+      </div>
+    `;
+  }
+
+  return `
+    <div class="role-card-visual pipeline-dots role-detail-visual">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  `;
+}
+
 function renderRoleDashboard() {
   const roleKey = document.body.dataset.role;
   const data = roleDashboards[roleKey];
@@ -401,7 +427,7 @@ function renderRoleDashboard() {
           <div class="role-project-list">
             ${data.projects.map((project) => `
               <article class="role-project-card">
-                <div class="mini-chart">${bars(project.score)}</div>
+                ${roleVisual(roleKey, project.score)}
                 <div>
                   <h3>${project.title}</h3>
                   <p>${project.summary[lang]}</p>

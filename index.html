@@ -31,15 +31,19 @@
   </header>
 
   <main id="inicio">
-    <section class="hero section-pad">
+    <section class="hero section-pad friendly-hero">
       <div class="container hero-dashboard">
         <div class="hero-copy">
           <p class="eyebrow" data-i18n="hero.eyebrow">Data Scientist | ML aplicado | Analitica predictiva</p>
-          <h1 data-i18n="hero.title">Portafolio de proyectos Data Science</h1>
+          <h1 data-i18n="hero.title">Juan Pablo Garcia Chavez</h1>
           <p class="hero-lead" data-i18n="hero.lead">
             Soy Juan Pablo Garcia Chavez, Data Scientist con base en ingenieria mecatronica y maestria en ingenieria electronica.
             Construyo modelos, pipelines y analisis que conectan datos tecnicos con decisiones claras.
           </p>
+          <div class="hero-highlight">
+            <strong data-i18n="hero.highlightTitle">3 rutas publicas</strong>
+            <span data-i18n="hero.highlightText">Data Analyst Jr, Data Scientist Jr y Machine Learning Jr con proyectos curados para cada tipo de vacante.</span>
+          </div>
           <div class="actions">
             <a class="btn primary" href="#proyectos" data-i18n="hero.projectsCta">Explorar proyectos</a>
             <a class="btn" href="dashboards/data-analyst/">Data Analyst</a>
@@ -51,33 +55,59 @@
           </div>
         </div>
 
-        <section class="hero-panel" aria-label="Resumen visual del portafolio">
-          <div class="panel-top">
-            <div>
-              <span class="panel-label" data-i18n="hero.panelLabel">Portfolio health</span>
-              <strong data-i18n="hero.panelStrong">11 proyectos curados</strong>
+        <section class="profile-card hero-profile-card" aria-label="Perfil y contacto">
+          <div class="profile-image-wrap">
+            <img src="assets/img/hero-analytics.png" alt="Dashboard de analitica en laptop" loading="eager">
+          </div>
+          <div class="profile-card-body">
+            <span class="profile-badge" data-i18n="hero.status">GitHub Pages ready</span>
+            <h2 data-i18n="hero.panelStrong">11 proyectos curados</h2>
+            <p data-i18n="hero.panelLabel">Portfolio health</p>
+            <div class="profile-contact-grid">
+              <a class="contact-row" data-contact-link="email" href="mailto:juanpablogarciachavez7799@gmail.com">
+                <span class="contact-icon">@</span>
+                <span><small>Email</small><strong data-i18n="profile.email">Contacto publico</strong></span>
+              </a>
+              <a class="contact-row" data-contact-link="linkedin" href="https://www.linkedin.com/in/juan-pablo-garcia-chavez/" target="_blank" rel="noreferrer">
+                <span class="contact-icon">in</span>
+                <span><small>LinkedIn</small><strong data-i18n="profile.linkedin">Perfil profesional</strong></span>
+              </a>
+              <a class="contact-row" data-contact-link="github" href="https://github.com/JuanPa7799" target="_blank" rel="noreferrer">
+                <span class="contact-icon">GH</span>
+                <span><small>GitHub</small><strong data-i18n="profile.github">Repositorios</strong></span>
+              </a>
+              <a class="contact-row" data-contact-link="cv" href="assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">
+                <span class="contact-icon">CV</span>
+                <span><small>PDF</small><strong data-i18n="profile.cv">CV fallback</strong></span>
+              </a>
             </div>
-            <span class="status-pill" data-i18n="hero.status">GitHub Pages ready</span>
           </div>
-          <div class="kpi-row">
-            <article>
-              <span data-i18n="hero.kpiAuc">Mejor AUC</span>
-              <strong data-count="0.8963" data-decimals="4">0</strong>
-              <small>Interconnect churn</small>
-            </article>
-            <article>
-              <span>Forecast RMSE</span>
-              <strong data-count="43.21" data-decimals="2">0</strong>
-              <small data-i18n="hero.kpiRmse">Objetivo <= 48</small>
-            </article>
-            <article>
-              <span>Vision MAE</span>
-              <strong data-count="7.03" data-decimals="2">0</strong>
-              <small>ResNet50</small>
-            </article>
-          </div>
-          <div class="dashboard-chart" data-hero-chart aria-label="Mini ranking visual"></div>
         </section>
+      </div>
+    </section>
+
+    <section class="quick-stats">
+      <div class="container kpi-row">
+        <article>
+          <span data-i18n="hero.kpiAuc">Mejor AUC</span>
+          <strong data-count="0.8963" data-decimals="4">0</strong>
+          <small>Interconnect churn</small>
+        </article>
+        <article>
+          <span>Forecast RMSE</span>
+          <strong data-count="43.21" data-decimals="2">0</strong>
+          <small data-i18n="hero.kpiRmse">Objetivo <= 48</small>
+        </article>
+        <article>
+          <span>Vision MAE</span>
+          <strong data-count="7.03" data-decimals="2">0</strong>
+          <small>ResNet50</small>
+        </article>
+        <article>
+          <span data-i18n="hero.kpiPaths">Rutas</span>
+          <strong>3</strong>
+          <small>Analyst | Scientist | ML</small>
+        </article>
       </div>
     </section>
 
@@ -93,10 +123,14 @@
         </div>
 
         <div class="role-entry-grid">
-          <article class="role-entry-card">
+          <article class="role-entry-card role-analyst">
+            <img src="assets/img/data-analyst.png" alt="Visual de KPIs y analitica de negocio" loading="lazy">
             <p class="eyebrow">Business analytics</p>
             <h3>Data Analyst Jr</h3>
             <p data-i18n="paths.analystText">SQL, KPIs, dashboards, decision analytics y comunicacion ejecutiva para convertir datos en acciones.</p>
+            <div class="role-card-visual kpi-tiles" aria-hidden="true">
+              <span>SQL</span><span>KPI</span><span>BI</span>
+            </div>
             <div class="role-entry-metrics">
               <div><span data-i18n="paths.cases">Casos</span><strong>4</strong></div>
               <div><span data-i18n="paths.focus">Foco</span><strong>KPIs</strong></div>
@@ -106,10 +140,14 @@
             </div>
           </article>
 
-          <article class="role-entry-card">
+          <article class="role-entry-card role-scientist">
+            <img src="assets/img/data-scientist.png" alt="Visual de modelado predictivo y evaluacion de modelos" loading="lazy">
             <p class="eyebrow">Predictive modeling</p>
             <h3>Data Scientist Jr</h3>
             <p data-i18n="paths.scientistText">Proyectos end-to-end con Python, validacion, metricas, feature engineering y lectura tecnica.</p>
+            <div class="role-card-visual model-curve" aria-hidden="true">
+              <i></i><i></i><i></i>
+            </div>
             <div class="role-entry-metrics">
               <div><span data-i18n="paths.bestAuc">Mejor AUC</span><strong>0.8963</strong></div>
               <div><span data-i18n="paths.cases">Casos</span><strong>5</strong></div>
@@ -119,10 +157,14 @@
             </div>
           </article>
 
-          <article class="role-entry-card">
+          <article class="role-entry-card role-ml">
+            <img src="assets/img/machine-learning.png" alt="Visual de pipeline de machine learning aplicado" loading="lazy">
             <p class="eyebrow">Applied ML</p>
             <h3>Machine Learning Jr</h3>
             <p data-i18n="paths.mlText">Senales, vision, NLP, forecasting y camino hacia pipelines, APIs ligeras y modelos reutilizables.</p>
+            <div class="role-card-visual pipeline-dots" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
             <div class="role-entry-metrics">
               <div><span data-i18n="paths.flagship">Estrella</span><strong>96%+</strong></div>
               <div><span data-i18n="paths.domains">Dominios</span><strong>5</strong></div>

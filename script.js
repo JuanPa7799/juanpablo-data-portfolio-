@@ -13,14 +13,21 @@ const homeCopy = {
     "nav.about": "Sobre mi",
     "nav.contact": "Contacto",
     "hero.eyebrow": "Data Scientist | ML aplicado | Analitica predictiva",
-    "hero.title": "Portafolio de proyectos Data Science",
+    "hero.title": "Juan Pablo Garcia Chavez",
     "hero.lead": "Soy Juan Pablo Garcia Chavez, Data Scientist con base en ingenieria mecatronica y maestria en ingenieria electronica. Construyo modelos, pipelines y analisis que conectan datos tecnicos con decisiones claras.",
     "hero.projectsCta": "Explorar proyectos",
+    "hero.highlightTitle": "3 rutas publicas",
+    "hero.highlightText": "Data Analyst Jr, Data Scientist Jr y Machine Learning Jr con proyectos curados para cada tipo de vacante.",
     "hero.panelLabel": "Portfolio health",
     "hero.panelStrong": "11 proyectos curados",
     "hero.status": "GitHub Pages ready",
     "hero.kpiAuc": "Mejor AUC",
     "hero.kpiRmse": "Objetivo <= 48",
+    "hero.kpiPaths": "Rutas",
+    "profile.email": "Contacto publico",
+    "profile.linkedin": "Perfil profesional",
+    "profile.github": "Repositorios",
+    "profile.cv": "CV fallback",
     "paths.eyebrow": "Rutas profesionales",
     "paths.title": "Elige el dashboard segun el rol",
     "paths.lead": "Desde LinkedIn, esta sera la entrada principal: una vista clara que dirige a Data Analyst Jr, Data Scientist Jr o Machine Learning Jr con proyectos, metricas y CVs alineados.",
@@ -60,14 +67,21 @@ const homeCopy = {
     "nav.about": "About",
     "nav.contact": "Contact",
     "hero.eyebrow": "Data Scientist | Applied ML | Predictive analytics",
-    "hero.title": "Data Science Project Portfolio",
+    "hero.title": "Juan Pablo Garcia Chavez",
     "hero.lead": "I am Juan Pablo Garcia Chavez, a Data Scientist with a mechatronics engineering background and a master's degree in electronic engineering. I build models, pipelines, and analyses that connect technical data with clear decisions.",
     "hero.projectsCta": "Explore projects",
+    "hero.highlightTitle": "3 public paths",
+    "hero.highlightText": "Junior Data Analyst, Junior Data Scientist, and Junior Machine Learning paths with curated projects for each type of role.",
     "hero.panelLabel": "Portfolio health",
     "hero.panelStrong": "11 curated projects",
     "hero.status": "GitHub Pages ready",
     "hero.kpiAuc": "Best AUC",
     "hero.kpiRmse": "Target <= 48",
+    "hero.kpiPaths": "Paths",
+    "profile.email": "Public contact",
+    "profile.linkedin": "Professional profile",
+    "profile.github": "Repositories",
+    "profile.cv": "CV fallback",
     "paths.eyebrow": "Professional paths",
     "paths.title": "Choose the dashboard by role",
     "paths.lead": "From LinkedIn, this will be the main entry point: a clear view leading to Junior Data Analyst, Junior Data Scientist, or Junior Machine Learning paths with aligned projects, metrics, and CVs.",
@@ -115,6 +129,7 @@ const projectsData = [
     stack: ["Python", "TensorFlow", "Scikit-learn", "Senales"],
     difficulty: "Avanzado",
     featured: true,
+    visualType: "pipeline",
     chartData: [42, 64, 58, 91, 73, 96]
   },
   {
@@ -129,6 +144,7 @@ const projectsData = [
     stack: ["Python", "Pandas", "Scikit-learn", "AUC"],
     difficulty: "Avanzado",
     featured: true,
+    visualType: "score-ring",
     chartData: [50, 70, 82, 86, 89, 90]
   },
   {
@@ -143,6 +159,7 @@ const projectsData = [
     stack: ["Python", "Random Forest", "EDA", "Accuracy"],
     difficulty: "Intermedio",
     featured: false,
+    visualType: "matrix",
     chartData: [73, 79, 81, 72, 69, 81]
   },
   {
@@ -157,6 +174,7 @@ const projectsData = [
     stack: ["Python", "Random Forest", "F1", "AUC-ROC"],
     difficulty: "Avanzado",
     featured: false,
+    visualType: "scatter",
     chartData: [0, 32, 51, 64, 69, 86]
   },
   {
@@ -171,6 +189,7 @@ const projectsData = [
     stack: ["Python", "Regresion", "Bootstrap", "Riesgo"],
     difficulty: "Avanzado",
     featured: false,
+    visualType: "gauge",
     chartData: [60, 98, 52, 75, 88, 92]
   },
   {
@@ -185,6 +204,7 @@ const projectsData = [
     stack: ["Python", "Regresion", "sMAPE", "Mineria"],
     difficulty: "Avanzado",
     featured: false,
+    visualType: "timeline",
     chartData: [70, 82, 88, 91, 83, 92]
   },
   {
@@ -199,6 +219,7 @@ const projectsData = [
     stack: ["Python", "Algebra lineal", "KNN", "Privacidad"],
     difficulty: "Intermedio",
     featured: false,
+    visualType: "matrix",
     chartData: [48, 62, 74, 70, 80, 76]
   },
   {
@@ -213,6 +234,7 @@ const projectsData = [
     stack: ["Python", "LightGBM", "Random Forest", "RMSE"],
     difficulty: "Avanzado",
     featured: false,
+    visualType: "bars",
     chartData: [32, 82, 80, 74, 90, 88]
   },
   {
@@ -227,6 +249,7 @@ const projectsData = [
     stack: ["Python", "Series temporales", "Random Forest", "RMSE"],
     difficulty: "Avanzado",
     featured: false,
+    visualType: "timeline",
     chartData: [45, 52, 64, 78, 86, 90]
   },
   {
@@ -241,6 +264,7 @@ const projectsData = [
     stack: ["NLP", "TF-IDF", "LogReg", "LightGBM"],
     difficulty: "Avanzado",
     featured: false,
+    visualType: "score-ring",
     chartData: [50, 78, 86, 88, 84, 85]
   },
   {
@@ -255,6 +279,7 @@ const projectsData = [
     stack: ["TensorFlow", "ResNet50", "Keras", "Vision"],
     difficulty: "Avanzado",
     featured: false,
+    visualType: "scatter",
     chartData: [60, 71, 78, 84, 86, 87]
   }
 ];
@@ -346,15 +371,11 @@ function createProjectCard(project) {
   const language = getPortfolioLanguage();
   const dictionary = homeCopy[language] || homeCopy.es;
   const tags = project.stack.map((item) => `<span>${item}</span>`).join("");
-  const bars = project.chartData.map((value) => {
-    const safeValue = Math.max(8, Math.min(100, Number(value)));
-    return `<span class="chart-bar" style="height:${safeValue}%"></span>`;
-  }).join("");
 
   return `
     <article class="project-card ${project.featured ? "featured" : ""}" data-category="${project.category}">
       <div class="project-visual" aria-hidden="true">
-        <div class="mini-chart">${bars}</div>
+        ${createProjectVisual(project)}
       </div>
       <div class="project-body">
         <p class="project-type">${project.category}</p>
@@ -377,6 +398,46 @@ function createProjectCard(project) {
       </div>
     </article>
   `;
+}
+
+function createProjectVisual(project) {
+  const score = Math.max(0, Math.min(100, Number(project.metricScore || 75)));
+  const type = project.visualType || "bars";
+
+  if (type === "gauge" || type === "score-ring") {
+    return `<div class="visual-${type === "gauge" ? "gauge" : "ring"}" style="--score:${score}%"><span>${project.metricValue}</span></div>`;
+  }
+
+  if (type === "pipeline") {
+    return `<div class="visual-pipeline"><span></span><span></span><span></span><span></span></div>`;
+  }
+
+  if (type === "timeline") {
+    return `<div class="visual-timeline"><span></span><span></span><span></span><span></span><span></span></div>`;
+  }
+
+  if (type === "scatter") {
+    const points = project.chartData.map((value, index) => {
+      const x = 12 + index * 15;
+      const y = 82 - Math.max(12, Math.min(78, Number(value)));
+      return `<span style="left:${x}%;top:${Math.max(12, y)}%"></span>`;
+    }).join("");
+    return `<div class="visual-scatter">${points}</div>`;
+  }
+
+  if (type === "matrix") {
+    const cells = Array.from({ length: 20 }, (_, index) => {
+      const alpha = 0.18 + ((index % 5) + Math.floor(index / 5)) * 0.06;
+      return `<span style="--alpha:${alpha.toFixed(2)}"></span>`;
+    }).join("");
+    return `<div class="visual-matrix">${cells}</div>`;
+  }
+
+  const bars = project.chartData.map((value) => {
+    const safeValue = Math.max(8, Math.min(100, Number(value)));
+    return `<span class="chart-bar" style="height:${safeValue}%"></span>`;
+  }).join("");
+  return `<div class="mini-chart visual-bars">${bars}</div>`;
 }
 
 function renderProjects(category = "All") {
