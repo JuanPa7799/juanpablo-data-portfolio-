@@ -12,3 +12,11 @@ build/
 PLAN_PORTAFOLIO.md
 PROMPTS_CODEX_PORTAFOLIO.md
 pasos.md
+EXAMPLES/
+private/
+daily/
+*.pem
+*gcloud*.json
+*credential*.json
+*credentials*.json
+*secret*.json
