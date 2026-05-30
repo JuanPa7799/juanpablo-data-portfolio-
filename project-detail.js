@@ -370,6 +370,308 @@ const projectDetails = {
   }
 };
 
+const projectEnhancements = {
+  "calidad-energia": {
+    visualType: "pipeline",
+    roles: ["machine-learning", "data-scientist"],
+    decision: "Convertir senales electricas en clases tecnicas utiles para diagnostico.",
+    businessImpact: "Acelera la lectura de eventos de calidad de energia y diferencia mi perfil por unir ingenieria, senales y ML.",
+    technicalSummary: "El flujo trabaja con preprocesamiento de senales, extraccion de caracteristicas, comparacion de modelos y optimizacion del pipeline.",
+    titleEn: "Electrical disturbance classification",
+    eyebrowEn: "Flagship project | Machine Learning applied to engineering",
+    leadEn: "Classification system for electrical signals focused on power quality diagnosis. It is the project that best connects my engineering background with applied data science.",
+    decisionEn: "Turn electrical signals into technical classes that support diagnosis.",
+    businessImpactEn: "Speeds up the interpretation of power quality events and differentiates my profile by combining engineering, signals, and ML.",
+    technicalSummaryEn: "The workflow covers signal preprocessing, feature extraction, model comparison, and pipeline optimization.",
+    methodologyEn: ["Explored signal behavior and class patterns.", "Prepared and normalized data for modeling.", "Built features to improve event separability.", "Trained and compared supervised models.", "Evaluated classification performance with technical interpretation."],
+    resultsEn: ["Reported accuracy above 96% in experimental validation.", "Approximate 80% processing-time reduction.", "Strong differentiator because it combines ML, signals, and electrical engineering."],
+    insightEn: "The value is not only the metric. It shows that I can translate a physical phenomenon into model-ready variables and useful diagnostic results.",
+    nextEn: ["Add real pipeline visuals.", "Publish a clean notebook once local paths are removed.", "Connect a public technical report or article."]
+  },
+  "interconnect-churn": {
+    visualType: "roc",
+    image: "../../assets/img/projects/interconnect-churn/notebook-visual.png",
+    roles: ["data-scientist", "data-analyst"],
+    decision: "Priorizar clientes con mayor riesgo de cancelacion usando AUC-ROC como metrica principal.",
+    businessImpact: "El modelo permite ordenar acciones de retencion y pasar de datos dispersos a una lista accionable por cliente.",
+    technicalSummary: "Integre cuatro fuentes, defini churn desde fecha de cancelacion, codifique variables y compare modelos supervisados hasta elegir Gradient Boosting.",
+    titleEn: "Interconnect churn prediction",
+    eyebrowEn: "End-to-end Data Science | Classification",
+    leadEn: "Complete pipeline to identify customers at risk of cancellation by integrating multiple sources and selecting a model by ROC-AUC.",
+    decisionEn: "Prioritize customers with higher cancellation risk using ROC-AUC as the main metric.",
+    businessImpactEn: "The model can rank retention actions and turn scattered customer data into an actionable risk list.",
+    technicalSummaryEn: "I merged four sources, defined churn from contract end dates, encoded features, and compared supervised models before selecting Gradient Boosting.",
+    methodologyEn: ["Merged four customer-level sources.", "Defined churn from the contract end date.", "Imputed, encoded, and prepared a reproducible pipeline.", "Compared baselines and supervised models.", "Evaluated final test performance with ROC-AUC and accuracy."],
+    resultsEn: ["Gradient Boosting was selected by ROC-AUC.", "Test ROC-AUC: 0.8963 and test accuracy: 0.8538.", "The solution supports risk segmentation for retention."],
+    insightEn: "The strongest part is the full workflow: from scattered data to a decision-ready retention signal.",
+    nextEn: ["Add a cleaned feature importance view.", "Create a public variable table.", "Publish a notebook with local paths removed."]
+  },
+  "megaline-plan-recommendation": {
+    visualType: "matrix",
+    image: "../../assets/img/projects/megaline-plan-recommendation/notebook-visual.png",
+    roles: ["data-scientist", "data-analyst"],
+    decision: "Recomendar Smart o Ultra con un modelo simple que supera la prueba de cordura.",
+    businessImpact: "Ayuda a orientar usuarios hacia un plan mas adecuado segun su comportamiento real.",
+    technicalSummary: "Compare arboles, bosque aleatorio y regresion logistica con division train/valid/test y baseline dummy.",
+    titleEn: "Mobile plan recommendation",
+    eyebrowEn: "ML | Product classification",
+    leadEn: "Model to recommend Smart or Ultra plans from monthly user behavior.",
+    decisionEn: "Recommend Smart or Ultra with a simple model that beats the sanity check.",
+    businessImpactEn: "Helps guide users toward a better plan based on actual usage behavior.",
+    technicalSummaryEn: "I compared trees, random forest, and logistic regression with train/validation/test splits and a dummy baseline.",
+    methodologyEn: ["Explored classes and behavioral variables.", "Split data into train, validation, and test.", "Tuned decision-tree depth.", "Tuned random-forest estimators.", "Compared final results against logistic regression and baseline."],
+    resultsEn: ["Random Forest reached 0.8149 test accuracy.", "The model beat the 0.6967 sanity check.", "The minimum accuracy target above 0.75 was met."],
+    insightEn: "A good fundamentals case: compare models, validate against a baseline, and prove the model learned a real signal.",
+    nextEn: ["Add confusion matrix.", "Explain the most relevant variables.", "Create a public notebook version."]
+  },
+  "bank-churn-balanced": {
+    visualType: "score-ring",
+    image: "../../assets/img/projects/bank-churn-balanced/notebook-visual.png",
+    roles: ["data-scientist", "data-analyst"],
+    decision: "Optimizar deteccion de clientes que abandonan, no solo accuracy global.",
+    businessImpact: "Permite priorizar retencion sobre la clase que realmente importa para negocio.",
+    technicalSummary: "Trabaje el desbalance con Random Forest, ajuste de umbral y evaluacion por F1, recall y AUC-ROC.",
+    titleEn: "Bank churn with imbalanced classes",
+    eyebrowEn: "Business ML | Imbalanced classification",
+    leadEn: "Model to detect banking customers at risk of leaving using balancing, threshold tuning, and the right metrics.",
+    decisionEn: "Optimize detection of customers who leave, not only global accuracy.",
+    businessImpactEn: "Supports retention prioritization around the class that actually matters to the business.",
+    technicalSummaryEn: "I handled class imbalance with Random Forest, threshold tuning, and evaluation through F1, recall, and ROC-AUC.",
+    methodologyEn: ["Analyzed class imbalance.", "Used stratified train/validation/test splits.", "Compared logistic regression, Random Forest, and balancing strategies.", "Tuned the threshold to maximize validation F1.", "Evaluated the final model on test data."],
+    resultsEn: ["Test F1 reached 0.6365.", "Test ROC-AUC reached 0.865.", "Churn recall reached 0.6904."],
+    insightEn: "In imbalanced churn, accuracy can look good while failing exactly where the business needs the model.",
+    nextEn: ["Add feature ranking.", "Show precision-recall curve.", "Create business recommendations by segment."]
+  },
+  "oilygiant-risk-profit": {
+    visualType: "gauge",
+    image: "../../assets/img/projects/oilygiant-risk-profit/notebook-visual.png",
+    roles: ["data-analyst", "data-scientist"],
+    decision: "Elegir region_1 porque combina beneficio esperado con riesgo menor al limite de negocio.",
+    businessImpact: "Muestra como tomar decisiones con modelos, incertidumbre y restricciones, no solo con la prediccion mas alta.",
+    technicalSummary: "Use regresion lineal por region y bootstrap para estimar beneficio promedio, intervalo y riesgo de perdida.",
+    titleEn: "Oil region risk and profit",
+    eyebrowEn: "Decision Analytics | Risk and profit",
+    leadEn: "Region selection for 200 new wells using linear regression, expected profit, and bootstrapping.",
+    decisionEn: "Choose region_1 because it combines expected profit with risk below the business limit.",
+    businessImpactEn: "Shows how to make decisions with models, uncertainty, and constraints, not just the highest prediction.",
+    technicalSummaryEn: "I trained linear regression by region and used bootstrapping to estimate average profit, interval, and loss risk.",
+    methodologyEn: ["Trained linear regression by region.", "Calculated the break-even reserve volume.", "Selected the top 200 wells by prediction.", "Bootstrapped 1000 samples to simulate uncertainty.", "Selected the final region by profit and risk constraint."],
+    resultsEn: ["region_1 was the only eligible option under 2.5% loss risk.", "Estimated average profit: 4.52M USD.", "The best risk-adjusted decision was not just the largest point estimate."],
+    insightEn: "A strong business case: it connects prediction, expected value, risk, and a clear investment recommendation.",
+    nextEn: ["Add bootstrap distribution.", "Show confidence interval.", "Create an executive investment summary."]
+  },
+  "gold-recovery-zyfra": {
+    visualType: "timeline",
+    roles: ["data-scientist", "machine-learning"],
+    decision: "Evitar fuga de informacion y evaluar recuperacion con la metrica industrial correcta.",
+    businessImpact: "Refuerza criterio para procesos industriales donde algunas variables no existen al momento de predecir.",
+    technicalSummary: "Verifique formula de recuperacion, compare columnas train/test, impute faltantes y evalue con sMAPE total.",
+    titleEn: "Gold recovery | Zyfra",
+    eyebrowEn: "Industrial ML | Mining processes",
+    leadEn: "Gold recovery prediction in an industrial process while respecting feature availability and sMAPE evaluation.",
+    decisionEn: "Avoid leakage and evaluate recovery with the correct industrial metric.",
+    businessImpactEn: "Shows judgment for industrial processes where some variables are not available at prediction time.",
+    technicalSummaryEn: "I validated the recovery formula, compared train/test columns, imputed missing values, and evaluated with total sMAPE.",
+    methodologyEn: ["Compared train, test, and full datasets.", "Validated the official recovery formula.", "Detected test-unavailable features.", "Imputed missing values and removed leakage.", "Evaluated rougher, final, and total sMAPE."],
+    resultsEn: ["Recovery formula matched with MAE 0.0000.", "Total sMAPE: 8.49%.", "The model respected real feature availability."],
+    insightEn: "The main value is methodological care: using a feature that is not available at prediction time invalidates the model.",
+    nextEn: ["Add concentration charts by stage.", "Show discarded leakage features.", "Publish a technical README."]
+  },
+  "sure-tomorrow-insurance": {
+    visualType: "pipeline",
+    image: "../../assets/img/projects/sure-tomorrow-insurance/notebook-visual.png",
+    roles: ["machine-learning", "data-scientist"],
+    decision: "Resolver similitud, prediccion y ofuscacion de datos con una misma base matematica.",
+    businessImpact: "Conecta marketing, prediccion y privacidad sin vender el proyecto como solo una metrica.",
+    technicalSummary: "Use escalado, KNN, regresion lineal y transformacion matricial para proteger datos personales.",
+    titleEn: "Sure Tomorrow Insurance",
+    eyebrowEn: "Applied linear algebra | ML and privacy",
+    leadEn: "Project to find similar customers, predict insurance benefits, and protect personal data through matrix transformation.",
+    decisionEn: "Solve similarity, prediction, and data obfuscation with the same mathematical foundation.",
+    businessImpactEn: "Connects marketing, prediction, and privacy without reducing the project to a single metric.",
+    technicalSummaryEn: "I used scaling, KNN, linear regression, and matrix transformation to protect personal data.",
+    methodologyEn: ["Reviewed and scaled variables.", "Found similar customers using distance.", "Predicted probability of receiving benefits.", "Built linear regression for expected benefits.", "Transformed data to make personal recovery harder."],
+    resultsEn: ["Connected linear algebra foundations with practical ML tasks.", "Showed how to protect data while preserving analytical utility.", "Adds mathematical and privacy judgment to the portfolio."],
+    insightEn: "Not every strong portfolio piece is about high metrics. This one shows math foundations and privacy thinking.",
+    nextEn: ["Add a visual matrix transformation example.", "Compare models before and after obfuscation.", "Create a recruiter-friendly privacy summary."]
+  },
+  "rusty-bargain-car-pricing": {
+    visualType: "scatter",
+    image: "../../assets/img/projects/rusty-bargain-car-pricing/notebook-visual.png",
+    roles: ["data-analyst", "data-scientist"],
+    decision: "Elegir un modelo considerando calidad predictiva y velocidad de respuesta.",
+    businessImpact: "En un producto real, LightGBM puede ser mejor opcion aunque Random Forest tenga menor RMSE absoluto.",
+    technicalSummary: "Compare regresion lineal, Random Forest y LightGBM por RMSE, tiempo de entrenamiento y velocidad de prediccion.",
+    titleEn: "Used car price prediction",
+    eyebrowEn: "Regression | Quality vs speed",
+    leadEn: "Model to estimate used-car prices by comparing error, training time, and prediction speed.",
+    decisionEn: "Choose a model by considering predictive quality and response speed.",
+    businessImpactEn: "For a real product, LightGBM can be the better decision even if Random Forest has the lowest absolute RMSE.",
+    technicalSummaryEn: "I compared linear regression, Random Forest, and LightGBM by RMSE, training time, and prediction speed.",
+    methodologyEn: ["Cleaned data and prepared features.", "Built a linear regression baseline.", "Trained Random Forest.", "Trained LightGBM.", "Analyzed quality, training time, and prediction speed."],
+    resultsEn: ["Random Forest had the lowest RMSE: 1747.77.", "LightGBM was competitive: RMSE 1776.60.", "LightGBM trained in 16.61s vs 2790.24s for Random Forest."],
+    insightEn: "For product decisions, the best model is not always the one with the smallest error if it is too slow to use.",
+    nextEn: ["Add latency table.", "Show feature importance.", "Create a small pricing demo."]
+  },
+  "sweet-lift-taxi-forecasting": {
+    visualType: "forecast",
+    image: "../../assets/img/projects/sweet-lift-taxi-forecasting/notebook-visual.png",
+    roles: ["machine-learning", "data-scientist"],
+    decision: "Predecir demanda horaria respetando el orden temporal.",
+    businessImpact: "Permite anticipar horas pico y planear disponibilidad de conductores en aeropuertos.",
+    technicalSummary: "Remuestree la serie por hora, cree lags y variables temporales, y evalue con test cronologico.",
+    titleEn: "Taxi demand forecasting",
+    eyebrowEn: "Forecasting | Time series",
+    leadEn: "Hourly taxi order prediction to anticipate airport demand and assign drivers during peak hours.",
+    decisionEn: "Predict hourly demand while respecting chronological order.",
+    businessImpactEn: "Helps anticipate peak hours and plan driver availability at airports.",
+    technicalSummaryEn: "I resampled the series hourly, created lags and time features, and evaluated on a chronological test set.",
+    methodologyEn: ["Resampled events to hourly frequency.", "Analyzed trend, seasonality, and peak hours.", "Created 24 lags, rolling mean, weekday, and hour features.", "Trained supervised models.", "Validated on the final 10% as chronological test."],
+    resultsEn: ["Random Forest reached test RMSE 43.21.", "The model met the RMSE <= 48 target.", "Built 27 temporal predictive features."],
+    insightEn: "The key was respecting time: using future information would create nice but useless results.",
+    nextEn: ["Add actual vs predicted chart.", "Create a peak-hour calendar.", "Test specialized time-series models."]
+  },
+  "imdb-sentiment-nlp": {
+    visualType: "matrix",
+    image: "../../assets/img/projects/imdb-sentiment-nlp/notebook-visual.png",
+    roles: ["machine-learning", "data-scientist"],
+    decision: "Usar una solucion de texto fuerte y eficiente antes de saltar a modelos pesados.",
+    businessImpact: "Clasificar resenas negativas ayuda a monitorear percepcion y priorizar revision de contenido.",
+    technicalSummary: "Compare TF-IDF con regresion logistica, LightGBM y una prueba controlada con BERT.",
+    titleEn: "IMDB sentiment analysis",
+    eyebrowEn: "NLP | Text classification",
+    leadEn: "Automatic positive/negative review classification using TF-IDF, logistic regression, LightGBM, and a controlled BERT test.",
+    decisionEn: "Use a strong and efficient text solution before jumping to heavier models.",
+    businessImpactEn: "Classifying negative reviews helps monitor perception and prioritize content review.",
+    technicalSummaryEn: "I compared TF-IDF with logistic regression, LightGBM, and a controlled BERT sample.",
+    methodologyEn: ["Explored reviews, classes, and split distribution.", "Preprocessed text.", "Vectorized with TF-IDF and n-grams.", "Trained logistic regression and boosting models.", "Tested behavior with custom reviews."],
+    resultsEn: ["TF-IDF plus logistic regression was the most stable approach.", "The workflow reached the required F1 >= 0.85 threshold.", "BERT was tested on a sample due to computational cost."],
+    insightEn: "In practical NLP, a well-vectorized linear model can be strong, explainable, and cheap.",
+    nextEn: ["Extract the exact final F1.", "Add custom review examples.", "Publish a clean notebook version."]
+  },
+  "good-seed-age-vision": {
+    visualType: "score-ring",
+    roles: ["machine-learning", "data-scientist"],
+    decision: "Usar vision artificial como apoyo operativo, no como sustituto unico de decision.",
+    businessImpact: "El caso muestra criterio responsable en una aplicacion sensible relacionada con edad.",
+    technicalSummary: "Entrene ResNet50 con cabeza de regresion y evalue MAE de validacion, evitando publicar rostros del dataset.",
+    titleEn: "Age estimation with computer vision",
+    eyebrowEn: "Computer Vision | Deep Learning",
+    leadEn: "ResNet50 model to estimate age from images and support alcohol-sale compliance.",
+    decisionEn: "Use computer vision as operational support, not as the only decision maker.",
+    businessImpactEn: "The case shows responsible judgment in a sensitive age-related application.",
+    technicalSummaryEn: "I trained ResNet50 with a regression head and evaluated validation MAE, while avoiding publication of dataset faces.",
+    methodologyEn: ["Explored labels and age distribution.", "Prepared image generators.", "Used pretrained ResNet50 with a regression head.", "Trained on GPU.", "Evaluated with MAE and responsible-use interpretation."],
+    resultsEn: ["Reference validation MAE: 7.03.", "Architecture: ResNet50 + GlobalAveragePooling2D + Dense(1).", "The model can support review but requires human operating policies."],
+    insightEn: "In sensitive computer vision use cases, the metric must be paired with operational judgment.",
+    nextEn: ["Add only authorized sample visuals.", "Evaluate error by age range.", "Document responsible-use criteria."]
+  }
+};
+
+const detailCopy = {
+  es: {
+    navProjects: "Casos aplicados",
+    navAbout: "Sobre mi",
+    navContact: "Contacto",
+    backHome: "Portafolio",
+    executive: "Vista ejecutiva",
+    decision: "Decision",
+    impact: "Impacto",
+    technical: "Lectura tecnica",
+    evidence: "Evidencia visual",
+    curated: "Material curado",
+    tabsMethod: "Metodo",
+    tabsResults: "Resultados",
+    tabsCriteria: "Criterio",
+    next: "Siguiente mejora publica",
+    resources: "Recursos",
+    safe: "Publicacion segura",
+    safeText: "Esta pagina usa contenido curado: no publica datasets completos, notebooks crudos, rutas locales ni archivos privados.",
+    roles: "Tambien encaja en",
+    cv: "Ver CV PDF",
+    github: "GitHub",
+    visualNote: "Grafica extraida de notebook local y revisada para publicacion.",
+    interactiveNote: "Visual interactivo recreado con metricas publicas del proyecto.",
+    dataAnalyst: "Data Analyst",
+    dataScientist: "Data Scientist",
+    machineLearning: "Machine Learning",
+    lang: "ES / EN"
+  },
+  en: {
+    navProjects: "Applied cases",
+    navAbout: "About",
+    navContact: "Contact",
+    backHome: "Portfolio",
+    executive: "Executive view",
+    decision: "Decision",
+    impact: "Impact",
+    technical: "Technical read",
+    evidence: "Visual evidence",
+    curated: "Curated material",
+    tabsMethod: "Method",
+    tabsResults: "Results",
+    tabsCriteria: "Judgment",
+    next: "Next public improvement",
+    resources: "Resources",
+    safe: "Safe publication",
+    safeText: "This page uses curated content: no full datasets, raw notebooks, local paths, or private files are published.",
+    roles: "Also fits",
+    cv: "View CV PDF",
+    github: "GitHub",
+    visualNote: "Chart extracted from a local notebook and reviewed for publication.",
+    interactiveNote: "Interactive visual recreated with public project metrics.",
+    dataAnalyst: "Data Analyst",
+    dataScientist: "Data Scientist",
+    machineLearning: "Machine Learning",
+    lang: "ES / EN"
+  }
+};
+
+const metricLabelsEn = {
+  "Precision reportada": "Reported accuracy",
+  "Optimizacion pipeline": "Pipeline optimization",
+  "Dominio": "Domain",
+  "Modelo final": "Final model",
+  "AUC-ROC test": "Test ROC-AUC",
+  "Accuracy test": "Test accuracy",
+  "Dummy baseline": "Dummy baseline",
+  "F1 test": "Test F1",
+  "Recall churn": "Churn recall",
+  "Region recomendada": "Recommended region",
+  "Beneficio promedio": "Average profit",
+  "Riesgo perdida": "Loss risk",
+  "EAM formula": "Formula MAE",
+  "sMAPE final": "Final sMAPE",
+  "sMAPE total": "Total sMAPE",
+  "Tareas resueltas": "Tasks solved",
+  "Foco": "Focus",
+  "RF RMSE": "RF RMSE",
+  "LightGBM RMSE": "LightGBM RMSE",
+  "LightGBM train": "LightGBM train",
+  "RMSE test": "Test RMSE",
+  "Objetivo": "Target",
+  "Meta": "Target",
+  "Mejor enfoque": "Best approach",
+  "Extra": "Extra",
+  "Arquitectura": "Architecture",
+  "MAE validacion": "Validation MAE",
+  "Imagenes": "Images"
+};
+
+const chartTitlesEn = {
+  "Evolucion del flujo tecnico": "Technical workflow evolution",
+  "Comparacion de modelos": "Model comparison",
+  "Exactitud por modelo": "Accuracy by model",
+  "Efecto del modelado": "Modeling effect",
+  "Riesgo de perdida por region": "Loss risk by region",
+  "Calidad por etapa": "Quality by stage",
+  "Componentes tecnicos": "Technical components",
+  "Calidad relativa por modelo": "Relative model quality",
+  "RMSE por modelo": "RMSE by model",
+  "Solidez por enfoque": "Robustness by approach",
+  "Evolucion de entrenamiento": "Training evolution"
+};
+
 function getSlugFromPath() {
   const parts = window.location.pathname.split("/").filter(Boolean);
   const last = parts[parts.length - 1];
@@ -399,19 +701,173 @@ function tagMarkup(items) {
   return items.map((item) => `<span>${item}</span>`).join("");
 }
 
-function renderProjectPage(project) {
+function currentLanguage() {
+  return localStorage.getItem("portfolio-language") === "en" ? "en" : "es";
+}
+
+function localizedProject(slug, lang) {
+  const base = projectDetails[slug];
+  const extra = projectEnhancements[slug] || {};
+  if (lang === "es") {
+    return { ...base, ...extra };
+  }
+
+  return {
+    ...base,
+    ...extra,
+    title: extra.titleEn || base.title,
+    eyebrow: extra.eyebrowEn || base.eyebrow,
+    lead: extra.leadEn || base.lead,
+    decision: extra.decisionEn || extra.decision,
+    businessImpact: extra.businessImpactEn || extra.businessImpact,
+    technicalSummary: extra.technicalSummaryEn || extra.technicalSummary,
+    methodology: extra.methodologyEn || base.methodology,
+    results: extra.resultsEn || base.results,
+    insight: extra.insightEn || base.insight,
+    next: extra.nextEn || base.next,
+    metrics: (base.metrics || []).map(([label, value]) => [metricLabelsEn[label] || label, value]),
+    chartTitle: extra.chartTitleEn || chartTitlesEn[base.chartTitle] || base.chartTitle
+  };
+}
+
+function roleLabel(role, lang) {
+  const copy = detailCopy[lang];
+  return {
+    "data-analyst": copy.dataAnalyst,
+    "data-scientist": copy.dataScientist,
+    "machine-learning": copy.machineLearning
+  }[role] || role;
+}
+
+function roleHref(role) {
+  return `../../dashboards/${role}/`;
+}
+
+function renderInteractiveVisual(project, copy) {
+  const type = project.visualType || "bars";
+  const items = project.chart || [];
+
+  if (type === "gauge") {
+    const best = items[1] || items[0] || ["Riesgo", 15];
+    return `<div class="detail-visual gauge-visual"><div class="gauge-ring" style="--score:${Math.max(12, 100 - Number(best[1]))}%"><span>${project.metrics[2]?.[1] || best[1]}</span></div><p>${project.decision}</p></div>`;
+  }
+
+  if (type === "pipeline") {
+    const steps = items.length ? items : [["Datos", 30], ["Features", 60], ["Modelo", 80], ["Decision", 96]];
+    return `<div class="detail-visual pipeline-visual">${steps.map(([label], index) => `<div><span>${index + 1}</span><strong>${label}</strong></div>`).join("")}</div>`;
+  }
+
+  if (type === "scatter") {
+    return `<div class="detail-visual scatter-visual">${items.map(([label, value], index) => `<i style="--x:${18 + index * 30}%;--y:${100 - Math.min(90, Number(value))}%" title="${label}: ${value}"></i>`).join("")}<span>${copy.interactiveNote}</span></div>`;
+  }
+
+  if (type === "forecast") {
+    return `<div class="detail-visual forecast-visual"><svg viewBox="0 0 320 120" role="img" aria-label="${project.chartTitle}"><polyline points="0,82 40,74 80,78 120,58 160,64 200,38 240,48 280,24 320,34"></polyline><polyline class="forecast-line" points="0,88 40,80 80,82 120,68 160,70 200,50 240,54 280,36 320,42"></polyline></svg></div>`;
+  }
+
+  if (type === "roc") {
+    return `<div class="detail-visual roc-visual"><svg viewBox="0 0 320 180" role="img" aria-label="${project.chartTitle}"><line x1="25" y1="155" x2="295" y2="20"></line><path d="M25 155 C38 88, 74 52, 125 42 S230 20, 295 20"></path></svg><strong>AUC ${project.metrics[1]?.[1] || ""}</strong></div>`;
+  }
+
+  if (type === "score-ring") {
+    const score = parseFloat(String(project.metrics[1]?.[1] || project.metrics[0]?.[1] || "75").replace(/[^\d.]/g, "")) || 75;
+    const normalized = score <= 1 ? score * 100 : Math.min(score, 100);
+    return `<div class="detail-visual score-ring-visual"><div class="score-ring" style="--score:${normalized}%"><span>${project.metrics[1]?.[1] || project.metrics[0]?.[1]}</span></div><p>${project.businessImpact}</p></div>`;
+  }
+
+  if (type === "timeline") {
+    return `<div class="detail-visual timeline-visual">${items.map(([label, value]) => `<div><span>${label}</span><strong>${value}</strong></div>`).join("")}</div>`;
+  }
+
+  return `<div class="comparison-bars">${barsMarkup(items)}</div>`;
+}
+
+function visualMarkup(project, copy) {
+  if (project.image) {
+    return `
+      <figure class="notebook-visual-card">
+        <img src="${project.image}" alt="${project.chartTitle}" loading="lazy">
+        <figcaption>${copy.visualNote}</figcaption>
+      </figure>
+    `;
+  }
+
+  return `
+    <div>
+      ${renderInteractiveVisual(project, copy)}
+      <p class="visual-caption">${copy.interactiveNote}</p>
+    </div>
+  `;
+}
+
+function enhanceProjectHeader(lang) {
+  const copy = detailCopy[lang];
+  document.documentElement.lang = lang;
+  document.querySelectorAll(".nav-links a").forEach((link) => {
+    const href = link.getAttribute("href") || "";
+    if (href.includes("#proyectos")) link.textContent = copy.navProjects;
+    if (href.includes("#sobre-mi")) link.textContent = copy.navAbout;
+    if (href.includes("#contacto")) link.textContent = copy.navContact;
+  });
+
+  const navLinks = document.querySelector(".nav-links");
+  const nav = document.querySelector(".site-header .nav");
+  if (nav && navLinks && !document.querySelector("[data-project-nav-toggle]")) {
+    const toggle = document.createElement("button");
+    toggle.className = "nav-toggle";
+    toggle.type = "button";
+    toggle.setAttribute("aria-label", "Abrir menu");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.dataset.projectNavToggle = "";
+    toggle.innerHTML = "<span></span><span></span><span></span>";
+    toggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+    });
+    nav.insertBefore(toggle, navLinks);
+  }
+  if (navLinks && !document.querySelector("[data-project-language-toggle]")) {
+    const button = document.createElement("button");
+    button.className = "language-toggle";
+    button.type = "button";
+    button.dataset.projectLanguageToggle = "";
+    button.textContent = copy.lang;
+    button.addEventListener("click", () => {
+      const next = currentLanguage() === "es" ? "en" : "es";
+      localStorage.setItem("portfolio-language", next);
+      renderProjectPage(getSlugFromPath(), next);
+    });
+    navLinks.appendChild(button);
+  }
+  const toggle = document.querySelector("[data-project-language-toggle]");
+  if (toggle) toggle.textContent = copy.lang;
+}
+
+function renderProjectPage(slug, lang = currentLanguage()) {
+  const project = localizedProject(slug, lang);
+  const copy = detailCopy[lang];
   document.title = `${project.title} | Juan Pablo Garcia`;
+  enhanceProjectHeader(lang);
 
   const main = document.querySelector("main");
   if (!main) return;
 
   main.innerHTML = `
-    <section class="detail-hero">
+    <section class="detail-hero executive-project-hero">
       <div class="container detail-hero-grid">
         <div>
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../../index.html">${copy.backHome}</a>
+            <span>/</span>
+            <a href="../../index.html#proyectos">${copy.navProjects}</a>
+          </nav>
           <p class="eyebrow">${project.eyebrow}</p>
           <h1>${project.title}</h1>
           <p class="hero-lead">${project.lead}</p>
+          <div class="executive-pill-row">
+            <span>${copy.executive}</span>
+            <span>${copy.curated}</span>
+          </div>
           <div class="tag-list">${tagMarkup(project.stack)}</div>
         </div>
         <aside class="detail-scorecard" aria-label="Metricas principales">
@@ -428,28 +884,40 @@ function renderProjectPage(project) {
     <section class="section-pad section-band">
       <div class="container page-grid detail-layout">
         <div class="content-stack">
-          <section class="content-block narrative-block">
-            <h2>Resumen ejecutivo</h2>
-            <p>${project.context}</p>
-            <p>${project.data}</p>
+          <section class="executive-grid">
+            <article class="content-block narrative-block">
+              <span class="panel-label">${copy.decision}</span>
+              <h2>${project.decision}</h2>
+              <p>${project.context}</p>
+            </article>
+            <article class="content-block narrative-block">
+              <span class="panel-label">${copy.impact}</span>
+              <h2>${project.metrics[0]?.[1] || ""}</h2>
+              <p>${project.businessImpact}</p>
+            </article>
+            <article class="content-block narrative-block">
+              <span class="panel-label">${copy.technical}</span>
+              <h2>${project.stack.slice(0, 2).join(" + ")}</h2>
+              <p>${project.technicalSummary}</p>
+            </article>
           </section>
 
           <section class="project-dashboard-panel">
             <div class="panel-top">
               <div>
-                <span class="panel-label">Dashboard del proyecto</span>
+                <span class="panel-label">${copy.evidence}</span>
                 <h2>${project.chartTitle}</h2>
               </div>
-              <span class="status-pill">Datos curados</span>
+              <span class="status-pill">${copy.curated}</span>
             </div>
-            <div class="comparison-bars">${barsMarkup(project.chart)}</div>
+            ${visualMarkup(project, copy)}
           </section>
 
           <section class="content-block">
             <div class="tab-controls" role="tablist" aria-label="Detalle del proyecto">
-              <button class="tab-btn active" type="button" data-tab="metodo">Metodologia</button>
-              <button class="tab-btn" type="button" data-tab="resultados">Resultados</button>
-              <button class="tab-btn" type="button" data-tab="aprendizaje">Criterio tecnico</button>
+              <button class="tab-btn active" type="button" data-tab="metodo">${copy.tabsMethod}</button>
+              <button class="tab-btn" type="button" data-tab="resultados">${copy.tabsResults}</button>
+              <button class="tab-btn" type="button" data-tab="aprendizaje">${copy.tabsCriteria}</button>
             </div>
             <div class="tab-panel active" data-panel="metodo">
               <ol class="timeline-list">${listMarkup(project.methodology)}</ol>
@@ -463,18 +931,24 @@ function renderProjectPage(project) {
           </section>
 
           <section class="content-block">
-            <h2>Siguiente mejora publica</h2>
+            <h2>${copy.next}</h2>
             <ul class="insight-list">${listMarkup(project.next)}</ul>
           </section>
         </div>
 
         <aside class="side-panel detail-side" aria-label="Recursos del proyecto">
-          <a class="btn primary" href="../../index.html#proyectos">Volver al dashboard</a>
-          <a class="btn" href="../../assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">Ver CV PDF</a>
-          <a class="btn" href="https://github.com/JuanPa7799" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn primary" href="../../index.html#proyectos">${copy.navProjects}</a>
+          <a class="btn" href="../../assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">${copy.cv}</a>
+          <a class="btn" href="https://github.com/JuanPa7799" target="_blank" rel="noreferrer">${copy.github}</a>
+          <section class="content-block role-fit-card">
+            <h2>${copy.roles}</h2>
+            <div class="role-link-list">
+              ${(project.roles || []).map((role) => `<a href="${roleHref(role)}">${roleLabel(role, lang)}</a>`).join("")}
+            </div>
+          </section>
           <section class="content-block">
-            <h2>Publicacion segura</h2>
-            <p>Esta vista usa contenido curado: no publica datasets completos, notebooks con rutas locales ni archivos privados del bootcamp.</p>
+            <h2>${copy.safe}</h2>
+            <p>${copy.safeText}</p>
           </section>
           <section class="content-block">
             <h2>Stack</h2>
@@ -498,5 +972,5 @@ function renderProjectPage(project) {
 
 const slug = getSlugFromPath();
 if (slug && projectDetails[slug]) {
-  renderProjectPage(projectDetails[slug]);
+  renderProjectPage(slug);
 }

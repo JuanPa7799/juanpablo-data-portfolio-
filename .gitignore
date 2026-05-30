@@ -15,6 +15,7 @@ pasos.md
 EXAMPLES/
 private/
 daily/
+assets-source/
 *.pem
 *gcloud*.json
 *credential*.json

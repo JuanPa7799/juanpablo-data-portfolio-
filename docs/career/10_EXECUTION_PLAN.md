@@ -76,7 +76,7 @@ Tener claro que mostrar segun el tipo de vacante.
 
 ## Fase 3 - Dashboard publico principal
 
-Estado: version visual friendly creada y conectada a dashboards por rol.
+Estado: version visual friendly creada, conectada a dashboards por rol y reforzada con narrativa personal, trayectoria breve y copy menos generico.
 
 Objetivo:
 
@@ -103,6 +103,7 @@ Pendiente:
 
 - revisar visualmente en navegador;
 - ajustar copy fino despues de ver la pagina renderizada;
+- reemplazar avatar de iniciales por `assets/img/profile.jpg` cuando exista foto publica aprobada;
 - ajustar responsive visual si en celular algun bloque se siente pesado;
 - reemplazar fallback de CV por PDFs finales.
 
@@ -216,7 +217,7 @@ Mientras los PDFs finales no existan, los dashboards usan `Portafolio_de_evidenc
 
 ## Fase 6 - Proyectos publicos
 
-Estado: hay paginas curadas y tarjetas publicas con visuales diferenciados; falta mejorar algunas paginas individuales.
+Estado: paginas individuales migradas a vista ejecutiva bilingue con visuales hibridos; falta revision visual fina en navegador.
 
 Regla:
 
