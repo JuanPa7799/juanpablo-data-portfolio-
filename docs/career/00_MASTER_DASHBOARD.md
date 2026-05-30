@@ -39,6 +39,15 @@ docs/career/
   -> markdowns de planeacion editables
 ```
 
+## Mapa de documentos actuales
+
+- `docs/career/README.md`: indice de trabajo.
+- `docs/career/data-analyst/`: CV, job search y dashboard del rol.
+- `docs/career/data-scientist/`: CV, job search y dashboard del rol.
+- `docs/career/machine-learning/`: CV, job search y dashboard del rol.
+- `docs/career/06_LINKEDIN_MASTER_FLOW.md`: ruta desde LinkedIn.
+- `docs/career/05_PRIVATE_DAILY_SYSTEM.md`: panel privado diario, no publico.
+
 ## Entrada recomendada desde LinkedIn
 
 LinkedIn debe apuntar al dashboard principal:
