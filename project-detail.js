@@ -31,7 +31,6 @@ const projectDetails = {
       "Caso diferencial porque combina ML, senales e ingenieria electrica."
     ],
     insight: "El valor del proyecto no esta solo en la metrica: esta en demostrar que puedo traducir un fenomeno fisico en variables modelables y resultados utiles para diagnostico.",
-    next: ["Agregar imagenes reales del pipeline.", "Publicar notebook curado cuando este libre de rutas locales.", "Conectar articulo o reporte tecnico publico."]
   },
   "interconnect-churn": {
     title: "Prediccion de churn para Interconnect",
@@ -64,7 +63,6 @@ const projectDetails = {
       "La solucion queda lista para segmentar clientes por riesgo."
     ],
     insight: "La parte fuerte del caso es el flujo completo: de datos dispersos a una recomendacion accionable para retencion.",
-    next: ["Agregar curva ROC exportada.", "Crear tabla de variables clave.", "Publicar notebook limpio sin rutas locales."]
   },
   "megaline-plan-recommendation": {
     title: "Recomendacion de planes moviles",
@@ -98,7 +96,6 @@ const projectDetails = {
       "El objetivo minimo de exactitud mayor a 0.75 fue cumplido."
     ],
     insight: "Es un buen caso de fundamentos: probar modelos, no confiar en una sola metrica aislada y validar que el modelo aprende algo real.",
-    next: ["Agregar matriz de confusion.", "Explicar variables mas influyentes.", "Convertir notebook a version publica."]
   },
   "bank-churn-balanced": {
     title: "Churn bancario con clases desbalanceadas",
@@ -132,7 +129,6 @@ const projectDetails = {
       "Recall de churn de 0.6904, util para priorizar retencion."
     ],
     insight: "Este proyecto muestra criterio: en churn desbalanceado, accuracy puede verse bien aunque el modelo falle justo donde importa.",
-    next: ["Agregar ranking de variables.", "Mostrar curva precision-recall.", "Crear recomendaciones de negocio por segmento."]
   },
   "oilygiant-risk-profit": {
     title: "Riesgo y rentabilidad petrolera",
@@ -165,7 +161,6 @@ const projectDetails = {
       "La mayor ganancia puntual no coincidio con la mejor decision ajustada por riesgo."
     ],
     insight: "Este es un caso muy fuerte para negocio: muestra que se tomar decisiones con modelos, restricciones y riesgo, no solo con predicciones.",
-    next: ["Agregar distribucion de bootstrap.", "Mostrar intervalo de confianza.", "Crear narrativa ejecutiva de inversion."]
   },
   "gold-recovery-zyfra": {
     title: "Recuperacion de oro | Zyfra",
@@ -198,7 +193,6 @@ const projectDetails = {
       "Se respeto la disponibilidad real de variables para modelado."
     ],
     insight: "El mayor valor aqui es el cuidado metodologico: en procesos industriales, usar una variable que no existe al momento de prediccion invalida el modelo.",
-    next: ["Agregar graficas de concentracion por etapa.", "Mostrar variables descartadas.", "Publicar README tecnico del flujo."]
   },
   "sure-tomorrow-insurance": {
     title: "Sure Tomorrow Insurance",
@@ -232,7 +226,6 @@ const projectDetails = {
       "Es una pieza importante para mostrar criterio matematico y privacidad."
     ],
     insight: "No todo portafolio debe ser solo metricas altas. Este proyecto muestra base matematica y pensamiento de privacidad, dos cosas que pesan mucho en trabajos reales.",
-    next: ["Agregar ejemplo visual de transformacion.", "Comparar modelo antes/despues de ofuscacion.", "Crear resumen de privacidad para reclutadores."]
   },
   "rusty-bargain-car-pricing": {
     title: "Precio de autos usados",
@@ -265,7 +258,6 @@ const projectDetails = {
       "LightGBM entreno en 16.61s frente a 2790.24s de Random Forest."
     ],
     insight: "Para producto, LightGBM puede ser mejor decision aunque no tenga el RMSE minimo absoluto: entrega calidad alta con mucha mejor velocidad.",
-    next: ["Agregar tabla de latencias.", "Mostrar importancia de variables.", "Crear demo simple de estimacion."]
   },
   "sweet-lift-taxi-forecasting": {
     title: "Forecast de pedidos de taxi",
@@ -298,7 +290,6 @@ const projectDetails = {
       "Se construyeron 27 variables predictoras temporales."
     ],
     insight: "La parte importante fue respetar el tiempo: en forecasting, mezclar datos futuros en entrenamiento puede dar resultados bonitos pero inutiles.",
-    next: ["Agregar grafica real vs predicho.", "Crear calendario de horas pico.", "Probar modelos especializados de series."]
   },
   "imdb-sentiment-nlp": {
     title: "Sentimiento en resenas IMDB",
@@ -332,7 +323,6 @@ const projectDetails = {
       "BERT se considero en muestra por costo computacional."
     ],
     insight: "En NLP practico, un modelo lineal bien vectorizado puede ser una solucion fuerte, explicable y barata antes de saltar a modelos pesados.",
-    next: ["Extraer F1 exacto de la tabla final.", "Agregar ejemplos de resenas propias.", "Publicar version limpia del notebook."]
   },
   "good-seed-age-vision": {
     title: "Estimacion de edad con vision",
@@ -366,7 +356,6 @@ const projectDetails = {
       "El modelo puede apoyar revision, pero requiere politicas humanas de control."
     ],
     insight: "El resultado es util si se entiende su limite: en vision aplicada a decisiones sensibles, la metrica debe ir acompanada de criterio operativo.",
-    next: ["Agregar muestra visual autorizada.", "Evaluar error por rango de edad.", "Documentar criterios de uso responsable."]
   }
 };
 
@@ -386,7 +375,6 @@ const projectEnhancements = {
     methodologyEn: ["Explored signal behavior and class patterns.", "Prepared and normalized data for modeling.", "Built features to improve event separability.", "Trained and compared supervised models.", "Evaluated classification performance with technical interpretation."],
     resultsEn: ["Reported accuracy above 96% in experimental validation.", "Approximate 80% processing-time reduction.", "Strong differentiator because it combines ML, signals, and electrical engineering."],
     insightEn: "The value is not only the metric. It shows that I can translate a physical phenomenon into model-ready variables and useful diagnostic results.",
-    nextEn: ["Add real pipeline visuals.", "Publish a clean notebook once local paths are removed.", "Connect a public technical report or article."]
   },
   "interconnect-churn": {
     visualType: "roc",
@@ -404,7 +392,6 @@ const projectEnhancements = {
     methodologyEn: ["Merged four customer-level sources.", "Defined churn from the contract end date.", "Imputed, encoded, and prepared a reproducible pipeline.", "Compared baselines and supervised models.", "Evaluated final test performance with ROC-AUC and accuracy."],
     resultsEn: ["Gradient Boosting was selected by ROC-AUC.", "Test ROC-AUC: 0.8963 and test accuracy: 0.8538.", "The solution supports risk segmentation for retention."],
     insightEn: "The strongest part is the full workflow: from scattered data to a decision-ready retention signal.",
-    nextEn: ["Add a cleaned feature importance view.", "Create a public variable table.", "Publish a notebook with local paths removed."]
   },
   "megaline-plan-recommendation": {
     visualType: "matrix",
@@ -422,7 +409,6 @@ const projectEnhancements = {
     methodologyEn: ["Explored classes and behavioral variables.", "Split data into train, validation, and test.", "Tuned decision-tree depth.", "Tuned random-forest estimators.", "Compared final results against logistic regression and baseline."],
     resultsEn: ["Random Forest reached 0.8149 test accuracy.", "The model beat the 0.6967 sanity check.", "The minimum accuracy target above 0.75 was met."],
     insightEn: "A good fundamentals case: compare models, validate against a baseline, and prove the model learned a real signal.",
-    nextEn: ["Add confusion matrix.", "Explain the most relevant variables.", "Create a public notebook version."]
   },
   "bank-churn-balanced": {
     visualType: "score-ring",
@@ -440,7 +426,6 @@ const projectEnhancements = {
     methodologyEn: ["Analyzed class imbalance.", "Used stratified train/validation/test splits.", "Compared logistic regression, Random Forest, and balancing strategies.", "Tuned the threshold to maximize validation F1.", "Evaluated the final model on test data."],
     resultsEn: ["Test F1 reached 0.6365.", "Test ROC-AUC reached 0.865.", "Churn recall reached 0.6904."],
     insightEn: "In imbalanced churn, accuracy can look good while failing exactly where the business needs the model.",
-    nextEn: ["Add feature ranking.", "Show precision-recall curve.", "Create business recommendations by segment."]
   },
   "oilygiant-risk-profit": {
     visualType: "gauge",
@@ -458,7 +443,6 @@ const projectEnhancements = {
     methodologyEn: ["Trained linear regression by region.", "Calculated the break-even reserve volume.", "Selected the top 200 wells by prediction.", "Bootstrapped 1000 samples to simulate uncertainty.", "Selected the final region by profit and risk constraint."],
     resultsEn: ["region_1 was the only eligible option under 2.5% loss risk.", "Estimated average profit: 4.52M USD.", "The best risk-adjusted decision was not just the largest point estimate."],
     insightEn: "A strong business case: it connects prediction, expected value, risk, and a clear investment recommendation.",
-    nextEn: ["Add bootstrap distribution.", "Show confidence interval.", "Create an executive investment summary."]
   },
   "gold-recovery-zyfra": {
     visualType: "timeline",
@@ -475,7 +459,6 @@ const projectEnhancements = {
     methodologyEn: ["Compared train, test, and full datasets.", "Validated the official recovery formula.", "Detected test-unavailable features.", "Imputed missing values and removed leakage.", "Evaluated rougher, final, and total sMAPE."],
     resultsEn: ["Recovery formula matched with MAE 0.0000.", "Total sMAPE: 8.49%.", "The model respected real feature availability."],
     insightEn: "The main value is methodological care: using a feature that is not available at prediction time invalidates the model.",
-    nextEn: ["Add concentration charts by stage.", "Show discarded leakage features.", "Publish a technical README."]
   },
   "sure-tomorrow-insurance": {
     visualType: "pipeline",
@@ -493,7 +476,6 @@ const projectEnhancements = {
     methodologyEn: ["Reviewed and scaled variables.", "Found similar customers using distance.", "Predicted probability of receiving benefits.", "Built linear regression for expected benefits.", "Transformed data to make personal recovery harder."],
     resultsEn: ["Connected linear algebra foundations with practical ML tasks.", "Showed how to protect data while preserving analytical utility.", "Adds mathematical and privacy judgment to the portfolio."],
     insightEn: "Not every strong portfolio piece is about high metrics. This one shows math foundations and privacy thinking.",
-    nextEn: ["Add a visual matrix transformation example.", "Compare models before and after obfuscation.", "Create a recruiter-friendly privacy summary."]
   },
   "rusty-bargain-car-pricing": {
     visualType: "scatter",
@@ -511,7 +493,6 @@ const projectEnhancements = {
     methodologyEn: ["Cleaned data and prepared features.", "Built a linear regression baseline.", "Trained Random Forest.", "Trained LightGBM.", "Analyzed quality, training time, and prediction speed."],
     resultsEn: ["Random Forest had the lowest RMSE: 1747.77.", "LightGBM was competitive: RMSE 1776.60.", "LightGBM trained in 16.61s vs 2790.24s for Random Forest."],
     insightEn: "For product decisions, the best model is not always the one with the smallest error if it is too slow to use.",
-    nextEn: ["Add latency table.", "Show feature importance.", "Create a small pricing demo."]
   },
   "sweet-lift-taxi-forecasting": {
     visualType: "forecast",
@@ -529,7 +510,6 @@ const projectEnhancements = {
     methodologyEn: ["Resampled events to hourly frequency.", "Analyzed trend, seasonality, and peak hours.", "Created 24 lags, rolling mean, weekday, and hour features.", "Trained supervised models.", "Validated on the final 10% as chronological test."],
     resultsEn: ["Random Forest reached test RMSE 43.21.", "The model met the RMSE <= 48 target.", "Built 27 temporal predictive features."],
     insightEn: "The key was respecting time: using future information would create nice but useless results.",
-    nextEn: ["Add actual vs predicted chart.", "Create a peak-hour calendar.", "Test specialized time-series models."]
   },
   "imdb-sentiment-nlp": {
     visualType: "matrix",
@@ -547,7 +527,6 @@ const projectEnhancements = {
     methodologyEn: ["Explored reviews, classes, and split distribution.", "Preprocessed text.", "Vectorized with TF-IDF and n-grams.", "Trained logistic regression and boosting models.", "Tested behavior with custom reviews."],
     resultsEn: ["TF-IDF plus logistic regression was the most stable approach.", "The workflow reached the required F1 >= 0.85 threshold.", "BERT was tested on a sample due to computational cost."],
     insightEn: "In practical NLP, a well-vectorized linear model can be strong, explainable, and cheap.",
-    nextEn: ["Extract the exact final F1.", "Add custom review examples.", "Publish a clean notebook version."]
   },
   "good-seed-age-vision": {
     visualType: "score-ring",
@@ -564,7 +543,6 @@ const projectEnhancements = {
     methodologyEn: ["Explored labels and age distribution.", "Prepared image generators.", "Used pretrained ResNet50 with a regression head.", "Trained on GPU.", "Evaluated with MAE and responsible-use interpretation."],
     resultsEn: ["Reference validation MAE: 7.03.", "Architecture: ResNet50 + GlobalAveragePooling2D + Dense(1).", "The model can support review but requires human operating policies."],
     insightEn: "In sensitive computer vision use cases, the metric must be paired with operational judgment.",
-    nextEn: ["Add only authorized sample visuals.", "Evaluate error by age range.", "Document responsible-use criteria."]
   }
 };
 
@@ -573,25 +551,23 @@ const detailCopy = {
     navProjects: "Casos aplicados",
     navAbout: "Sobre mi",
     navContact: "Contacto",
-    backHome: "Portafolio",
-    executive: "Vista ejecutiva",
-    decision: "Decision",
+    backHome: "Inicio general",
+    summary: "Resumen",
+    decision: "Decision tomada",
     impact: "Impacto",
-    technical: "Lectura tecnica",
+    technical: "Como lo resolvi",
     evidence: "Evidencia visual",
-    curated: "Material curado",
-    tabsMethod: "Metodo",
+    tabsMethod: "Metodologia",
     tabsResults: "Resultados",
     tabsCriteria: "Criterio",
-    next: "Siguiente mejora publica",
     resources: "Recursos",
-    safe: "Publicacion segura",
-    safeText: "Esta pagina usa contenido curado: no publica datasets completos, notebooks crudos, rutas locales ni archivos privados.",
-    roles: "Tambien encaja en",
+    roles: "Rutas relacionadas",
     cv: "Ver CV PDF",
     github: "GitHub",
-    visualNote: "Grafica extraida de notebook local y revisada para publicacion.",
-    interactiveNote: "Visual interactivo recreado con metricas publicas del proyecto.",
+    visualNote: "Grafica de resultados del proyecto.",
+    interactiveNote: "Visual de resultados construido con las metricas del proyecto.",
+    technologies: "Tecnologias",
+    sourceDashboard: "Volver a la ruta",
     dataAnalyst: "Data Analyst",
     dataScientist: "Data Scientist",
     machineLearning: "Machine Learning",
@@ -601,25 +577,23 @@ const detailCopy = {
     navProjects: "Applied cases",
     navAbout: "About",
     navContact: "Contact",
-    backHome: "Portfolio",
-    executive: "Executive view",
-    decision: "Decision",
+    backHome: "Main home",
+    summary: "Summary",
+    decision: "Decision made",
     impact: "Impact",
-    technical: "Technical read",
+    technical: "How I solved it",
     evidence: "Visual evidence",
-    curated: "Curated material",
     tabsMethod: "Method",
     tabsResults: "Results",
     tabsCriteria: "Judgment",
-    next: "Next public improvement",
     resources: "Resources",
-    safe: "Safe publication",
-    safeText: "This page uses curated content: no full datasets, raw notebooks, local paths, or private files are published.",
-    roles: "Also fits",
+    roles: "Related paths",
     cv: "View CV PDF",
     github: "GitHub",
-    visualNote: "Chart extracted from a local notebook and reviewed for publication.",
-    interactiveNote: "Interactive visual recreated with public project metrics.",
+    visualNote: "Project result chart.",
+    interactiveNote: "Result visual built from the project metrics.",
+    technologies: "Technologies",
+    sourceDashboard: "Back to path",
     dataAnalyst: "Data Analyst",
     dataScientist: "Data Scientist",
     machineLearning: "Machine Learning",
@@ -724,7 +698,6 @@ function localizedProject(slug, lang) {
     methodology: extra.methodologyEn || base.methodology,
     results: extra.resultsEn || base.results,
     insight: extra.insightEn || base.insight,
-    next: extra.nextEn || base.next,
     metrics: (base.metrics || []).map(([label, value]) => [metricLabelsEn[label] || label, value]),
     chartTitle: extra.chartTitleEn || chartTitlesEn[base.chartTitle] || base.chartTitle
   };
@@ -741,6 +714,15 @@ function roleLabel(role, lang) {
 
 function roleHref(role) {
   return `../../dashboards/${role}/`;
+}
+
+function getSourceRole() {
+  const source = new URLSearchParams(window.location.search).get("from");
+  return ["data-analyst", "data-scientist", "machine-learning"].includes(source) ? source : "";
+}
+
+function sourceRoleHref(sourceRole) {
+  return sourceRole ? roleHref(sourceRole) : "../../index.html";
 }
 
 function renderInteractiveVisual(project, copy) {
@@ -800,9 +782,13 @@ function visualMarkup(project, copy) {
   `;
 }
 
-function enhanceProjectHeader(lang) {
+function enhanceProjectHeader(lang, sourceRole = "") {
   const copy = detailCopy[lang];
   document.documentElement.lang = lang;
+  const brand = document.querySelector(".brand");
+  if (brand) {
+    brand.href = sourceRoleHref(sourceRole);
+  }
   document.querySelectorAll(".nav-links a").forEach((link) => {
     const href = link.getAttribute("href") || "";
     if (href.includes("#proyectos")) link.textContent = copy.navProjects;
@@ -846,8 +832,11 @@ function enhanceProjectHeader(lang) {
 function renderProjectPage(slug, lang = currentLanguage()) {
   const project = localizedProject(slug, lang);
   const copy = detailCopy[lang];
+  const sourceRole = getSourceRole();
+  const sourceLabel = sourceRole ? roleLabel(sourceRole, lang) : copy.backHome;
+  const sourceHref = sourceRoleHref(sourceRole);
   document.title = `${project.title} | Juan Pablo Garcia`;
-  enhanceProjectHeader(lang);
+  enhanceProjectHeader(lang, sourceRole);
 
   const main = document.querySelector("main");
   if (!main) return;
@@ -857,17 +846,13 @@ function renderProjectPage(slug, lang = currentLanguage()) {
       <div class="container detail-hero-grid">
         <div>
           <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="../../index.html">${copy.backHome}</a>
+            <a href="${sourceHref}">${sourceLabel}</a>
             <span>/</span>
             <a href="../../index.html#proyectos">${copy.navProjects}</a>
           </nav>
           <p class="eyebrow">${project.eyebrow}</p>
           <h1>${project.title}</h1>
           <p class="hero-lead">${project.lead}</p>
-          <div class="executive-pill-row">
-            <span>${copy.executive}</span>
-            <span>${copy.curated}</span>
-          </div>
           <div class="tag-list">${tagMarkup(project.stack)}</div>
         </div>
         <aside class="detail-scorecard" aria-label="Metricas principales">
@@ -886,7 +871,7 @@ function renderProjectPage(slug, lang = currentLanguage()) {
         <div class="content-stack">
           <section class="executive-grid">
             <article class="content-block narrative-block">
-              <span class="panel-label">${copy.decision}</span>
+              <span class="panel-label">${copy.summary}</span>
               <h2>${project.decision}</h2>
               <p>${project.context}</p>
             </article>
@@ -908,7 +893,6 @@ function renderProjectPage(slug, lang = currentLanguage()) {
                 <span class="panel-label">${copy.evidence}</span>
                 <h2>${project.chartTitle}</h2>
               </div>
-              <span class="status-pill">${copy.curated}</span>
             </div>
             ${visualMarkup(project, copy)}
           </section>
@@ -930,14 +914,11 @@ function renderProjectPage(slug, lang = currentLanguage()) {
             </div>
           </section>
 
-          <section class="content-block">
-            <h2>${copy.next}</h2>
-            <ul class="insight-list">${listMarkup(project.next)}</ul>
-          </section>
         </div>
 
         <aside class="side-panel detail-side" aria-label="Recursos del proyecto">
-          <a class="btn primary" href="../../index.html#proyectos">${copy.navProjects}</a>
+          <a class="btn primary" href="${sourceHref}">${sourceRole ? copy.sourceDashboard : copy.backHome}</a>
+          <a class="btn" href="../../index.html">${copy.backHome}</a>
           <a class="btn" href="../../assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">${copy.cv}</a>
           <a class="btn" href="https://github.com/JuanPa7799" target="_blank" rel="noreferrer">${copy.github}</a>
           <section class="content-block role-fit-card">
@@ -947,11 +928,7 @@ function renderProjectPage(slug, lang = currentLanguage()) {
             </div>
           </section>
           <section class="content-block">
-            <h2>${copy.safe}</h2>
-            <p>${copy.safeText}</p>
-          </section>
-          <section class="content-block">
-            <h2>Stack</h2>
+            <h2>${copy.technologies}</h2>
             <div class="tag-list">${tagMarkup(project.stack)}</div>
           </section>
         </aside>

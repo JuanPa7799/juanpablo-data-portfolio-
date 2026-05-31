@@ -4,37 +4,43 @@
     "data-analyst": {
       "es": {
         "planned": "cv-data-analyst-es.pdf",
-        "current": "Portafolio_de_evidencias_V2.pdf",
-        "status": "fallback"
+        "current": "cv-data-analyst-es.pdf",
+        "web": "../../cv/data-analyst/es/",
+        "status": "active"
       },
       "en": {
         "planned": "cv-data-analyst-en.pdf",
-        "current": "Portafolio_de_evidencias_V2.pdf",
-        "status": "fallback"
+        "current": "cv-data-analyst-en.pdf",
+        "web": "../../cv/data-analyst/en/",
+        "status": "active"
       }
     },
     "data-scientist": {
       "es": {
         "planned": "cv-data-scientist-es.pdf",
-        "current": "Portafolio_de_evidencias_V2.pdf",
-        "status": "fallback"
+        "current": "cv-data-scientist-es.pdf",
+        "web": "../../cv/data-scientist/es/",
+        "status": "active"
       },
       "en": {
         "planned": "cv-data-scientist-en.pdf",
-        "current": "Portafolio_de_evidencias_V2.pdf",
-        "status": "fallback"
+        "current": "cv-data-scientist-en.pdf",
+        "web": "../../cv/data-scientist/en/",
+        "status": "active"
       }
     },
     "machine-learning": {
       "es": {
         "planned": "cv-machine-learning-es.pdf",
-        "current": "Portafolio_de_evidencias_V2.pdf",
-        "status": "fallback"
+        "current": "cv-machine-learning-es.pdf",
+        "web": "../../cv/machine-learning/es/",
+        "status": "active"
       },
       "en": {
         "planned": "cv-machine-learning-en.pdf",
-        "current": "Portafolio_de_evidencias_V2.pdf",
-        "status": "fallback"
+        "current": "cv-machine-learning-en.pdf",
+        "web": "../../cv/machine-learning/en/",
+        "status": "active"
       }
     }
   }

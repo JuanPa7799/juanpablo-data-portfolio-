@@ -188,7 +188,7 @@ Pendientes:
 
 ## Fase 5 - CVs y portafolios ES/EN
 
-Estado: estructura preparada; PDFs finales pendientes.
+Estado: CVs ES/EN por rol creados en Markdown, pagina web publica y PDF descargable.
 
 Se necesitan seis CVs:
 
@@ -213,11 +213,11 @@ Resultado esperado:
 
 Cada dashboard debe descargar el CV correcto segun rol e idioma.
 
-Mientras los PDFs finales no existan, los dashboards usan `Portafolio_de_evidencias_V2.pdf` como fallback seguro.
+Los dashboards enlazan al CV web por rol e idioma, y a su PDF correspondiente en `assets/pdf/`.
 
 ## Fase 6 - Proyectos publicos
 
-Estado: paginas individuales migradas a vista ejecutiva bilingue con visuales hibridos; falta revision visual fina en navegador.
+Estado: paginas individuales migradas a vista publica bilingue, sin copy interno de desarrollo, con visuales hibridos y navegacion por contexto desde dashboards.
 
 Regla:
 

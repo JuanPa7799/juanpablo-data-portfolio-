@@ -275,46 +275,54 @@ const roleDashboards = {
 
 const languageLabels = {
   es: {
-    cv: "Descargar CV ES",
+    cv: "Ver CV",
+    pdf: "Descargar PDF",
     home: "Volver al dashboard principal",
-    projects: "Proyectos seleccionados",
-    stack: "Stack priorizado",
-    roadmap: "Siguientes mejoras",
+    projects: "Casos destacados",
+    stack: "Tecnologias principales",
+    roadmap: "Ruta de crecimiento",
     viewProject: "Ver proyecto",
     metric: "Metrica",
-    score: "Score visual",
+    score: "Nivel",
     roleSwitch: "Cambiar ruta",
     contact: "Contacto",
-    note: "Los CVs por rol ES/EN se enlazaran cuando esten aprobados. Por ahora se usa el PDF publico actual.",
+    note: "CV y proyectos alineados con esta ruta profesional.",
     flow: "Flujo de trabajo",
-    cvStatus: "Estado de CV",
-    currentCv: "Fallback publico activo",
-    plannedCv: "PDF final reservado",
+    cvStatus: "CV de esta ruta",
+    currentCv: "Pagina web",
+    plannedCv: "PDF descargable",
     otherPaths: "Otras rutas",
     dataAnalyst: "Data Analyst",
     dataScientist: "Data Scientist",
-    machineLearning: "Machine Learning"
+    machineLearning: "Machine Learning",
+    navHome: "Inicio",
+    navContact: "Contacto",
+    roleDashboard: "Dashboard por rol"
   },
   en: {
-    cv: "Download EN CV",
+    cv: "View CV",
+    pdf: "Download PDF",
     home: "Back to main dashboard",
-    projects: "Selected projects",
-    stack: "Priority stack",
-    roadmap: "Next improvements",
+    projects: "Featured cases",
+    stack: "Core technologies",
+    roadmap: "Growth path",
     viewProject: "View project",
     metric: "Metric",
     score: "Visual score",
     roleSwitch: "Switch path",
     contact: "Contact",
-    note: "Role-specific ES/EN CVs will be linked once approved. For now, the current public PDF is used.",
+    note: "CV and projects aligned with this professional path.",
     flow: "Workflow",
-    cvStatus: "CV status",
-    currentCv: "Active public fallback",
-    plannedCv: "Reserved final PDF",
+    cvStatus: "Role CV",
+    currentCv: "Web page",
+    plannedCv: "Downloadable PDF",
     otherPaths: "Other paths",
     dataAnalyst: "Data Analyst",
     dataScientist: "Data Scientist",
-    machineLearning: "Machine Learning"
+    machineLearning: "Machine Learning",
+    navHome: "Home",
+    navContact: "Contact",
+    roleDashboard: "Role Dashboard"
   }
 };
 
@@ -323,6 +331,95 @@ const roleRoutes = [
   ["data-scientist", "../data-scientist/"],
   ["machine-learning", "../machine-learning/"]
 ];
+
+const kpiLabelMap = {
+  "Business cases": { es: "Casos de negocio", en: "Business cases" },
+  "Riesgo minimo": { es: "Riesgo minimo", en: "Minimum risk" },
+  "Mejor AUC": { es: "Mejor AUC", en: "Best AUC" },
+  "Foco": { es: "Foco", en: "Focus" },
+  "End-to-end": { es: "End-to-end", en: "End-to-end" },
+  "F1 test": { es: "F1 test", en: "Test F1" },
+  "Proyecto estrella": { es: "Proyecto estrella", en: "Flagship project" },
+  "Vision MAE": { es: "MAE vision", en: "Vision MAE" },
+  "NLP meta": { es: "Meta NLP", en: "NLP target" },
+  "Dominios": { es: "Dominios", en: "Domains" }
+};
+
+const tagMap = {
+  "Riesgo": { es: "Riesgo", en: "Risk" },
+  "Beneficio": { es: "Beneficio", en: "Profit" },
+  "Clientes": { es: "Clientes", en: "Customers" },
+  "Retencion": { es: "Retencion", en: "Retention" },
+  "Segmentacion": { es: "Segmentacion", en: "Segmentation" },
+  "Producto": { es: "Producto", en: "Product" },
+  "Usuarios": { es: "Usuarios", en: "Users" },
+  "Balanceo": { es: "Balanceo", en: "Balancing" },
+  "Regresion": { es: "Regresion", en: "Regression" },
+  "Industria": { es: "Industria", en: "Industry" },
+  "Series": { es: "Series", en: "Time series" },
+  "Decision": { es: "Decision", en: "Decision" },
+  "Senales": { es: "Senales", en: "Signals" },
+  "Ingenieria": { es: "Ingenieria", en: "Engineering" },
+  "Vision": { es: "Vision", en: "Vision" },
+  "Latencia": { es: "Latencia", en: "Latency" }
+};
+
+const roadmapMap = {
+  "Dashboard BI de KPIs comerciales": { es: "Dashboard BI de KPIs comerciales", en: "Business KPI BI dashboard" },
+  "Caso SQL con consultas avanzadas": { es: "Caso SQL con consultas avanzadas", en: "SQL case with advanced queries" },
+  "Reporte automatizado semanal con Python": { es: "Reporte automatizado semanal con Python", en: "Weekly automated report with Python" },
+  "Interpretabilidad con permutation importance o SHAP": { es: "Interpretabilidad con permutation importance o SHAP", en: "Interpretability with permutation importance or SHAP" },
+  "Proyecto SQL + ML con datos publicos": { es: "Proyecto SQL + ML con datos publicos", en: "SQL + ML project with public data" },
+  "Caso de experimentacion o A/B testing": { es: "Caso de experimentacion o A/B testing", en: "Experimentation or A/B testing case" },
+  "API FastAPI para un modelo tabular": { es: "API FastAPI para un modelo tabular", en: "FastAPI API for a tabular model" },
+  "Pipeline sklearn serializado con joblib": { es: "Pipeline sklearn serializado con joblib", en: "sklearn pipeline serialized with joblib" },
+  "Dockerfile y demo local": { es: "Dockerfile y demo local", en: "Dockerfile and local demo" },
+  "Monitoreo simple con datos simulados": { es: "Monitoreo simple con datos simulados", en: "Simple monitoring with simulated data" }
+};
+
+const projectTitleMap = {
+  "Riesgo y rentabilidad petrolera": { es: "Riesgo y rentabilidad petrolera", en: "Oil risk and profitability" },
+  "Prediccion de churn Interconnect": { es: "Prediccion de churn Interconnect", en: "Interconnect churn prediction" },
+  "Precio de autos usados": { es: "Precio de autos usados", en: "Used car pricing" },
+  "Recomendacion de planes moviles": { es: "Recomendacion de planes moviles", en: "Mobile plan recommendation" },
+  "Churn bancario balanceado": { es: "Churn bancario balanceado", en: "Balanced bank churn" },
+  "Recuperacion de oro Zyfra": { es: "Recuperacion de oro Zyfra", en: "Zyfra gold recovery" },
+  "Forecast de pedidos de taxi": { es: "Forecast de pedidos de taxi", en: "Taxi order forecasting" },
+  "Clasificacion de perturbaciones electricas": { es: "Clasificacion de perturbaciones electricas", en: "Electrical disturbance classification" },
+  "Estimacion de edad con vision": { es: "Estimacion de edad con vision", en: "Age estimation with computer vision" },
+  "Sentimiento en resenas IMDB": { es: "Sentimiento en resenas IMDB", en: "IMDB review sentiment" }
+};
+
+const projectImageSlugs = new Set([
+  "bank-churn-balanced",
+  "imdb-sentiment-nlp",
+  "interconnect-churn",
+  "megaline-plan-recommendation",
+  "oilygiant-risk-profit",
+  "rusty-bargain-car-pricing",
+  "sure-tomorrow-insurance",
+  "sweet-lift-taxi-forecasting"
+]);
+
+function localize(map, value, lang) {
+  return map[value]?.[lang] || value;
+}
+
+function cvWebPath(roleKey, lang) {
+  return `../../cv/${roleKey}/${lang}/`;
+}
+
+function cvPdfPath(roleKey, lang) {
+  return `../../assets/pdf/cv-${roleKey}-${lang}.pdf`;
+}
+
+function projectImage(project) {
+  return `../../assets/img/projects/${project.slug}/notebook-visual.png`;
+}
+
+function translatedTags(items, lang) {
+  return items.map((item) => localize(tagMap, item, lang));
+}
 
 function getLanguage() {
   return localStorage.getItem("portfolio-language") || "es";
@@ -368,6 +465,17 @@ function roleVisual(roleKey, score) {
   `;
 }
 
+function projectVisual(project, roleKey, score) {
+  if (!projectImageSlugs.has(project.slug)) {
+    return roleVisual(roleKey, score);
+  }
+  return `
+    <div class="role-project-media">
+      <img src="${projectImage(project)}" alt="" loading="lazy">
+    </div>
+  `;
+}
+
 function renderRoleDashboard() {
   const roleKey = document.body.dataset.role;
   const data = roleDashboards[roleKey];
@@ -377,6 +485,15 @@ function renderRoleDashboard() {
   const lang = getLanguage();
   const copy = languageLabels[lang];
   setLanguage(lang);
+  document.querySelectorAll("[data-nav-links] a").forEach((link) => {
+    const href = link.getAttribute("href") || "";
+    if (href === "../../index.html") link.textContent = copy.navHome;
+    if (href.includes("#contacto")) link.textContent = copy.navContact;
+  });
+  const brandText = document.querySelector(".brand span:last-child");
+  if (brandText) brandText.textContent = copy.roleDashboard;
+  const footerRole = document.querySelector(".footer-inner span:last-child");
+  if (footerRole) footerRole.textContent = `${data.title[lang]} Dashboard`;
 
   root.innerHTML = `
     <section class="role-hero section-pad">
@@ -387,7 +504,8 @@ function renderRoleDashboard() {
           <h1>${data.title[lang]}</h1>
           <p class="hero-lead">${data.lead[lang]}</p>
           <div class="actions">
-            <a class="btn primary" href="${data.cv[lang]}" target="_blank" rel="noreferrer">${copy.cv}</a>
+            <a class="btn primary" href="${cvWebPath(roleKey, lang)}">${copy.cv}</a>
+            <a class="btn" href="${cvPdfPath(roleKey, lang)}" target="_blank" rel="noreferrer">${copy.pdf}</a>
             <a class="btn" href="../../index.html">${copy.home}</a>
             <a class="btn" href="mailto:juanpablogarciachavez7799@gmail.com">${copy.contact}</a>
           </div>
@@ -404,7 +522,7 @@ function renderRoleDashboard() {
           <div class="kpi-row">
             ${data.kpis.map(([label, value]) => `
               <article>
-                <span>${label}</span>
+                <span>${localize(kpiLabelMap, label, lang)}</span>
                 <strong>${value}</strong>
               </article>
             `).join("")}
@@ -427,9 +545,9 @@ function renderRoleDashboard() {
           <div class="role-project-list">
             ${data.projects.map((project) => `
               <article class="role-project-card">
-                ${roleVisual(roleKey, project.score)}
+                ${projectVisual(project, roleKey, project.score)}
                 <div>
-                  <h3>${project.title}</h3>
+                  <h3>${localize(projectTitleMap, project.title, lang)}</h3>
                   <p>${project.summary[lang]}</p>
                   <div class="project-meta">
                     <div>
@@ -441,9 +559,9 @@ function renderRoleDashboard() {
                       <strong>${project.score}/100</strong>
                     </div>
                   </div>
-                  <div class="tag-list">${tags(project.tags)}</div>
+                  <div class="tag-list">${tags(translatedTags(project.tags, lang))}</div>
                   <div class="card-actions">
-                    <a href="../../projects/${project.slug}/">${copy.viewProject}</a>
+                    <a href="../../projects/${project.slug}/?from=${roleKey}">${copy.viewProject}</a>
                   </div>
                 </div>
               </article>
@@ -456,11 +574,11 @@ function renderRoleDashboard() {
             <h2>${copy.cvStatus}</h2>
             <div class="cv-status-row">
               <span>${copy.currentCv}</span>
-              <strong>Portafolio_de_evidencias_V2.pdf</strong>
+              <a href="${cvWebPath(roleKey, lang)}">${data.title[lang]}</a>
             </div>
             <div class="cv-status-row">
               <span>${copy.plannedCv}</span>
-              <strong>${lang === "es" ? data.cv.plannedEs : data.cv.plannedEn}</strong>
+              <a href="${cvPdfPath(roleKey, lang)}" target="_blank" rel="noreferrer">${lang === "es" ? data.cv.plannedEs : data.cv.plannedEn}</a>
             </div>
           </section>
           <section class="content-block">
@@ -470,7 +588,7 @@ function renderRoleDashboard() {
           <section class="content-block">
             <h2>${copy.roadmap}</h2>
             <ul class="insight-list">
-              ${data.roadmap.map((item) => `<li>${item}</li>`).join("")}
+              ${data.roadmap.map((item) => `<li>${localize(roadmapMap, item, lang)}</li>`).join("")}
             </ul>
           </section>
           <section class="content-block role-switch-card">
