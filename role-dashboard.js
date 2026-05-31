@@ -434,6 +434,8 @@ const projectTitleMap = {
 
 const projectImageSlugs = new Set([
   "bank-churn-balanced",
+  "calidad-energia",
+  "good-seed-age-vision",
   "imdb-sentiment-nlp",
   "interconnect-churn",
   "megaline-plan-recommendation",
@@ -442,6 +444,11 @@ const projectImageSlugs = new Set([
   "sure-tomorrow-insurance",
   "sweet-lift-taxi-forecasting"
 ]);
+
+const projectImageFiles = {
+  "calidad-energia": "notebook-visual.jpg",
+  "good-seed-age-vision": "notebook-visual.jpg"
+};
 
 function localize(map, value, lang) {
   return map[value]?.[lang] || value;
@@ -456,7 +463,8 @@ function cvPdfPath(roleKey, lang) {
 }
 
 function projectImage(project) {
-  return `../../assets/img/projects/${project.slug}/notebook-visual.png`;
+  const fileName = projectImageFiles[project.slug] || "notebook-visual.png";
+  return `../../assets/img/projects/${project.slug}/${fileName}`;
 }
 
 function translatedTags(items, lang) {

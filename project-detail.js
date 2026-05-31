@@ -18,6 +18,7 @@ const projectDetails = {
       ["Modelos", 82],
       ["Optimizacion", 96]
     ],
+    image: "../../assets/img/projects/calidad-energia/notebook-visual.jpg",
     methodology: [
       "Exploracion de senales y comportamiento de clases.",
       "Preprocesamiento, normalizacion y preparacion del dataset.",
@@ -343,6 +344,7 @@ const projectDetails = {
       ["E3 MAE", 83],
       ["Val MAE", 87]
     ],
+    image: "../../assets/img/projects/good-seed-age-vision/notebook-visual.jpg",
     methodology: [
       "EDA de etiquetas y distribucion de edades.",
       "Preparacion de generadores de imagenes.",
