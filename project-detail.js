@@ -564,6 +564,9 @@ const detailCopy = {
     roles: "Rutas relacionadas",
     cv: "Ver CV PDF",
     github: "GitHub",
+    email: "Enviar email",
+    linkedin: "Ver LinkedIn",
+    upwork: "Ver Upwork",
     visualNote: "Grafica de resultados del proyecto.",
     interactiveNote: "Visual de resultados construido con las metricas del proyecto.",
     technologies: "Tecnologias",
@@ -590,6 +593,9 @@ const detailCopy = {
     roles: "Related paths",
     cv: "View CV PDF",
     github: "GitHub",
+    email: "Send email",
+    linkedin: "View LinkedIn",
+    upwork: "View Upwork",
     visualNote: "Project result chart.",
     interactiveNote: "Result visual built from the project metrics.",
     technologies: "Technologies",
@@ -835,6 +841,7 @@ function renderProjectPage(slug, lang = currentLanguage()) {
   const sourceRole = getSourceRole();
   const sourceLabel = sourceRole ? roleLabel(sourceRole, lang) : copy.backHome;
   const sourceHref = sourceRoleHref(sourceRole);
+  const cvHref = sourceRole ? `../../assets/pdf/cv-${sourceRole}-${lang}.pdf` : "../../assets/pdf/Portafolio_de_evidencias_V2.pdf";
   document.title = `${project.title} | Juan Pablo Garcia`;
   enhanceProjectHeader(lang, sourceRole);
 
@@ -919,7 +926,10 @@ function renderProjectPage(slug, lang = currentLanguage()) {
         <aside class="side-panel detail-side" aria-label="Recursos del proyecto">
           <a class="btn primary" href="${sourceHref}">${sourceRole ? copy.sourceDashboard : copy.backHome}</a>
           <a class="btn" href="../../index.html">${copy.backHome}</a>
-          <a class="btn" href="../../assets/pdf/Portafolio_de_evidencias_V2.pdf" target="_blank" rel="noreferrer">${copy.cv}</a>
+          <a class="btn" href="${cvHref}" target="_blank" rel="noreferrer">${copy.cv}</a>
+          <a class="btn" href="mailto:juanpablogarciachavez7799@gmail.com">${copy.email}</a>
+          <a class="btn" href="https://www.linkedin.com/in/juan-pablo-garcia-chavez/" target="_blank" rel="noreferrer">${copy.linkedin}</a>
+          <a class="btn" href="https://www.upwork.com/freelancers/~01c64dd314ad35adc5" target="_blank" rel="noreferrer">${copy.upwork}</a>
           <a class="btn" href="https://github.com/JuanPa7799" target="_blank" rel="noreferrer">${copy.github}</a>
           <section class="content-block role-fit-card">
             <h2>${copy.roles}</h2>

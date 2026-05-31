@@ -1,6 +1,7 @@
 const contactoData = {
   github: "https://github.com/JuanPa7799",
   linkedin: "https://www.linkedin.com/in/juan-pablo-garcia-chavez/",
+  upwork: "https://www.upwork.com/freelancers/~01c64dd314ad35adc5",
   email: "juanpablogarciachavez7799@gmail.com",
   cv: "assets/pdf/Portafolio_de_evidencias_V2.pdf"
 };
@@ -27,6 +28,7 @@ const homeCopy = {
     "profile.email": "Contacto publico",
     "profile.linkedin": "Perfil profesional",
     "profile.github": "Repositorios",
+    "profile.upwork": "Freelance",
     "profile.cv": "CV fallback",
     "paths.eyebrow": "Rutas profesionales",
     "paths.title": "Elige el dashboard segun el rol",
@@ -64,7 +66,8 @@ const homeCopy = {
     "contact.eyebrow": "Contacto",
     "contact.title": "Listo para colaborar en proyectos con datos.",
     "contact.lead": "Si necesitas alguien que analice, modele, explique y ejecute con criterio tecnico, aqui estan mis canales principales.",
-    "contact.email": "Enviar correo"
+    "contact.email": "Enviar correo",
+    "contact.upwork": "Ver Upwork"
   },
   en: {
     "nav.dashboard": "Dashboard",
@@ -87,6 +90,7 @@ const homeCopy = {
     "profile.email": "Public contact",
     "profile.linkedin": "Professional profile",
     "profile.github": "Repositories",
+    "profile.upwork": "Freelance",
     "profile.cv": "CV fallback",
     "paths.eyebrow": "Professional paths",
     "paths.title": "Choose the dashboard by role",
@@ -124,7 +128,8 @@ const homeCopy = {
     "contact.eyebrow": "Contact",
     "contact.title": "Ready to collaborate on data projects.",
     "contact.lead": "If you need someone who can analyze, model, explain, and execute with technical judgment, these are my main channels.",
-    "contact.email": "Send email"
+    "contact.email": "Send email",
+    "contact.upwork": "View Upwork"
   }
 };
 
@@ -364,7 +369,7 @@ document.querySelectorAll("[data-contact-link]").forEach((link) => {
     link.href = `mailto:${contactoData.email}`;
   }
 
-  if (type === "github" || type === "linkedin" || type === "cv") {
+  if (type === "github" || type === "linkedin" || type === "upwork" || type === "cv") {
     link.href = contactoData[type];
   }
 });

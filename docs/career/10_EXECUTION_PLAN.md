@@ -76,7 +76,7 @@ Tener claro que mostrar segun el tipo de vacante.
 
 ## Fase 3 - Dashboard publico principal
 
-Estado: version visual friendly creada, conectada a dashboards por rol y reforzada con narrativa personal, trayectoria breve y copy menos generico.
+Estado: version visual friendly creada, conectada a dashboards por rol, reforzada con narrativa personal, foto de perfil, links publicos y copy menos generico.
 
 Objetivo:
 
@@ -103,13 +103,11 @@ Pendiente:
 
 - revisar visualmente en navegador;
 - ajustar copy fino despues de ver la pagina renderizada;
-- reemplazar avatar de iniciales por `assets/img/profile.jpg` cuando exista foto publica aprobada;
-- ajustar responsive visual si en celular algun bloque se siente pesado;
-- reemplazar fallback de CV por PDFs finales.
+- ajustar responsive visual si en celular algun bloque se siente pesado.
 
 ## Fase 4 - Dashboards por rol
 
-Estado: primera version creada con selector ES/EN, KPIs, proyectos, flujo visual, estado de CV, navegacion entre rutas e identidad visual diferenciada por rol.
+Estado: version pulida con selector ES/EN, KPIs, proyectos con imagenes, foto de perfil, contacto publico, CV por idioma, navegacion entre rutas e identidad visual diferenciada por rol.
 
 ### Data Analyst Jr
 
@@ -129,11 +127,11 @@ Proyectos principales:
 3. Rusty Bargain Pricing.
 4. Megaline Plan Recommendation.
 
-Pendientes:
+Fortalezas visibles:
 
-- agregar proyecto SQL fuerte;
-- agregar dashboard BI o dashboard HTML de KPIs;
-- crear CV Data Analyst ES/EN.
+- decision analytics con riesgo y rentabilidad;
+- integracion y limpieza de datos;
+- comunicacion ejecutiva con metricas.
 
 ### Data Scientist Jr
 
@@ -154,11 +152,11 @@ Proyectos principales:
 4. Sweet Lift Taxi Forecasting.
 5. OilyGiant Risk & Profit.
 
-Pendientes:
+Fortalezas visibles:
 
-- agregar interpretabilidad;
-- agregar SQL + ML;
-- crear CV Data Scientist ES/EN.
+- proyectos end-to-end con metricas verificables;
+- clasificacion, regresion y forecasting;
+- traduccion de resultados tecnicos a impacto de negocio.
 
 ### Machine Learning Jr
 
@@ -179,16 +177,15 @@ Proyectos principales:
 4. Rusty Bargain Pricing.
 5. Sweet Lift Taxi Forecasting.
 
-Pendientes:
+Fortalezas visibles:
 
-- crear API FastAPI;
-- crear pipeline serializado;
-- crear Docker/demo local;
-- crear CV Machine Learning ES/EN.
+- ML aplicado a senales, texto, imagenes, precios y series;
+- TensorFlow, Keras, LightGBM y scikit-learn;
+- comparacion de modelos y criterio de reproducibilidad.
 
 ## Fase 5 - CVs y portafolios ES/EN
 
-Estado: CVs ES/EN por rol creados en Markdown, pagina web publica y PDF descargable.
+Estado: CVs ES/EN por rol creados en Markdown, pagina web publica y PDF descargable, con proyectos escritos como contexto, tecnologias, resultado medible e impacto.
 
 Se necesitan seis CVs:
 
@@ -199,15 +196,13 @@ Se necesitan seis CVs:
 5. Machine Learning ES.
 6. Machine Learning EN.
 
-Correcciones obligatorias segun feedback:
+Correcciones aplicadas segun feedback:
 
-- corregir caracteres raros;
-- quitar bullets vacios;
-- quitar tecnologias duplicadas;
-- mover TripleTen a Educacion/Certificaciones;
-- agregar links directos a portafolio y proyectos;
+- no publicar telefono;
+- agregar links directos a portafolio, GitHub, LinkedIn y Upwork;
 - adaptar resumen y proyectos segun rol;
-- decidir si el telefono va publico o no.
+- presentar proyectos como academicos/aplicados, no como experiencia laboral tradicional;
+- describir proyectos con contexto, tecnologias, resultado medible e impacto.
 
 Resultado esperado:
 

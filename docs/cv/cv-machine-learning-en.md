@@ -10,6 +10,7 @@ fontsize: 10pt
 
 GitHub: <https://github.com/JuanPa7799>  
 LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>  
+Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>\
 Email: <juanpablogarciachavez7799@gmail.com>  
 Portfolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
 
@@ -26,37 +27,33 @@ Junior Machine Learning practitioner with a background in Mechatronics Engineeri
 
 ## Selected Projects
 
-### Electrical disturbance classification
+### Electrical disturbance classification | Applied project
 
-Flagship ML project applied to electrical signals and power quality.
+- Context: classified electrical disturbances to support power-quality analysis.
+- Technologies: Python, NumPy, pandas, scikit-learn, TensorFlow, and signal processing.
+- Measurable result: reported accuracy above 96% and roughly 80% processing reduction.
+- Impact: connected engineering background with ML applied to signals and operational efficiency.
 
-- Reported accuracy: 96%+.
-- Approximate processing reduction: 80%.
-- Stack: Python, NumPy, pandas, scikit-learn, TensorFlow.
+### Age estimation with computer vision | Applied academic project
 
-### Age estimation with computer vision
+- Context: estimated age from images as operational support in a sensitive use case.
+- Technologies: Python, TensorFlow, Keras, ResNet50, and GPU training.
+- Measurable result: 7.03 validation MAE with ResNet50 and a regression head.
+- Impact: paired deep learning with responsible judgment: review support, not a single automated decision.
 
-ResNet50 model to estimate age from images.
+### IMDB review sentiment | Applied academic project
 
-- Validation MAE: 7.03.
-- Architecture: ResNet50 + regression head.
-- Responsible approach: operational support, not a single decision maker.
+- Context: classified positive and negative reviews to monitor user perception.
+- Technologies: Python, TF-IDF, logistic regression, LightGBM, and a controlled BERT test.
+- Measurable result: F1 >= 0.85 target reached with a TF-IDF plus linear-model approach.
+- Impact: showed that an efficient, explainable solution can be competitive before moving to heavier models.
 
-### IMDB review sentiment
+### Taxi order forecasting | Applied academic project
 
-Text classification with TF-IDF, logistic regression, LightGBM, and BERT test.
-
-- Required F1 threshold: greater than or equal to 0.85.
-- Best approach: TF-IDF + logistic regression.
-- Focus: practical, explainable, and efficient NLP.
-
-### Taxi order forecasting
-
-Temporal pipeline with lags, rolling means, and chronological validation.
-
-- Final model: Random Forest.
-- Test RMSE: 43.21.
-- Operational target met.
+- Context: forecasted hourly demand to anticipate peak-hour operations.
+- Technologies: Python, pandas, scikit-learn, lags, rolling means, and Random Forest.
+- Measurable result: 43.21 test RMSE, meeting the operational target.
+- Impact: built a reproducible temporal pipeline with chronological validation.
 
 ## Education
 

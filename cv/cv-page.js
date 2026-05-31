@@ -6,10 +6,10 @@ const cvData = {
       summary: "Data Analyst Jr con formacion en Ingenieria Mecatronica y Maestria en Ingenieria Electronica. Trabajo con Python, SQL, analisis exploratorio, KPIs y visualizacion para transformar datos en recomendaciones claras.",
       skills: ["Python", "SQL", "Pandas", "NumPy", "Excel", "KPIs", "Dashboards", "Storytelling"],
       projects: [
-        ["Riesgo y rentabilidad petrolera", "Decision de inversion con beneficio promedio de 4.52M USD y riesgo de perdida de 1.5%."],
-        ["Interconnect Churn", "Pipeline de retencion con AUC-ROC test de 0.8963 y accuracy de 0.8538."],
-        ["Precio de autos usados", "Comparacion de modelos por RMSE, tiempo de entrenamiento y velocidad de respuesta."],
-        ["Recomendacion de planes moviles", "Random Forest con accuracy test de 0.8149 frente a baseline 0.6967."]
+        ["Riesgo y rentabilidad petrolera", "Contexto: seleccion regional bajo incertidumbre. Tecnologias: Python, regresion lineal y bootstrap. Resultado: 4.52M USD de beneficio promedio y 1.5% de riesgo. Impacto: recomendacion clara para inversion."],
+        ["Interconnect Churn", "Contexto: priorizar retencion. Tecnologias: Python, pandas, scikit-learn y Gradient Boosting. Resultado: AUC-ROC 0.8963 y accuracy 0.8538. Impacto: foco en clientes con mayor riesgo."],
+        ["Precio de autos usados", "Contexto: pricing con velocidad operativa. Tecnologias: LightGBM y Random Forest. Resultado: RMSE 1776.60 con LightGBM rapido. Impacto: trade-off entre precision y producto."],
+        ["Recomendacion de planes moviles", "Contexto: recomendacion Smart/Ultra. Tecnologias: scikit-learn y Random Forest. Resultado: accuracy 0.8149 vs baseline 0.6967. Impacto: decision comercial con evidencia."]
       ],
       dashboard: "Dashboard Data Analyst",
       download: "Descargar PDF",
@@ -22,10 +22,10 @@ const cvData = {
       summary: "Junior Data Analyst with a background in Mechatronics Engineering and a Master's degree in Electronic Engineering. I work with Python, SQL, exploratory analysis, KPIs, and visualization to turn data into clear recommendations.",
       skills: ["Python", "SQL", "Pandas", "NumPy", "Excel", "KPIs", "Dashboards", "Storytelling"],
       projects: [
-        ["Oil risk and profitability", "Investment decision case with 4.52M USD average profit and 1.5% loss risk."],
-        ["Interconnect churn", "Retention pipeline with 0.8963 test ROC-AUC and 0.8538 accuracy."],
-        ["Used car pricing", "Model comparison by RMSE, training time, and response speed."],
-        ["Mobile plan recommendation", "Random Forest with 0.8149 test accuracy against 0.6967 baseline."]
+        ["Oil risk and profitability", "Context: regional selection under uncertainty. Technologies: Python, linear regression, and bootstrap. Result: 4.52M USD average profit and 1.5% risk. Impact: clear investment recommendation."],
+        ["Interconnect churn", "Context: retention prioritization. Technologies: Python, pandas, scikit-learn, and Gradient Boosting. Result: 0.8963 ROC-AUC and 0.8538 accuracy. Impact: focus on higher-risk customers."],
+        ["Used car pricing", "Context: pricing with operational speed. Technologies: LightGBM and Random Forest. Result: 1776.60 RMSE with fast LightGBM training. Impact: accuracy versus product-speed trade-off."],
+        ["Mobile plan recommendation", "Context: Smart/Ultra recommendation. Technologies: scikit-learn and Random Forest. Result: 0.8149 accuracy vs 0.6967 baseline. Impact: evidence-based commercial decision."]
       ],
       dashboard: "Data Analyst dashboard",
       download: "Download PDF",
@@ -40,10 +40,10 @@ const cvData = {
       summary: "Data Scientist Jr con formacion en Ingenieria Mecatronica y Maestria en Ingenieria Electronica. Desarrollo proyectos end-to-end con Python, pandas, scikit-learn, feature engineering, validacion de modelos y comunicacion de resultados.",
       skills: ["Python", "Pandas", "Scikit-learn", "SQL", "AUC-ROC", "F1", "RMSE", "sMAPE"],
       projects: [
-        ["Interconnect Churn", "GradientBoostingClassifier con AUC-ROC test de 0.8963."],
-        ["Churn bancario", "Clasificacion desbalanceada con F1 test 0.6365 y AUC-ROC 0.865."],
-        ["Recuperacion de oro Zyfra", "Regresion industrial con sMAPE total de 8.49%."],
-        ["Forecast de taxi", "Random Forest con RMSE test 43.21 y objetivo operacional cumplido."]
+        ["Interconnect Churn", "Contexto: cancelacion en telecom. Tecnologias: pandas, feature engineering y GradientBoostingClassifier. Resultado: AUC-ROC 0.8963. Impacto: pipeline end-to-end para retencion."],
+        ["Churn bancario", "Contexto: clases desbalanceadas. Tecnologias: scikit-learn, balanceo y Random Forest. Resultado: F1 0.6365 y AUC-ROC 0.865. Impacto: metrica alineada al costo de perder clientes."],
+        ["Recuperacion de oro Zyfra", "Contexto: proceso industrial. Tecnologias: Python, validacion de variables y regresion. Resultado: sMAPE total 8.49%. Impacto: control de fuga de informacion."],
+        ["Forecast de taxi", "Contexto: demanda horaria. Tecnologias: lags, medias moviles y Random Forest. Resultado: RMSE 43.21. Impacto: objetivo operacional cumplido."]
       ],
       dashboard: "Dashboard Data Scientist",
       download: "Descargar PDF",
@@ -56,10 +56,10 @@ const cvData = {
       summary: "Junior Data Scientist with a background in Mechatronics Engineering and a Master's degree in Electronic Engineering. I build end-to-end projects with Python, pandas, scikit-learn, feature engineering, model validation, and clear communication.",
       skills: ["Python", "Pandas", "Scikit-learn", "SQL", "ROC-AUC", "F1", "RMSE", "sMAPE"],
       projects: [
-        ["Interconnect churn", "GradientBoostingClassifier with 0.8963 test ROC-AUC."],
-        ["Bank churn", "Imbalanced classification with 0.6365 test F1 and 0.865 ROC-AUC."],
-        ["Zyfra gold recovery", "Industrial regression with 8.49% total sMAPE."],
-        ["Taxi forecasting", "Random Forest with 43.21 test RMSE and operational target met."]
+        ["Interconnect churn", "Context: telecom cancellation. Technologies: pandas, feature engineering, and GradientBoostingClassifier. Result: 0.8963 ROC-AUC. Impact: end-to-end retention pipeline."],
+        ["Bank churn", "Context: imbalanced classes. Technologies: scikit-learn, balancing, and Random Forest. Result: 0.6365 F1 and 0.865 ROC-AUC. Impact: metric aligned with churn risk."],
+        ["Zyfra gold recovery", "Context: industrial process. Technologies: Python, variable validation, and regression. Result: 8.49% total sMAPE. Impact: leakage-aware modeling."],
+        ["Taxi forecasting", "Context: hourly demand. Technologies: lags, rolling means, and Random Forest. Result: 43.21 RMSE. Impact: operational target met."]
       ],
       dashboard: "Data Scientist dashboard",
       download: "Download PDF",
@@ -74,10 +74,10 @@ const cvData = {
       summary: "Machine Learning Jr con base en Ingenieria Mecatronica y Maestria en Ingenieria Electronica. Trabajo con clasificacion, regresion, vision computacional, NLP, forecasting y senales, con enfoque en soluciones reproducibles.",
       skills: ["Python", "Scikit-learn", "TensorFlow", "Keras", "LightGBM", "Pipelines", "NLP", "Vision"],
       projects: [
-        ["Clasificacion de perturbaciones electricas", "ML aplicado a senales con precision 96%+ y optimizacion aproximada del 80%."],
-        ["Estimacion de edad con vision", "ResNet50 con MAE de validacion 7.03."],
-        ["Sentimiento IMDB", "TF-IDF, regresion logistica, LightGBM y umbral F1 >= 0.85."],
-        ["Forecast de taxi", "Pipeline temporal con lags y RMSE test 43.21."]
+        ["Clasificacion de perturbaciones electricas", "Contexto: calidad de energia. Tecnologias: TensorFlow, scikit-learn y procesamiento de senales. Resultado: precision 96%+ y optimizacion cercana al 80%. Impacto: ML aplicado a ingenieria."],
+        ["Estimacion de edad con vision", "Contexto: apoyo operativo sensible. Tecnologias: TensorFlow, Keras y ResNet50. Resultado: MAE 7.03. Impacto: vision con criterio responsable."],
+        ["Sentimiento IMDB", "Contexto: clasificacion de resenas. Tecnologias: TF-IDF, regresion logistica y LightGBM. Resultado: F1 >= 0.85. Impacto: NLP eficiente y explicable."],
+        ["Forecast de taxi", "Contexto: demanda temporal. Tecnologias: lags, medias moviles y Random Forest. Resultado: RMSE 43.21. Impacto: pipeline reproducible."]
       ],
       dashboard: "Dashboard Machine Learning",
       download: "Descargar PDF",
@@ -90,16 +90,31 @@ const cvData = {
       summary: "Junior Machine Learning practitioner with a background in Mechatronics Engineering and a Master's degree in Electronic Engineering. I work with classification, regression, computer vision, NLP, forecasting, and signal-focused projects with a reproducibility mindset.",
       skills: ["Python", "Scikit-learn", "TensorFlow", "Keras", "LightGBM", "Pipelines", "NLP", "Vision"],
       projects: [
-        ["Electrical disturbance classification", "ML applied to signals with 96%+ accuracy and roughly 80% optimization."],
-        ["Age estimation with vision", "ResNet50 with 7.03 validation MAE."],
-        ["IMDB sentiment", "TF-IDF, logistic regression, LightGBM, and F1 >= 0.85 threshold."],
-        ["Taxi forecasting", "Temporal pipeline with lags and 43.21 test RMSE."]
+        ["Electrical disturbance classification", "Context: power quality. Technologies: TensorFlow, scikit-learn, and signal processing. Result: 96%+ accuracy and roughly 80% optimization. Impact: ML applied to engineering."],
+        ["Age estimation with vision", "Context: sensitive operational support. Technologies: TensorFlow, Keras, and ResNet50. Result: 7.03 MAE. Impact: computer vision with responsible judgment."],
+        ["IMDB sentiment", "Context: review classification. Technologies: TF-IDF, logistic regression, and LightGBM. Result: F1 >= 0.85. Impact: efficient and explainable NLP."],
+        ["Taxi forecasting", "Context: temporal demand. Technologies: lags, rolling means, and Random Forest. Result: 43.21 RMSE. Impact: reproducible forecasting pipeline."]
       ],
       dashboard: "Machine Learning dashboard",
       download: "Download PDF",
       portfolio: "Portfolio",
       contact: "Contact"
     }
+  }
+};
+
+const contactCopy = {
+  es: {
+    email: "Enviar email",
+    github: "Ver GitHub",
+    linkedin: "Ver LinkedIn",
+    upwork: "Ver Upwork"
+  },
+  en: {
+    email: "Send email",
+    github: "View GitHub",
+    linkedin: "View LinkedIn",
+    upwork: "View Upwork"
   }
 };
 
@@ -113,6 +128,7 @@ function renderCv() {
   document.title = `${data.title} | Juan Pablo Garcia Chavez`;
 
   const root = document.querySelector("[data-cv-root]");
+  const contact = contactCopy[lang];
   const pdf = `../../../assets/pdf/cv-${role}-${lang}.pdf`;
   const dashboard = `../../../dashboards/${role}/`;
   root.innerHTML = `
@@ -134,9 +150,10 @@ function renderCv() {
             <img src="../../../assets/img/profile.jpg" alt="Juan Pablo Garcia Chavez" loading="eager">
           </div>
           <div class="profile-card-body">
-            <a class="contact-row" href="mailto:juanpablogarciachavez7799@gmail.com"><span class="contact-icon">@</span><span><small>Email</small><strong>${data.contact}</strong></span></a>
-            <a class="contact-row" href="https://github.com/JuanPa7799" target="_blank" rel="noreferrer"><span class="contact-icon">GH</span><span><small>GitHub</small><strong>JuanPa7799</strong></span></a>
-            <a class="contact-row" href="https://www.linkedin.com/in/juan-pablo-garcia-chavez/" target="_blank" rel="noreferrer"><span class="contact-icon">in</span><span><small>LinkedIn</small><strong>${lang === "es" ? "Perfil publico" : "Public profile"}</strong></span></a>
+            <a class="contact-row" href="mailto:juanpablogarciachavez7799@gmail.com"><span class="contact-icon">@</span><span><small>Email</small><strong>${contact.email}</strong></span></a>
+            <a class="contact-row" href="https://github.com/JuanPa7799" target="_blank" rel="noreferrer"><span class="contact-icon">GH</span><span><small>GitHub</small><strong>${contact.github}</strong></span></a>
+            <a class="contact-row" href="https://www.linkedin.com/in/juan-pablo-garcia-chavez/" target="_blank" rel="noreferrer"><span class="contact-icon">in</span><span><small>LinkedIn</small><strong>${contact.linkedin}</strong></span></a>
+            <a class="contact-row" href="https://www.upwork.com/freelancers/~01c64dd314ad35adc5" target="_blank" rel="noreferrer"><span class="contact-icon">Up</span><span><small>Upwork</small><strong>${contact.upwork}</strong></span></a>
           </div>
         </aside>
       </div>

@@ -10,6 +10,7 @@ fontsize: 10pt
 
 GitHub: <https://github.com/JuanPa7799>  
 LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>  
+Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>\
 Email: <juanpablogarciachavez7799@gmail.com>  
 Portafolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
 
@@ -26,37 +27,33 @@ Machine Learning Jr con base en Ingenieria Mecatronica y Maestria en Ingenieria 
 
 ## Proyectos destacados
 
-### Clasificacion de perturbaciones electricas
+### Clasificacion de perturbaciones electricas | Proyecto aplicado
 
-Proyecto estrella de ML aplicado a senales electricas y calidad de energia.
+- Contexto: clasificar perturbaciones electricas para apoyar analisis de calidad de energia.
+- Tecnologias: Python, NumPy, pandas, scikit-learn, TensorFlow y procesamiento de senales.
+- Resultado medible: precision reportada superior al 96% y reduccion aproximada de 80% en procesamiento.
+- Impacto: conecte formacion en ingenieria con ML aplicado a senales y eficiencia operativa.
 
-- Precision reportada: 96%+.
-- Reduccion aproximada de procesamiento: 80%.
-- Stack: Python, NumPy, pandas, scikit-learn, TensorFlow.
+### Estimacion de edad con vision | Proyecto academico aplicado
 
-### Estimacion de edad con vision
+- Contexto: estimar edad desde imagenes como apoyo operativo en un caso sensible.
+- Tecnologias: Python, TensorFlow, Keras, ResNet50 y entrenamiento con GPU.
+- Resultado medible: MAE de validacion 7.03 con arquitectura ResNet50 y cabeza de regresion.
+- Impacto: combine deep learning con criterio responsable: apoyo a revision, no decision automatica unica.
 
-Modelo ResNet50 para estimar edad desde imagenes.
+### Sentimiento en resenas IMDB | Proyecto academico aplicado
 
-- MAE de validacion: 7.03.
-- Arquitectura: ResNet50 + cabeza de regresion.
-- Enfoque responsable: apoyo operativo, no decision unica.
+- Contexto: clasificar resenas positivas y negativas para monitorear percepcion.
+- Tecnologias: Python, TF-IDF, regresion logistica, LightGBM y prueba controlada con BERT.
+- Resultado medible: umbral F1 mayor o igual a 0.85 alcanzado con enfoque TF-IDF + modelo lineal.
+- Impacto: demostre que una solucion eficiente y explicable puede competir antes de usar modelos mas pesados.
 
-### Sentimiento en resenas IMDB
+### Forecast de pedidos de taxi | Proyecto academico aplicado
 
-Clasificacion de texto con TF-IDF, regresion logistica, LightGBM y prueba BERT.
-
-- Umbral de F1 requerido: mayor o igual a 0.85.
-- Mejor enfoque: TF-IDF + regresion logistica.
-- Enfoque: NLP practico, explicable y eficiente.
-
-### Forecast de pedidos de taxi
-
-Pipeline temporal con lags, medias moviles y validacion cronologica.
-
-- Modelo final: Random Forest.
-- RMSE test: 43.21.
-- Objetivo operacional cumplido.
+- Contexto: predecir demanda horaria para anticipar operacion en horas pico.
+- Tecnologias: Python, pandas, scikit-learn, lags, medias moviles y Random Forest.
+- Resultado medible: RMSE test 43.21, cumpliendo el objetivo operacional.
+- Impacto: estructure un pipeline temporal reproducible con validacion cronologica.
 
 ## Educacion
 

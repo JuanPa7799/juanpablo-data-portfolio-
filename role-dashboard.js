@@ -75,10 +75,19 @@ const roleDashboards = {
         tags: ["Usuarios", "Producto", "Accuracy"]
       }
     ],
-    roadmap: [
-      "Dashboard BI de KPIs comerciales",
-      "Caso SQL con consultas avanzadas",
-      "Reporte automatizado semanal con Python"
+    strengths: [
+      {
+        es: "Lectura de KPIs, riesgo y rentabilidad con criterios de negocio.",
+        en: "KPI, risk, and profitability analysis with business criteria."
+      },
+      {
+        es: "Integracion, limpieza y validacion de datos con Python, SQL y pandas.",
+        en: "Data integration, cleaning, and validation with Python, SQL, and pandas."
+      },
+      {
+        es: "Comunicacion clara de hallazgos para apoyar decisiones ejecutivas.",
+        en: "Clear communication of findings to support executive decisions."
+      }
     ],
     accent: "Business analytics"
   },
@@ -169,10 +178,19 @@ const roleDashboards = {
         tags: ["Bootstrap", "Riesgo", "Decision"]
       }
     ],
-    roadmap: [
-      "Interpretabilidad con permutation importance o SHAP",
-      "Proyecto SQL + ML con datos publicos",
-      "Caso de experimentacion o A/B testing"
+    strengths: [
+      {
+        es: "Proyectos end-to-end con datos integrados, EDA, modelado y metricas verificables.",
+        en: "End-to-end projects with integrated data, EDA, modeling, and verifiable metrics."
+      },
+      {
+        es: "Clasificacion, regresion y forecasting con lectura critica de AUC-ROC, F1, RMSE y sMAPE.",
+        en: "Classification, regression, and forecasting with critical use of ROC-AUC, F1, RMSE, and sMAPE."
+      },
+      {
+        es: "Traduccion de resultados tecnicos a impacto de negocio y siguientes decisiones.",
+        en: "Translation of technical results into business impact and next decisions."
+      }
     ],
     accent: "Predictive modeling"
   },
@@ -263,14 +281,35 @@ const roleDashboards = {
         tags: ["Forecasting", "Features", "Pipeline"]
       }
     ],
-    roadmap: [
-      "API FastAPI para un modelo tabular",
-      "Pipeline sklearn serializado con joblib",
-      "Dockerfile y demo local",
-      "Monitoreo simple con datos simulados"
+    strengths: [
+      {
+        es: "ML aplicado a senales, texto, imagenes, precios y series temporales.",
+        en: "Applied ML across signals, text, images, pricing, and time series."
+      },
+      {
+        es: "Uso practico de TensorFlow, Keras, LightGBM y scikit-learn para resolver problemas reales.",
+        en: "Practical use of TensorFlow, Keras, LightGBM, and scikit-learn to solve real problems."
+      },
+      {
+        es: "Criterio de reproducibilidad, validacion y comparacion de modelos antes de elegir una solucion.",
+        en: "Reproducibility, validation, and model comparison before choosing a solution."
+      }
     ],
     accent: "Applied ML"
   }
+};
+
+const publicLinks = {
+  email: "mailto:juanpablogarciachavez7799@gmail.com",
+  github: "https://github.com/JuanPa7799",
+  linkedin: "https://www.linkedin.com/in/juan-pablo-garcia-chavez/",
+  upwork: "https://www.upwork.com/freelancers/~01c64dd314ad35adc5"
+};
+
+const roleImages = {
+  "data-analyst": "../../assets/img/data-analyst.png",
+  "data-scientist": "../../assets/img/data-scientist.png",
+  "machine-learning": "../../assets/img/machine-learning.png"
 };
 
 const languageLabels = {
@@ -280,12 +319,15 @@ const languageLabels = {
     home: "Volver al dashboard principal",
     projects: "Casos destacados",
     stack: "Tecnologias principales",
-    roadmap: "Ruta de crecimiento",
+    strengths: "Fortalezas de la ruta",
     viewProject: "Ver proyecto",
     metric: "Metrica",
     score: "Nivel",
     roleSwitch: "Cambiar ruta",
-    contact: "Contacto",
+    email: "Enviar email",
+    linkedin: "Ver LinkedIn",
+    upwork: "Ver Upwork",
+    github: "GitHub",
     note: "CV y proyectos alineados con esta ruta profesional.",
     flow: "Flujo de trabajo",
     cvStatus: "CV de esta ruta",
@@ -297,6 +339,7 @@ const languageLabels = {
     machineLearning: "Machine Learning",
     navHome: "Inicio",
     navContact: "Contacto",
+    profile: "Perfil profesional",
     roleDashboard: "Dashboard por rol"
   },
   en: {
@@ -305,12 +348,15 @@ const languageLabels = {
     home: "Back to main dashboard",
     projects: "Featured cases",
     stack: "Core technologies",
-    roadmap: "Growth path",
+    strengths: "Path strengths",
     viewProject: "View project",
     metric: "Metric",
     score: "Visual score",
     roleSwitch: "Switch path",
-    contact: "Contact",
+    email: "Send email",
+    linkedin: "View LinkedIn",
+    upwork: "View Upwork",
+    github: "GitHub",
     note: "CV and projects aligned with this professional path.",
     flow: "Workflow",
     cvStatus: "Role CV",
@@ -322,6 +368,7 @@ const languageLabels = {
     machineLearning: "Machine Learning",
     navHome: "Home",
     navContact: "Contact",
+    profile: "Professional profile",
     roleDashboard: "Role Dashboard"
   }
 };
@@ -364,17 +411,12 @@ const tagMap = {
   "Latencia": { es: "Latencia", en: "Latency" }
 };
 
-const roadmapMap = {
-  "Dashboard BI de KPIs comerciales": { es: "Dashboard BI de KPIs comerciales", en: "Business KPI BI dashboard" },
-  "Caso SQL con consultas avanzadas": { es: "Caso SQL con consultas avanzadas", en: "SQL case with advanced queries" },
-  "Reporte automatizado semanal con Python": { es: "Reporte automatizado semanal con Python", en: "Weekly automated report with Python" },
-  "Interpretabilidad con permutation importance o SHAP": { es: "Interpretabilidad con permutation importance o SHAP", en: "Interpretability with permutation importance or SHAP" },
-  "Proyecto SQL + ML con datos publicos": { es: "Proyecto SQL + ML con datos publicos", en: "SQL + ML project with public data" },
-  "Caso de experimentacion o A/B testing": { es: "Caso de experimentacion o A/B testing", en: "Experimentation or A/B testing case" },
-  "API FastAPI para un modelo tabular": { es: "API FastAPI para un modelo tabular", en: "FastAPI API for a tabular model" },
-  "Pipeline sklearn serializado con joblib": { es: "Pipeline sklearn serializado con joblib", en: "sklearn pipeline serialized with joblib" },
-  "Dockerfile y demo local": { es: "Dockerfile y demo local", en: "Dockerfile and local demo" },
-  "Monitoreo simple con datos simulados": { es: "Monitoreo simple con datos simulados", en: "Simple monitoring with simulated data" }
+const metricMap = {
+  "Riesgo 1.5%": { es: "Riesgo 1.5%", en: "Risk 1.5%" },
+  "Beneficio 4.52M USD": { es: "Beneficio 4.52M USD", en: "Profit 4.52M USD" },
+  "Precision 96%+": { es: "Precision 96%+", en: "Accuracy 96%+" },
+  "LightGBM RMSE 1776.60": { es: "LightGBM RMSE 1776.60", en: "LightGBM RMSE 1776.60" },
+  "AUC-ROC 0.8963": { es: "AUC-ROC 0.8963", en: "ROC-AUC 0.8963" }
 };
 
 const projectTitleMap = {
@@ -507,17 +549,25 @@ function renderRoleDashboard() {
             <a class="btn primary" href="${cvWebPath(roleKey, lang)}">${copy.cv}</a>
             <a class="btn" href="${cvPdfPath(roleKey, lang)}" target="_blank" rel="noreferrer">${copy.pdf}</a>
             <a class="btn" href="../../index.html">${copy.home}</a>
-            <a class="btn" href="mailto:juanpablogarciachavez7799@gmail.com">${copy.contact}</a>
+            <a class="btn" href="${publicLinks.linkedin}" target="_blank" rel="noreferrer">${copy.linkedin}</a>
+            <a class="btn" href="${publicLinks.upwork}" target="_blank" rel="noreferrer">${copy.upwork}</a>
+            <a class="btn" href="${publicLinks.email}">${copy.email}</a>
           </div>
           <p class="role-note">${copy.note}</p>
         </div>
-        <aside class="hero-panel role-scoreboard" aria-label="KPIs del rol">
-          <div class="panel-top">
-            <div>
-              <span class="panel-label">${copy.roleSwitch}</span>
-              <strong>${data.title[lang]}</strong>
+        <aside class="hero-panel role-profile-panel" aria-label="${copy.profile}">
+          <div class="role-profile-top">
+            <div class="role-portrait">
+              <img src="../../assets/img/profile.jpg" alt="Juan Pablo Garcia Chavez" loading="eager">
             </div>
-            <span class="status-pill">ES / EN</span>
+            <div>
+              <span class="panel-label">${copy.profile}</span>
+              <strong>Juan Pablo Garcia Chavez</strong>
+              <small>${data.title[lang]}</small>
+            </div>
+          </div>
+          <div class="role-hero-image">
+            <img src="${roleImages[roleKey]}" alt="" loading="lazy">
           </div>
           <div class="kpi-row">
             ${data.kpis.map(([label, value]) => `
@@ -526,9 +576,6 @@ function renderRoleDashboard() {
                 <strong>${value}</strong>
               </article>
             `).join("")}
-          </div>
-          <div class="dashboard-chart role-main-chart" aria-hidden="true">
-            ${data.projects.slice(0, 4).map((project) => `<span class="chart-bar" data-label="${project.metric.split(" ")[0]}" style="height:${project.score}%"></span>`).join("")}
           </div>
           <div class="workflow-strip" aria-label="${copy.flow}">
             ${data.workflow[lang].map((step) => `<span>${step}</span>`).join("")}
@@ -552,7 +599,7 @@ function renderRoleDashboard() {
                   <div class="project-meta">
                     <div>
                       <span>${copy.metric}</span>
-                      <strong>${project.metric}</strong>
+                      <strong>${localize(metricMap, project.metric, lang)}</strong>
                     </div>
                     <div>
                       <span>${copy.score}</span>
@@ -586,9 +633,9 @@ function renderRoleDashboard() {
             <div class="tag-list">${tags(data.stack)}</div>
           </section>
           <section class="content-block">
-            <h2>${copy.roadmap}</h2>
+            <h2>${copy.strengths}</h2>
             <ul class="insight-list">
-              ${data.roadmap.map((item) => `<li>${localize(roadmapMap, item, lang)}</li>`).join("")}
+              ${data.strengths.map((item) => `<li>${item[lang]}</li>`).join("")}
             </ul>
           </section>
           <section class="content-block role-switch-card">

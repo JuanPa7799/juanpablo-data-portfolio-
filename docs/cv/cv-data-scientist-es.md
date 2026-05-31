@@ -10,6 +10,7 @@ fontsize: 10pt
 
 GitHub: <https://github.com/JuanPa7799>  
 LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>  
+Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>\
 Email: <juanpablogarciachavez7799@gmail.com>  
 Portafolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
 
@@ -26,37 +27,33 @@ Data Scientist Jr con formacion en Ingenieria Mecatronica y Maestria en Ingenier
 
 ## Proyectos destacados
 
-### Prediccion de churn para Interconnect
+### Prediccion de churn para Interconnect | Proyecto academico aplicado
 
-Pipeline completo para estimar clientes con riesgo de cancelacion.
+- Contexto: estimar cancelacion de clientes para priorizar retencion en una empresa de telecomunicaciones.
+- Tecnologias: Python, pandas, scikit-learn, feature engineering y GradientBoostingClassifier.
+- Resultado medible: 7043 filas integradas desde `contract`, `personal`, `internet` y `phone`; AUC-ROC test 0.8963 y accuracy test 0.8538.
+- Impacto: construccion end-to-end desde integracion de fuentes hasta seleccion de modelo final.
 
-- 7043 filas integradas desde cuatro fuentes.
-- Modelo final: GradientBoostingClassifier.
-- AUC-ROC test: 0.8963; accuracy test: 0.8538.
+### Churn bancario con clases desbalanceadas | Proyecto academico aplicado
 
-### Churn bancario con clases desbalanceadas
+- Contexto: detectar clientes bancarios con riesgo de abandono en un problema con clases desbalanceadas.
+- Tecnologias: Python, pandas, scikit-learn, balanceo de clases y Random Forest.
+- Resultado medible: F1 test 0.6365, AUC-ROC test 0.865 y recall de churn 0.6904.
+- Impacto: priorice metricas alineadas con el costo de no detectar clientes en riesgo.
 
-Modelo enfocado en detectar clientes que abandonan, priorizando F1 y recall.
+### Recuperacion de oro | Zyfra | Proyecto academico aplicado
 
-- F1 test: 0.6365.
-- AUC-ROC test: 0.865.
-- Recall de churn: 0.6904.
+- Contexto: predecir recuperacion de oro en un proceso industrial evitando fuga de informacion.
+- Tecnologias: Python, pandas, scikit-learn, validacion de variables y regresion.
+- Resultado medible: verificacion de formula con EAM 0.0000 y sMAPE total 8.49%.
+- Impacto: aplique criterio de datos disponibles en produccion para una metrica industrial especifica.
 
-### Recuperacion de oro | Zyfra
+### Forecast de pedidos de taxi | Proyecto academico aplicado
 
-Regresion industrial cuidando fuga de informacion y disponibilidad real de variables.
-
-- Verificacion de formula con EAM 0.0000.
-- sMAPE total: 8.49%.
-- Enfoque: proceso industrial, limpieza y validacion.
-
-### Forecast de pedidos de taxi
-
-Prediccion horaria de demanda para anticipar horas pico.
-
-- Modelo final: Random Forest.
-- RMSE test: 43.21.
-- Objetivo cumplido: RMSE menor o igual a 48.
+- Contexto: anticipar demanda horaria de taxis para cubrir horas pico.
+- Tecnologias: Python, pandas, scikit-learn, variables temporales, lags y Random Forest.
+- Resultado medible: RMSE test 43.21, cumpliendo el objetivo operacional de RMSE menor o igual a 48.
+- Impacto: transforme una serie temporal en un problema supervisado con validacion cronologica.
 
 ## Educacion
 

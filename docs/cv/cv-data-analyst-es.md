@@ -10,6 +10,7 @@ fontsize: 10pt
 
 GitHub: <https://github.com/JuanPa7799>  
 LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>  
+Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>\
 Email: <juanpablogarciachavez7799@gmail.com>  
 Portafolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
 
@@ -26,37 +27,33 @@ Data Analyst Jr con formacion en Ingenieria Mecatronica y Maestria en Ingenieria
 
 ## Proyectos destacados
 
-### Riesgo y rentabilidad petrolera
+### Riesgo y rentabilidad petrolera | Proyecto academico aplicado
 
-Seleccione `region_1` como alternativa recomendada al combinar beneficio esperado y riesgo de perdida. Use regresion lineal y bootstrapping para apoyar una decision de inversion con riesgo controlado.
+- Contexto: seleccion de una region de perforacion considerando beneficio esperado y riesgo de perdida.
+- Tecnologias: Python, pandas, NumPy, scikit-learn, regresion lineal y bootstrap.
+- Resultado medible: region recomendada `region_1`, beneficio promedio estimado de 4.52M USD y riesgo de perdida de 1.5%.
+- Impacto: traduje incertidumbre estadistica en una recomendacion de inversion clara para negocio.
 
-- Beneficio promedio estimado: 4.52M USD.
-- Riesgo de perdida: 1.5%, por debajo del limite de negocio.
-- Enfoque: decision analytics, incertidumbre y comunicacion ejecutiva.
+### Prediccion de churn para Interconnect | Proyecto academico aplicado
 
-### Prediccion de churn para Interconnect
+- Contexto: priorizar clientes con mayor probabilidad de cancelacion para apoyar acciones de retencion.
+- Tecnologias: Python, pandas, scikit-learn, integracion de datos y Gradient Boosting.
+- Resultado medible: 7043 clientes integrados; AUC-ROC test 0.8963 y accuracy test 0.8538.
+- Impacto: el modelo permite enfocar esfuerzos comerciales en clientes con mayor riesgo.
 
-Integre datos de contrato, cliente, internet y telefono para estimar riesgo de cancelacion y apoyar estrategias de retencion.
+### Precio de autos usados | Proyecto academico aplicado
 
-- 7043 clientes integrados.
-- Modelo final: Gradient Boosting.
-- AUC-ROC test: 0.8963; accuracy test: 0.8538.
+- Contexto: estimar precios de autos y comparar modelos segun precision y velocidad de respuesta.
+- Tecnologias: Python, pandas, scikit-learn, LightGBM y Random Forest.
+- Resultado medible: LightGBM RMSE 1776.60 con entrenamiento rapido; Random Forest RMSE 1747.77 con mayor costo de tiempo.
+- Impacto: documente un trade-off util para producto entre calidad predictiva y operacion.
 
-### Precio de autos usados
+### Recomendacion de planes moviles | Proyecto academico aplicado
 
-Compare modelos para estimar precio considerando calidad predictiva y velocidad de respuesta.
-
-- LightGBM RMSE: 1776.60 con entrenamiento rapido.
-- Random Forest RMSE: 1747.77, pero con costo de entrenamiento muy alto.
-- Enfoque: trade-off entre precision, tiempo y producto.
-
-### Recomendacion de planes moviles
-
-Clasifique usuarios hacia planes Smart o Ultra con base en comportamiento mensual.
-
-- Modelo final: Random Forest.
-- Accuracy test: 0.8149.
-- Baseline de cordura: 0.6967.
+- Contexto: recomendar planes Smart o Ultra segun comportamiento mensual de usuarios.
+- Tecnologias: Python, pandas, scikit-learn, Decision Tree, Random Forest y Logistic Regression.
+- Resultado medible: Random Forest con accuracy test 0.8149 frente a baseline 0.6967.
+- Impacto: converti comportamiento de usuarios en una regla predictiva para recomendacion comercial.
 
 ## Educacion
 

@@ -10,6 +10,7 @@ fontsize: 10pt
 
 GitHub: <https://github.com/JuanPa7799>  
 LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>  
+Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>\
 Email: <juanpablogarciachavez7799@gmail.com>  
 Portfolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
 
@@ -26,37 +27,33 @@ Junior Data Scientist with a background in Mechatronics Engineering and a Master
 
 ## Selected Projects
 
-### Interconnect churn prediction
+### Interconnect churn prediction | Applied academic project
 
-Complete pipeline to estimate customers at risk of cancellation.
+- Context: estimated customer cancellation risk to prioritize retention in a telecom business case.
+- Technologies: Python, pandas, scikit-learn, feature engineering, and GradientBoostingClassifier.
+- Measurable result: 7043 rows integrated from `contract`, `personal`, `internet`, and `phone`; 0.8963 test ROC-AUC and 0.8538 test accuracy.
+- Impact: built an end-to-end workflow from source integration to final model selection.
 
-- 7043 rows integrated from four sources.
-- Final model: GradientBoostingClassifier.
-- Test ROC-AUC: 0.8963; test accuracy: 0.8538.
+### Bank churn with imbalanced classes | Applied academic project
 
-### Bank churn with imbalanced classes
+- Context: detected bank customers at risk of churn in an imbalanced classification problem.
+- Technologies: Python, pandas, scikit-learn, class balancing, and Random Forest.
+- Measurable result: 0.6365 test F1, 0.865 test ROC-AUC, and 0.6904 churn recall.
+- Impact: aligned the metric choice with the cost of missing at-risk customers.
 
-Model focused on detecting customers who leave, prioritizing F1 and recall.
+### Gold recovery | Zyfra | Applied academic project
 
-- Test F1: 0.6365.
-- Test ROC-AUC: 0.865.
-- Churn recall: 0.6904.
+- Context: predicted gold recovery in an industrial process while avoiding data leakage.
+- Technologies: Python, pandas, scikit-learn, variable validation, and regression models.
+- Measurable result: formula validation MAE 0.0000 and 8.49% total sMAPE.
+- Impact: applied production-aware feature selection to a process-specific business metric.
 
-### Gold recovery | Zyfra
+### Taxi order forecasting | Applied academic project
 
-Industrial regression with leakage control and real feature availability.
-
-- Formula validation with MAE 0.0000.
-- Total sMAPE: 8.49%.
-- Focus: industrial process, cleaning, and validation.
-
-### Taxi order forecasting
-
-Hourly demand prediction to anticipate peak periods.
-
-- Final model: Random Forest.
-- Test RMSE: 43.21.
-- Target met: RMSE less than or equal to 48.
+- Context: forecasted hourly taxi demand to support peak-hour operations.
+- Technologies: Python, pandas, scikit-learn, temporal features, lags, and Random Forest.
+- Measurable result: 43.21 test RMSE, meeting the operational target of RMSE <= 48.
+- Impact: converted a time series into a supervised learning pipeline with chronological validation.
 
 ## Education
 
