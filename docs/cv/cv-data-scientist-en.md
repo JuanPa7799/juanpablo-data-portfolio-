@@ -8,11 +8,11 @@ fontsize: 10pt
 
 **Junior Data Scientist | Python | Machine Learning | SQL | Predictive Modeling**
 
-GitHub: <https://github.com/JuanPa7799>  
-LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>  
-Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>\
-Email: <juanpablogarciachavez7799@gmail.com>  
-Portfolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
+- GitHub: <https://github.com/JuanPa7799>
+- LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>
+- Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>
+- Email: <juanpablogarciachavez7799@gmail.com>
+- Portfolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
 
 ## Profile
 
@@ -64,4 +64,7 @@ Junior Data Scientist with a background in Mechatronics Engineering and a Master
 ## Links
 
 - Data Scientist dashboard: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/dashboards/data-scientist/>
+- Data Scientist web CV EN: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/cv/data-scientist/en/>
+- Interconnect project: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/projects/interconnect-churn/>
+- Taxi forecasting project: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/projects/sweet-lift-taxi-forecasting/>
 - Main portfolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>

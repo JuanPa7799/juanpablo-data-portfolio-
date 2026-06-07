@@ -3,7 +3,7 @@ const contactoData = {
   linkedin: "https://www.linkedin.com/in/juan-pablo-garcia-chavez/",
   upwork: "https://www.upwork.com/freelancers/~01c64dd314ad35adc5",
   email: "juanpablogarciachavez7799@gmail.com",
-  cv: "assets/pdf/Portafolio_de_evidencias_V2.pdf"
+  cv: "assets/pdf/cv-data-scientist-es.pdf"
 };
 
 const homeCopy = {
@@ -29,7 +29,7 @@ const homeCopy = {
     "profile.linkedin": "Perfil profesional",
     "profile.github": "Repositorios",
     "profile.upwork": "Freelance",
-    "profile.cv": "CV fallback",
+    "profile.cv": "CV principal",
     "paths.eyebrow": "Rutas profesionales",
     "paths.title": "Elige el dashboard segun el rol",
     "paths.lead": "Desde LinkedIn, esta sera la entrada principal: una vista clara que dirige a Data Analyst Jr, Data Scientist Jr o Machine Learning Jr con proyectos, metricas y CVs alineados.",
@@ -91,7 +91,7 @@ const homeCopy = {
     "profile.linkedin": "Professional profile",
     "profile.github": "Repositories",
     "profile.upwork": "Freelance",
-    "profile.cv": "CV fallback",
+    "profile.cv": "Main CV",
     "paths.eyebrow": "Professional paths",
     "paths.title": "Choose the dashboard by role",
     "paths.lead": "From LinkedIn, this will be the main entry point: a clear view leading to Junior Data Analyst, Junior Data Scientist, or Junior Machine Learning paths with aligned projects, metrics, and CVs.",

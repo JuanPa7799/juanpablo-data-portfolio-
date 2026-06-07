@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Conseguir entrevistas en roles de ciencia de datos junior donde se valore Python, modelado predictivo, estadistica, SQL, comunicacion y proyectos aplicados.
+Conseguir entrevistas en roles junior donde se valore Python, modelado predictivo, estadistica, SQL, validacion, comunicacion y proyectos aplicados.
 
 ## Puestos objetivo
 
@@ -15,9 +15,9 @@ Conseguir entrevistas en roles de ciencia de datos junior donde se valore Python
 
 ## Keywords principales
 
-Python, pandas, scikit-learn, SQL, machine learning, predictive modeling, statistics, model evaluation, feature engineering, AUC-ROC, F1, RMSE, classification, regression, time series.
+Python, pandas, scikit-learn, SQL, machine learning, predictive modeling, statistics, feature engineering, model evaluation, ROC-AUC, F1, RMSE, MAE, sMAPE, classification, regression, forecasting.
 
-## Empresas y sectores recomendados
+## Sectores recomendados
 
 - Fintech y bancos.
 - Telecomunicaciones.
@@ -33,37 +33,24 @@ Python, pandas, scikit-learn, SQL, machine learning, predictive modeling, statis
 | Postulaciones DS filtradas | 10 |
 | CVs adaptados por vacante | 5 |
 | Practicas SQL/Python | 2 |
-| Mejora de README o visual de proyecto | 1 |
+| Mejora visible de proyecto | 1 |
 | Publicacion tecnica en LinkedIn | 1 |
 
 ## Filtro antes de aplicar
 
-Aplicar si la vacante menciona al menos tres:
+Aplicar si la vacante menciona al menos tres: Python, SQL, machine learning, statistics, model validation, scikit-learn, analytics, predictive modeling.
 
-- Python
-- SQL
-- machine learning
-- statistics
-- model validation
-- scikit-learn
-- analytics
-- predictive modeling
-
-Evitar por ahora si exige como requisito central:
-
-- Deep learning avanzado sin proyecto relacionado.
-- MLOps productivo senior.
-- 4+ anos de experiencia profesional en ciencia de datos.
-- Cloud engineering como responsabilidad principal.
+Evitar por ahora si exige deep learning avanzado como responsabilidad central, MLOps senior, cloud engineering principal o 4+ anos profesionales.
 
 ## Mensaje corto para reclutador
 
 Hola, soy Juan Pablo Garcia Chavez. Soy Data Scientist Jr con formacion en ingenieria y proyectos aplicados de churn, forecasting, regresion industrial y clasificacion de senales. Me interesa la vacante porque combina Python, modelado predictivo y analisis de negocio. Portafolio: https://JuanPa7799.github.io/juanpablo-data-portfolio-/
 
-## Evidencia que debe estar lista
+## Evidencia lista para compartir
 
-- Dashboard Data Scientist publico.
-- CV Data Scientist ES.
-- CV Data Scientist EN.
-- Proyectos con metricas visibles y sin notebooks crudos.
-- Explicacion clara de limitaciones y siguientes pasos.
+- Dashboard Data Scientist: `dashboards/data-scientist/`
+- CV ES: `assets/pdf/cv-data-scientist-es.pdf`
+- CV EN: `assets/pdf/cv-data-scientist-en.pdf`
+- Proyecto Interconnect: `projects/interconnect-churn/`
+- Proyecto Taxi Forecasting: `projects/sweet-lift-taxi-forecasting/`
+- Proyecto Gold Recovery: `projects/gold-recovery-zyfra/`

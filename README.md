@@ -1,48 +1,81 @@
-# Juan Pablo Garcia Chavez | Data Scientist Portfolio
+# Juan Pablo Garcia Chavez | Data Science Portfolio
 
-Portafolio profesional enfocado en ciencia de datos, machine learning, analitica predictiva y datos aplicados a problemas reales de ingenieria.
+Portafolio profesional en español e ingles para roles Junior de Data Analyst, Data Scientist y Machine Learning. El sitio es estatico, seguro para GitHub Pages y muestra proyectos curados sin datasets completos, notebooks crudos ni material privado.
 
 ## Sitio web
 
-Cuando GitHub Pages este activo, el sitio quedara en:
+URL publica esperada al activar GitHub Pages:
 
 https://JuanPa7799.github.io/juanpablo-data-portfolio-/
 
-## Dashboards por rol
+Publicacion recomendada:
 
+- rama: `main`
+- carpeta: `/(root)`
+- archivo de entrada: `index.html`
+
+## Rutas principales
+
+- Home: `index.html`
 - Data Analyst Jr: `dashboards/data-analyst/`
 - Data Scientist Jr: `dashboards/data-scientist/`
 - Machine Learning Jr: `dashboards/machine-learning/`
 
-Los dashboards ya usan selector ES/EN y mantienen `Portafolio_de_evidencias_V2.pdf` como fallback mientras se generan los CVs finales por rol.
+## CVs por rol
 
-## Stack principal
+Paginas web:
 
-- Python
-- SQL
-- Pandas
-- NumPy
-- Scikit-learn
-- TensorFlow
-- Power BI
-- Git/GitHub
+- Data Analyst ES: `cv/data-analyst/es/`
+- Data Analyst EN: `cv/data-analyst/en/`
+- Data Scientist ES: `cv/data-scientist/es/`
+- Data Scientist EN: `cv/data-scientist/en/`
+- Machine Learning ES: `cv/machine-learning/es/`
+- Machine Learning EN: `cv/machine-learning/en/`
+
+PDFs descargables:
+
+- `assets/pdf/cv-data-analyst-es.pdf`
+- `assets/pdf/cv-data-analyst-en.pdf`
+- `assets/pdf/cv-data-scientist-es.pdf`
+- `assets/pdf/cv-data-scientist-en.pdf`
+- `assets/pdf/cv-machine-learning-es.pdf`
+- `assets/pdf/cv-machine-learning-en.pdf`
+
+Fuentes Markdown editables:
+
+- `docs/cv/cv-data-analyst-es.md`
+- `docs/cv/cv-data-analyst-en.md`
+- `docs/cv/cv-data-scientist-es.md`
+- `docs/cv/cv-data-scientist-en.md`
+- `docs/cv/cv-machine-learning-es.md`
+- `docs/cv/cv-machine-learning-en.md`
 
 ## Proyectos destacados
 
-### Clasificacion de perturbaciones electricas
+- Clasificacion de perturbaciones electricas: ML aplicado a señales electricas, precision 96%+ y optimizacion aproximada del 80%.
+- Prediccion de churn Interconnect: GradientBoostingClassifier con AUC-ROC test 0.8963 y accuracy test 0.8538.
+- Riesgo y rentabilidad petrolera: seleccion de `region_1`, beneficio promedio 4.52M USD y riesgo de perdida 1.5%.
+- Forecast de pedidos de taxi: Random Forest con RMSE test 43.21, cumpliendo objetivo operacional menor o igual a 48.
+- Vision, NLP, pricing, seguros y recuperacion industrial como evidencia complementaria por rol.
 
-Proyecto de investigacion aplicado a senales electricas y calidad de energia. Muestra machine learning, procesamiento de senales, evaluacion de modelos y criterio tecnico de ingenieria.
+## Documentos de carrera
 
-### Prediccion de churn | Interconnect
+- Indice: `docs/career/README.md`
+- Data Analyst: `docs/career/data-analyst/CV.md`, `DASHBOARD.md`, `JOB_SEARCH.md`
+- Data Scientist: `docs/career/data-scientist/CV.md`, `DASHBOARD.md`, `JOB_SEARCH.md`
+- Machine Learning: `docs/career/machine-learning/CV.md`, `DASHBOARD.md`, `JOB_SEARCH.md`
 
-Caso end-to-end de Data Science para integrar cuatro fuentes de datos, construir un pipeline reproducible y seleccionar un modelo de clasificacion con AUC-ROC de 0.8963 en test.
+## Stack principal
 
-### Dashboard de proyectos TripleTen
-
-La Home incluye proyectos curados de recomendacion, churn bancario, riesgo petrolero, recuperacion de oro, algebra lineal, pricing de autos, forecasting de taxis, NLP y vision computacional.
+Python, SQL, pandas, NumPy, scikit-learn, TensorFlow, Keras, LightGBM, visualizacion, storytelling con datos y Git/GitHub.
 
 ## Contacto
 
 - GitHub: https://github.com/JuanPa7799
 - LinkedIn: https://www.linkedin.com/in/juan-pablo-garcia-chavez/
+- Upwork: https://www.upwork.com/freelancers/~01c64dd314ad35adc5
 - Email: juanpablogarciachavez7799@gmail.com
+
+## Seguridad de publicacion
+
+No se publican telefono, datasets completos, notebooks crudos, credenciales, `.env`, `.pem`, rutas locales, carpetas `EXAMPLES/` ni `private/`.

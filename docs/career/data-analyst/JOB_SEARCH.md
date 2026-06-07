@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Conseguir entrevistas para roles donde el foco sea SQL, dashboards, KPIs, reporting, analisis de negocio y comunicacion de resultados.
+Conseguir entrevistas para roles donde el foco sea SQL, KPIs, reporting, dashboards, analisis de negocio y comunicacion de resultados.
 
 ## Puestos objetivo
 
@@ -15,16 +15,15 @@ Conseguir entrevistas para roles donde el foco sea SQL, dashboards, KPIs, report
 
 ## Keywords principales
 
-SQL, Power BI, Tableau, Excel, dashboards, KPI, reporting, data visualization, business intelligence, stakeholder, ETL, data quality, Python, pandas.
+SQL, Python, pandas, Excel, Power BI, Tableau, KPI, dashboard, reporting, business analytics, data visualization, ETL, data quality, storytelling.
 
-## Empresas y sectores recomendados
+## Sectores recomendados
 
 - Bancos y fintech.
 - Retail y e-commerce.
-- Consultoras de datos.
 - Telecomunicaciones.
 - Operaciones, logistica y manufactura.
-- Empresas con equipos BI internos.
+- Consultoras de datos.
 
 ## Estrategia semanal
 
@@ -33,37 +32,23 @@ SQL, Power BI, Tableau, Excel, dashboards, KPI, reporting, data visualization, b
 | Postulaciones filtradas | 10 |
 | CVs adaptados | 5 |
 | Contactos nuevos en LinkedIn | 5 |
-| Mejora visible de portafolio | 1 |
+| Mejora visible del portafolio | 1 |
 | Publicacion de insight en LinkedIn | 1 |
 
 ## Filtro antes de aplicar
 
-Aplicar si la vacante menciona al menos tres:
+Aplicar si la vacante menciona al menos tres: SQL, Excel, KPI, dashboard, reporting, Power BI/Tableau, Python, business analysis.
 
-- SQL
-- dashboard
-- KPI
-- reporting
-- Excel
-- Power BI o Tableau
-- Python
-- business analysis
-
-Evitar por ahora si exige:
-
-- 5+ anos de experiencia.
-- Arquitectura cloud avanzada como requisito principal.
-- Administracion completa de bases productivas.
-- Ingles conversacional avanzado si la entrevista sera completamente en ingles y aun no esta listo.
+Evitar por ahora si exige 5+ anos de experiencia, administracion productiva completa de bases, cloud avanzado o BI senior.
 
 ## Mensaje corto para reclutador
 
-Hola, soy Juan Pablo Garcia Chavez. Tengo formacion en ingenieria y un portafolio de analisis de datos con proyectos de KPIs, modelos predictivos y decision analytics. Me interesa la vacante de Data Analyst Jr porque combina SQL, visualizacion y analisis de negocio. Te comparto mi portafolio: https://JuanPa7799.github.io/juanpablo-data-portfolio-/
+Hola, soy Juan Pablo Garcia Chavez. Tengo formacion en ingenieria y un portafolio de analisis de datos con proyectos de KPIs, retencion, pricing y decision analytics. Me interesa la vacante de Data Analyst Jr porque combina SQL, visualizacion y analisis de negocio. Portafolio: https://JuanPa7799.github.io/juanpablo-data-portfolio-/
 
-## Evidencia que debe estar lista
+## Evidencia lista para compartir
 
-- Dashboard Data Analyst publico.
-- CV Data Analyst ES.
-- CV Data Analyst EN.
-- Proyecto OilyGiant curado.
-- Un dashboard BI real o simulacion profesional con datos publicos.
+- Dashboard Data Analyst: `dashboards/data-analyst/`
+- CV ES: `assets/pdf/cv-data-analyst-es.pdf`
+- CV EN: `assets/pdf/cv-data-analyst-en.pdf`
+- Proyecto OilyGiant: `projects/oilygiant-risk-profit/`
+- Proyecto Interconnect: `projects/interconnect-churn/`

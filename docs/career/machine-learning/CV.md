@@ -1,57 +1,52 @@
 # CV Machine Learning Jr
 
-## Objetivo del CV
+## Posicionamiento
 
-Presentarte como candidato con base fuerte en modelos y capacidad de avanzar de notebooks hacia pipelines, APIs, validacion, reproducibilidad y soluciones reutilizables.
+Machine Learning Jr con base en Ingenieria Mecatronica y Maestria en Ingenieria Electronica. Perfil orientado a modelos aplicados, señales, vision computacional, NLP, forecasting, comparacion de modelos y flujos reproducibles.
 
 ## Headline recomendado
 
-Machine Learning Jr | Python | TensorFlow | Scikit-learn | Pipelines | Model Deployment
+Machine Learning Jr | Python | TensorFlow | Scikit-learn | Computer Vision | NLP | Pipelines
 
 ## Resumen profesional ES
 
-Machine Learning Jr con formacion en Ingenieria Mecatronica y Maestria en Ingenieria Electronica. Experiencia en clasificacion, vision computacional, NLP, forecasting y modelos aplicados a ingenieria. Enfocado en construir soluciones reproducibles con Python, scikit-learn, TensorFlow y buenas practicas para acercar modelos a entornos reutilizables.
+Machine Learning Jr con formacion en ingenieria y proyectos aplicados de clasificacion, vision computacional, NLP, forecasting y señales electricas. Trabajo con Python, scikit-learn, TensorFlow, Keras y LightGBM, cuidando validacion, reproducibilidad y trade-offs entre calidad predictiva, velocidad y complejidad.
 
 ## Professional summary EN
 
-Junior Machine Learning practitioner with a background in Mechatronics Engineering and a Master's degree in Electronic Engineering. Experienced in classification, computer vision, NLP, forecasting, and engineering-focused ML projects. Focused on building reproducible solutions with Python, scikit-learn, TensorFlow, and practical steps toward reusable model workflows.
+Junior Machine Learning practitioner with an engineering background and applied projects in classification, computer vision, NLP, forecasting, and electrical signals. I work with Python, scikit-learn, TensorFlow, Keras, and LightGBM, focusing on validation, reproducibility, and trade-offs between predictive quality, speed, and complexity.
 
-## Bloques que deben ir arriba
+## CVs finales
 
-1. Python, scikit-learn, TensorFlow/Keras.
-2. Pipelines y estructura de proyecto.
-3. Vision, NLP y senales.
-4. Evaluacion de modelos y latencia.
-5. Experiencia embedded/ingenieria como diferenciador.
+- Web ES: `cv/machine-learning/es/`
+- Web EN: `cv/machine-learning/en/`
+- PDF ES: `assets/pdf/cv-machine-learning-es.pdf`
+- PDF EN: `assets/pdf/cv-machine-learning-en.pdf`
 
-## Proyectos destacados
+## Proyectos para el CV
 
-| Proyecto | Mensaje para CV | Evidencia |
-|---|---|---|
-| Calidad de energia | ML aplicado a senales electricas | Precision 96%+, reduccion ~80% |
-| Good Seed Age Vision | Vision computacional con ResNet50 | MAE validacion 7.03 |
-| IMDB Sentiment NLP | Clasificacion de texto con TF-IDF/LogReg/LGBM | F1 objetivo >= 0.85 |
-| Rusty Bargain Pricing | Comparacion calidad/velocidad de modelos | LightGBM RMSE 1776.60 |
-| Sweet Lift Taxi | Pipeline temporal para forecasting | RMSE test 43.21 |
+| Proyecto | Contexto | Tecnologias | Resultado medible | Impacto |
+|---|---|---|---|---|
+| Calidad de energia | Clasificacion de perturbaciones electricas | Python, TensorFlow, scikit-learn, señales | Precision 96%+; optimizacion ~80% | Proyecto estrella que une ingenieria y ML |
+| Good Seed Age Vision | Estimacion de edad desde imagenes | TensorFlow, Keras, ResNet50 | MAE validacion 7.03 | Vision con criterio responsable |
+| IMDB Sentiment NLP | Clasificacion de reseñas | TF-IDF, Logistic Regression, LightGBM | F1 >= 0.85 | NLP eficiente y explicable |
+| Rusty Bargain Pricing | Comparacion calidad/velocidad | LightGBM, Random Forest | LightGBM RMSE 1776.60 | Seleccion por precision y latencia |
+| Sweet Lift Taxi | Forecasting temporal | pandas, lags, Random Forest | RMSE test 43.21 | Pipeline temporal reproducible |
 
-## Ajustes sobre el CV base
+## Links publicos
 
-- No prometer deployment si aun no hay API publica.
-- Mostrar pipeline, reproducibilidad y calidad/latencia como intencion tecnica.
-- Incluir investigacion de perturbaciones electricas como proyecto estrella.
-- Agregar proyectos de vision y NLP con metricas claras.
-- Preparar versiones ES/EN con el mismo contenido, no traducciones improvisadas.
+- Dashboard: `dashboards/machine-learning/`
+- CV web ES: `cv/machine-learning/es/`
+- CV web EN: `cv/machine-learning/en/`
+- Calidad de energia: `projects/calidad-energia/`
+- Good Seed: `projects/good-seed-age-vision/`
+- IMDB NLP: `projects/imdb-sentiment-nlp/`
+- Rusty Bargain: `projects/rusty-bargain-car-pricing/`
+- Taxi Forecasting: `projects/sweet-lift-taxi-forecasting/`
 
-## Frases de impacto para bullets
+## Enfoque para reclutadores
 
-- Implementacion y comparacion de modelos con scikit-learn, LightGBM y TensorFlow.
-- Construccion de flujos reproducibles para entrenamiento, validacion y evaluacion.
-- Analisis de trade-offs entre calidad predictiva, velocidad y complejidad.
-- Aplicacion de ML a senales, texto, imagenes y series temporales.
-
-## Lo que no debe decir
-
-- No decir MLOps avanzado hasta tener Docker/API/CI evidenciados.
-- No decir deployment productivo si solo existe prototipo.
-- No listar demasiadas librerias sin proyecto asociado.
-- No publicar pesos de modelos o datasets pesados.
+- Priorizar ML aplicado con metricas verificables.
+- Mostrar deployment/pipelines como direccion tecnica, no como experiencia productiva senior.
+- Usar calidad de energia como diferenciador principal.
+- No publicar pesos de modelos, datasets pesados, rostros de datasets ni informacion sensible.

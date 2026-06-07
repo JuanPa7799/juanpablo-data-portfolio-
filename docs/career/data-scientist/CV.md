@@ -1,57 +1,52 @@
 # CV Data Scientist Jr
 
-## Objetivo del CV
+## Posicionamiento
 
-Presentarte como candidato capaz de construir proyectos de ciencia de datos de punta a punta: entendimiento del problema, preparacion de datos, modelado, evaluacion, interpretacion y comunicacion.
+Data Scientist Jr con formacion en Ingenieria Mecatronica y Maestria en Ingenieria Electronica. Perfil enfocado en proyectos end-to-end con Python, pandas, scikit-learn, SQL, feature engineering, validacion de modelos y comunicacion de resultados.
 
 ## Headline recomendado
 
-Data Scientist Jr | Python | Machine Learning | Modelado Predictivo | SQL | Estadistica
+Data Scientist Jr | Python | Machine Learning | SQL | Modelado Predictivo | Estadistica
 
 ## Resumen profesional ES
 
-Data Scientist Jr con formacion en Ingenieria Mecatronica y Maestria en Ingenieria Electronica. Experiencia en proyectos de machine learning, analisis predictivo, series temporales, clasificacion, regresion y evaluacion de modelos. Enfocado en resolver problemas reales con Python, estadistica, interpretacion de metricas y comunicacion clara de resultados.
+Data Scientist Jr con base en ingenieria y experiencia academica aplicada en churn, forecasting, regresion industrial, decision analytics y clasificacion de senales. Construyo flujos de ciencia de datos desde integracion y EDA hasta evaluacion de modelos con metricas como AUC-ROC, F1, RMSE y sMAPE.
 
 ## Professional summary EN
 
-Junior Data Scientist with a background in Mechatronics Engineering and a Master's degree in Electronic Engineering. Experienced in machine learning projects, predictive analytics, time series, classification, regression, and model evaluation. Focused on solving real-world problems with Python, statistics, metric interpretation, and clear communication of results.
+Junior Data Scientist with an engineering background and applied academic experience in churn, forecasting, industrial regression, decision analytics, and signal classification. I build data science workflows from integration and EDA to model evaluation using metrics such as ROC-AUC, F1, RMSE, and sMAPE.
 
-## Bloques que deben ir arriba
+## CVs finales
 
-1. Python, pandas, scikit-learn y SQL.
-2. Modelos y metricas.
-3. Proyectos end-to-end.
-4. Estadistica y validacion.
-5. Investigacion aplicada a perturbaciones electricas como diferenciador.
+- Web ES: `cv/data-scientist/es/`
+- Web EN: `cv/data-scientist/en/`
+- PDF ES: `assets/pdf/cv-data-scientist-es.pdf`
+- PDF EN: `assets/pdf/cv-data-scientist-en.pdf`
 
-## Proyectos destacados
+## Proyectos para el CV
 
-| Proyecto | Mensaje para CV | Evidencia |
-|---|---|---|
-| Interconnect Churn | Modelo predictivo de cancelacion de clientes | GradientBoostingClassifier, AUC-ROC 0.8963 |
-| Bank Churn Balanced | Clasificacion con clases desbalanceadas | F1 test 0.6365, AUC-ROC 0.865 |
-| Gold Recovery Zyfra | Regresion industrial con metrica sMAPE | sMAPE total 8.49% |
-| Sweet Lift Taxi | Forecasting de demanda operacional | RMSE test 43.21 |
-| Calidad de energia | Clasificacion de perturbaciones electricas | Precision 96%+ |
+| Proyecto | Contexto | Tecnologias | Resultado medible | Impacto |
+|---|---|---|---|---|
+| Interconnect Churn | Retencion en telecomunicaciones | Python, pandas, scikit-learn, GradientBoostingClassifier | AUC-ROC 0.8963; accuracy 0.8538 | Pipeline end-to-end para priorizar clientes |
+| Bank Churn Balanced | Clases desbalanceadas en banca | Python, scikit-learn, Random Forest, balanceo | F1 0.6365; AUC-ROC 0.865 | Metrica alineada con clientes en riesgo |
+| Gold Recovery Zyfra | Regresion industrial sin fuga de informacion | Python, pandas, scikit-learn, regresion | sMAPE total 8.49%; EAM 0.0000 | Validacion tecnica para proceso industrial |
+| Sweet Lift Taxi | Forecasting de demanda horaria | Python, pandas, lags, Random Forest | RMSE test 43.21 | Objetivo operacional cumplido |
+| Calidad de energia | Clasificacion de senales electricas | Python, TensorFlow, scikit-learn | Precision 96%+ | Diferenciador tecnico de ingenieria + ML |
 
-## Ajustes sobre el CV base
+## Links publicos
 
-- Subir proyectos con metricas concretas.
-- Usar bullets con problema, metodo y resultado.
-- Mover TripleTen a Educacion/Certificaciones.
-- Evitar saturar el resumen con demasiadas herramientas.
-- Agregar links directos al dashboard Data Scientist y proyectos.
+- Dashboard: `dashboards/data-scientist/`
+- CV web ES: `cv/data-scientist/es/`
+- CV web EN: `cv/data-scientist/en/`
+- Interconnect: `projects/interconnect-churn/`
+- Bank Churn: `projects/bank-churn-balanced/`
+- Gold Recovery: `projects/gold-recovery-zyfra/`
+- Taxi Forecasting: `projects/sweet-lift-taxi-forecasting/`
+- Calidad de energia: `projects/calidad-energia/`
 
-## Frases de impacto para bullets
+## Enfoque para reclutadores
 
-- Desarrollo de modelos predictivos con validacion de metricas como AUC-ROC, F1, RMSE y sMAPE.
-- Integracion, limpieza y analisis exploratorio de datos para construir datasets modelables.
-- Comparacion de modelos baseline y ensembles para seleccionar soluciones con mejor desempeno.
-- Comunicacion de resultados, limitaciones y siguientes pasos en reportes tecnicos.
-
-## Lo que no debe decir
-
-- No decir "experto en IA".
-- No prometer produccion/MLOps si la evidencia principal es notebook.
-- No usar metricas sin fuente verificada.
-- No incluir notebooks crudos o rutas locales como enlaces publicos.
+- Priorizar proyectos end-to-end y metricas verificables.
+- Mantener lenguaje junior honesto: aplicado, academico y de portafolio.
+- Evitar prometer MLOps productivo si la evidencia principal sigue siendo notebooks/prototipos.
+- No publicar telefono ni datos personales sensibles.

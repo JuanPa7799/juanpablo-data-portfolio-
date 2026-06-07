@@ -267,7 +267,7 @@ Uso diario:
 
 ## Fase 8 - LinkedIn
 
-Estado: pendiente.
+Estado: listo para actualizar cuando GitHub Pages este activo.
 
 Cambios:
 
@@ -290,7 +290,12 @@ Data Scientist Jr | Machine Learning | Python | SQL | Modelado Predictivo | Inge
 Antes de activar GitHub Pages:
 
 ```powershell
-git status --short
+git status --short --branch
+node --check script.js
+node --check role-dashboard.js
+node --check project-detail.js
+node --check cv/cv-page.js
+git diff --check
 git ls-files | Select-String -Pattern '\.pem$|\.env$|\.csv$|\.ipynb$|EXAMPLES|private'
 rg -n "C:\\Users|C:/Users|TOKEN|API_KEY|password|contrase|secret|private_key|OpenC1|gcloud" --glob '!EXAMPLES/**' .
 ```
@@ -309,29 +314,18 @@ Tambien probar:
 
 ## Orden inmediato de trabajo
 
-1. Revisar visualmente Home y dashboards por rol.
-2. Ajustar copy fino si algo se siente generico.
-3. Crear CVs por rol en markdown.
-4. Convertir CVs a PDF.
-5. Linkear PDFs correctos.
-6. Mejorar paginas de proyectos prioritarios.
-7. Crear sistema privado diario.
-8. Publicar en GitHub Pages.
+1. Activar GitHub Pages desde `main` y `/(root)`.
+2. Revisar visualmente Home, dashboards, proyectos y CVs en desktop y movil.
+3. Actualizar LinkedIn con el link principal del portafolio.
+4. Reemplazar PDFs en `assets/pdf/` si llegan nuevas versiones aprobadas.
+5. Mantener `EXAMPLES/` y `private/` fuera del repo publico.
 
-## Que necesito de ti
+## Decision actual
 
-Para avanzar sin inventar:
+El portafolio se publica con email, GitHub, LinkedIn y Upwork. No se publica telefono.
 
-1. Confirmar si puedo usar solo email publico o tambien telefono en CVs.
-2. Confirmar si quieres CVs mas sobrios o mas visuales.
-3. Pasarme material publico de `calidad-energia` si quieres mejorar esa pagina con mas detalle.
-4. Decirme si prefieres que primero terminemos Data Scientist o que avancemos los tres dashboards en paralelo.
+Las tres rutas salen en paralelo:
 
-## Decision recomendada
-
-Primero cerrar Data Scientist Jr porque es la ruta central.
-
-Despues adaptar hacia:
-
-- Data Analyst Jr para vacantes mas accesibles de entrada;
-- Machine Learning Jr para roles mas tecnicos y proyectos de mayor diferenciacion.
+- Data Analyst Jr para vacantes de entrada orientadas a negocio y reporting;
+- Data Scientist Jr como ruta central de ciencia de datos;
+- Machine Learning Jr como ruta tecnica diferenciada por senales, vision, NLP y forecasting.

@@ -1,10 +1,9 @@
 # CVs publicos del portafolio
 
-Esta carpeta contiene PDFs publicos revisados. Por seguridad, no se agregan CVs por rol hasta que esten aprobados.
+Esta carpeta contiene PDFs publicos revisados para descarga desde el sitio.
 
-## PDFs activos
+## PDFs activos por rol
 
-- `Portafolio_de_evidencias_V2.pdf`: PDF publico actual usado como fallback.
 - `cv-data-analyst-es.pdf`
 - `cv-data-analyst-en.pdf`
 - `cv-data-scientist-es.pdf`
@@ -12,4 +11,12 @@ Esta carpeta contiene PDFs publicos revisados. Por seguridad, no se agregan CVs 
 - `cv-machine-learning-es.pdf`
 - `cv-machine-learning-en.pdf`
 
-No publicar telefono ni datos personales adicionales hasta confirmacion explicita.
+## PDF historico
+
+- `Portafolio_de_evidencias_V2.pdf`: portafolio de evidencias inicial, conservado como documento complementario.
+
+## Fuentes editables
+
+Los Markdown fuente viven en `docs/cv/`. Para reemplazar un PDF manualmente, conservar exactamente el mismo nombre de archivo en esta carpeta.
+
+No publicar telefono, datos personales adicionales, documentos privados ni versiones sin revision final.

@@ -1,71 +1,61 @@
-# Checklist de aprobacion antes de HTML
+# Checklist de publicacion
 
-Este checklist evita construir paginas bonitas sobre contenido que todavia no esta aprobado.
+Este checklist se usa antes de activar o actualizar GitHub Pages.
 
-## Contenido
+## Contenido publico
 
-- [ ] Aprobar headline principal.
-- [ ] Aprobar resumen profesional en espanol.
-- [ ] Aprobar resumen profesional en ingles.
-- [ ] Aprobar los tres enfoques:
-  - Data Analyst Jr.
-  - Data Scientist Jr.
-  - Machine Learning Jr.
-- [ ] Aprobar proyectos por rol.
-- [ ] Aprobar metricas publicas.
-- [ ] Confirmar si se publican notebooks limpios o solo paginas curadas.
-- [ ] Confirmar si se publican CVs con email solamente o tambien telefono.
-
-## Visual
-
-- [ ] Aprobar paleta azul profundo, azul rey, morado y cyan.
-- [ ] Aprobar estilo dashboard.
-- [ ] Aprobar botones de idioma ES/EN.
-- [ ] Aprobar navegacion principal.
-- [ ] Aprobar que LinkedIn apunte al home principal.
+- [x] Home principal creada.
+- [x] Tres dashboards por rol creados.
+- [x] Proyectos por rol definidos.
+- [x] Metricas publicas verificadas.
+- [x] Foto de perfil agregada.
+- [x] Contacto publico: GitHub, LinkedIn, Upwork y email.
+- [x] Sin telefono publico.
 
 ## CVs
 
-- [ ] CV Data Analyst ES.
-- [ ] CV Data Analyst EN.
-- [ ] CV Data Scientist ES.
-- [ ] CV Data Scientist EN.
-- [ ] CV Machine Learning ES.
-- [ ] CV Machine Learning EN.
-- [ ] Corregir caracteres raros.
-- [ ] Quitar bullets vacios.
-- [ ] Quitar tecnologias duplicadas.
-- [ ] Mover TripleTen a Educacion/Certificaciones.
-- [ ] Agregar links directos a portafolio/proyectos.
+- [x] CV Data Analyst ES.
+- [x] CV Data Analyst EN.
+- [x] CV Data Scientist ES.
+- [x] CV Data Scientist EN.
+- [x] CV Machine Learning ES.
+- [x] CV Machine Learning EN.
+- [x] Paginas web de CV por rol e idioma.
+- [x] PDFs descargables por rol e idioma.
+- [x] Proyectos redactados con contexto, tecnologias, resultado medible e impacto.
 
 ## Seguridad
 
-- [ ] `EXAMPLES/` ignorado.
-- [ ] `private/` ignorado.
-- [ ] Sin `.pem`.
-- [ ] Sin `.env`.
-- [ ] Sin JSON de credenciales.
-- [ ] Sin datasets completos.
-- [ ] Sin rutas locales.
-- [ ] Sin notebooks crudos.
-- [ ] Sin documentos privados de feedback sin curar.
+- [x] `EXAMPLES/` ignorado.
+- [x] `private/` ignorado.
+- [x] Sin `.pem`.
+- [x] Sin `.env`.
+- [x] Sin JSON de credenciales.
+- [x] Sin datasets completos.
+- [x] Sin rutas locales.
+- [x] Sin notebooks crudos.
+- [x] Sin documentos privados de feedback sin curar.
 
 ## Comandos de revision
 
 ```powershell
-git status --short
+git status --short --branch
+node --check script.js
+node --check role-dashboard.js
+node --check project-detail.js
+node --check cv/cv-page.js
+git diff --check
 git ls-files | Select-String -Pattern '\.pem$|\.env$|\.csv$|\.ipynb$|EXAMPLES|private'
 rg -n "C:\\Users|C:/Users|TOKEN|API_KEY|password|contrase|secret|private_key|OpenC1|gcloud" --glob '!EXAMPLES/**' .
 ```
 
-## Salida esperada
+## Publicacion GitHub Pages
 
-Cuando este checklist este aprobado, se puede pasar a:
-
-1. crear `dashboards/data-analyst/index.html` - primera version creada;
-2. crear `dashboards/data-scientist/index.html` - primera version creada;
-3. crear `dashboards/machine-learning/index.html` - primera version creada;
-4. implementar selector ES/EN - primera version creada en Home y dashboards por rol;
-5. enlazar CVs finales - estructura preparada, PDFs finales pendientes;
-6. probar localmente - pendiente de revision visual;
-7. publicar en GitHub Pages - pendiente.
+1. Abrir `https://github.com/JuanPa7799/juanpablo-data-portfolio-`.
+2. Entrar a `Settings`.
+3. Entrar a `Pages`.
+4. Elegir `Deploy from a branch`.
+5. Seleccionar branch `main`.
+6. Seleccionar folder `/(root)`.
+7. Guardar y esperar el build.
+8. Revisar `https://JuanPa7799.github.io/juanpablo-data-portfolio-/`.

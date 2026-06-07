@@ -1,53 +1,39 @@
 # Dashboard Data Scientist Jr
 
-## Proposito
+## Ruta publica
 
-Mostrar que puedes resolver problemas de datos de punta a punta y defender tecnicamente tus decisiones de modelado.
+- Local: `dashboards/data-scientist/`
+- GitHub Pages: `https://JuanPa7799.github.io/juanpablo-data-portfolio-/dashboards/data-scientist/`
 
-## URL futura
+## Objetivo
 
-`dashboards/data-scientist/`
+Mostrar proyectos de ciencia de datos de punta a punta: problema, datos, EDA, feature engineering, modelos, validacion, metricas y comunicacion de impacto.
 
-## Estructura propuesta
+## Contenido visible
 
-1. Hero con posicionamiento Data Scientist Jr.
-2. Panel de metricas:
-   - mejor AUC-ROC;
-   - mejor F1;
-   - mejor RMSE;
-   - proyectos end-to-end.
-3. Ranking de proyectos por tipo de problema:
-   - clasificacion;
-   - regresion;
-   - forecasting;
-   - decision analytics.
-4. Project cards con:
-   - problema;
-   - dataset;
-   - metodologia;
-   - metrica;
-   - limitaciones;
-   - siguiente mejora.
-5. CTA:
-   - CV Data Scientist ES;
-   - Data Scientist CV EN;
-   - GitHub;
-   - LinkedIn.
+- Hero con foto profesional, rol Data Scientist Jr y botones a CV, LinkedIn, Upwork y email.
+- KPIs: proyectos end-to-end, mejor AUC, F1 test y sMAPE.
+- Proyectos principales:
+  - Interconnect Churn.
+  - Bank Churn Balanced.
+  - Gold Recovery Zyfra.
+  - Sweet Lift Taxi Forecasting.
+  - OilyGiant Risk & Profit.
+- Stack: Python, pandas, scikit-learn, SQL, estadistica y feature engineering.
+- Fortalezas de la ruta: integracion de datos, validacion de modelos, lectura critica de metricas e impacto de negocio.
 
-## Interacciones
+## Links clave
 
-- Filtro por tipo de modelo.
-- Comparador de metricas.
-- Barras de desempeno.
-- Mini timeline del flujo: datos -> EDA -> modelo -> evaluacion -> recomendacion.
-- Boton ES/EN visible.
+- CV ES: `cv/data-scientist/es/`
+- CV EN: `cv/data-scientist/en/`
+- PDF ES: `assets/pdf/cv-data-scientist-es.pdf`
+- PDF EN: `assets/pdf/cv-data-scientist-en.pdf`
+- Home: `index.html`
 
-## Copy base
+## Copy recomendado
 
 Construyo modelos predictivos con una lectura completa del problema: datos, supuestos, validacion, metricas y comunicacion. Mi objetivo es que cada modelo sea tecnicamente defendible y util para tomar decisiones.
 
-## Proyectos faltantes para fortalecer la ruta
+## Siguiente mejora privada
 
-1. Proyecto SQL + ML con datos publicos.
-2. Caso de experimentacion/A-B testing.
-3. Proyecto con interpretabilidad SHAP o permutation importance.
+Agregar un caso de interpretabilidad con SHAP o permutation importance y un proyecto SQL + ML. Esto queda como backlog interno, no como texto visible en la web publica.

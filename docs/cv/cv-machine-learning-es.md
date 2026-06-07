@@ -8,11 +8,11 @@ fontsize: 10pt
 
 **Machine Learning Jr | Python | TensorFlow | Scikit-learn | Pipelines**
 
-GitHub: <https://github.com/JuanPa7799>  
-LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>  
-Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>\
-Email: <juanpablogarciachavez7799@gmail.com>  
-Portafolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
+- GitHub: <https://github.com/JuanPa7799>
+- LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>
+- Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>
+- Email: <juanpablogarciachavez7799@gmail.com>
+- Portafolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
 
 ## Perfil
 
@@ -64,4 +64,7 @@ Machine Learning Jr con base en Ingenieria Mecatronica y Maestria en Ingenieria 
 ## Enlaces
 
 - Dashboard Machine Learning: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/dashboards/machine-learning/>
+- CV web Machine Learning ES: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/cv/machine-learning/es/>
+- Proyecto Calidad de energia: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/projects/calidad-energia/>
+- Proyecto Vision: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/projects/good-seed-age-vision/>
 - Portafolio general: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>

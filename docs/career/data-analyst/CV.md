@@ -1,57 +1,50 @@
 # CV Data Analyst Jr
 
-## Objetivo del CV
+## Posicionamiento
 
-Presentarte como candidato capaz de convertir datos en decisiones: SQL, dashboards, KPIs, analisis exploratorio, comunicacion ejecutiva y automatizacion basica con Python.
+Data Analyst Jr con base en Ingenieria Mecatronica y Maestria en Ingenieria Electronica. Perfil orientado a SQL, Python, KPIs, limpieza de datos, analisis de negocio, visualizacion y comunicacion clara de resultados.
 
 ## Headline recomendado
 
-Data Analyst Jr | SQL | Power BI | Python | KPIs | Storytelling con datos
+Data Analyst Jr | SQL | Python | KPIs | Business Analytics | Storytelling con datos
 
 ## Resumen profesional ES
 
-Data Analyst Jr con formacion en Ingenieria Mecatronica y Maestria en Ingenieria Electronica. Experiencia academica y aplicada en analisis de datos, Python, SQL, visualizacion y modelos predictivos. Enfocado en transformar datos en indicadores accionables, dashboards claros y recomendaciones para negocio.
+Data Analyst Jr con formacion en ingenieria y proyectos aplicados de analisis, decision analytics y modelado predictivo. Trabajo con Python, SQL, pandas, KPIs y visualizacion para transformar datos en recomendaciones accionables. Mi diferencial es comunicar hallazgos tecnicos con enfoque de negocio.
 
 ## Professional summary EN
 
-Junior Data Analyst with a background in Mechatronics Engineering and a Master's degree in Electronic Engineering. Experienced in data analysis, Python, SQL, visualization, and predictive modeling through applied academic and portfolio projects. Focused on turning data into actionable KPIs, clear dashboards, and business recommendations.
+Junior Data Analyst with an engineering background and applied projects in analytics, decision analytics, and predictive modeling. I work with Python, SQL, pandas, KPIs, and visualization to turn data into actionable recommendations. My differentiator is communicating technical findings with a business-oriented lens.
 
-## Bloques que deben ir arriba
+## CVs finales
 
-1. SQL y consultas.
-2. Dashboards y KPIs.
-3. Python para limpieza y automatizacion.
-4. Comunicacion de insights.
-5. Proyectos con impacto de negocio.
+- Web ES: `cv/data-analyst/es/`
+- Web EN: `cv/data-analyst/en/`
+- PDF ES: `assets/pdf/cv-data-analyst-es.pdf`
+- PDF EN: `assets/pdf/cv-data-analyst-en.pdf`
 
-## Proyectos destacados
+## Proyectos para el CV
 
-| Proyecto | Mensaje para CV | Evidencia |
-|---|---|---|
-| OilyGiant Risk & Profit | Seleccion de region con beneficio esperado y control de riesgo | Beneficio promedio 4.52M USD, riesgo 1.5% |
-| Interconnect Churn | Analisis predictivo para retencion de clientes | AUC-ROC 0.8963, accuracy 0.8538 |
-| Rusty Bargain Pricing | Comparacion de calidad y velocidad de modelos para pricing | LightGBM RMSE 1776.60 |
-| Megaline Plan Recommendation | Recomendacion de planes usando comportamiento de usuarios | Accuracy test 0.8149 |
+| Proyecto | Contexto | Tecnologias | Resultado medible | Impacto |
+|---|---|---|---|---|
+| OilyGiant Risk & Profit | Seleccion regional bajo incertidumbre | Python, pandas, regresion lineal, bootstrap | Beneficio 4.52M USD; riesgo 1.5% | Recomendacion de inversion con riesgo controlado |
+| Interconnect Churn | Priorizacion de clientes en riesgo | Python, pandas, scikit-learn, Gradient Boosting | AUC-ROC 0.8963; accuracy 0.8538 | Foco comercial para retencion |
+| Rusty Bargain Pricing | Estimacion de precio de autos usados | Python, LightGBM, Random Forest | LightGBM RMSE 1776.60 | Decision entre precision y velocidad |
+| Megaline Plan Recommendation | Recomendacion Smart/Ultra | Python, scikit-learn, Random Forest | Accuracy 0.8149 vs baseline 0.6967 | Recomendacion comercial basada en comportamiento |
 
-## Ajustes sobre el CV base
+## Links publicos
 
-- Mover TripleTen a Educacion, Certificaciones o Proyectos.
-- Corregir caracteres raros y bullets vacios.
-- Quitar tecnologias duplicadas.
-- Priorizar SQL, BI, Excel, Python y KPIs.
-- Dejar Machine Learning como diferencial, no como foco principal.
-- Agregar links directos al dashboard publico y proyectos curados.
+- Dashboard: `dashboards/data-analyst/`
+- CV web ES: `cv/data-analyst/es/`
+- CV web EN: `cv/data-analyst/en/`
+- OilyGiant: `projects/oilygiant-risk-profit/`
+- Interconnect: `projects/interconnect-churn/`
+- Rusty Bargain: `projects/rusty-bargain-car-pricing/`
+- Megaline: `projects/megaline-plan-recommendation/`
 
-## Frases de impacto para bullets
+## Enfoque para reclutadores
 
-- Construccion de dashboards y resumenes ejecutivos para comunicar metricas de negocio.
-- Limpieza, integracion y validacion de datos con Python y SQL.
-- Analisis de riesgo, rentabilidad y comportamiento de clientes para apoyar decisiones.
-- Automatizacion de reportes y exploracion de patrones con pandas y visualizaciones.
-
-## Lo que no debe decir
-
-- No presentarte como experto senior.
-- No prometer Power BI avanzado si aun no hay dashboard publico.
-- No mezclar demasiados frameworks de ML en el primer bloque.
-- No incluir telefono o datos personales sensibles en archivos publicos sin revision final.
+- Priorizar SQL, KPIs, negocio y comunicacion.
+- Mostrar ML como diferenciador, no como foco principal.
+- Evitar prometer Power BI avanzado si no se adjunta dashboard real todavia.
+- No publicar telefono ni datos personales sensibles.

@@ -8,11 +8,11 @@ fontsize: 10pt
 
 **Data Analyst Jr | SQL | Python | KPIs | Business Analytics**
 
-GitHub: <https://github.com/JuanPa7799>  
-LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>  
-Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>\
-Email: <juanpablogarciachavez7799@gmail.com>  
-Portafolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
+- GitHub: <https://github.com/JuanPa7799>
+- LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>
+- Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>
+- Email: <juanpablogarciachavez7799@gmail.com>
+- Portafolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
 
 ## Perfil
 
@@ -64,4 +64,7 @@ Data Analyst Jr con formacion en Ingenieria Mecatronica y Maestria en Ingenieria
 ## Enlaces
 
 - Dashboard Data Analyst: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/dashboards/data-analyst/>
+- CV web Data Analyst ES: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/cv/data-analyst/es/>
+- Proyecto OilyGiant: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/projects/oilygiant-risk-profit/>
+- Proyecto Interconnect: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/projects/interconnect-churn/>
 - Portafolio general: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>

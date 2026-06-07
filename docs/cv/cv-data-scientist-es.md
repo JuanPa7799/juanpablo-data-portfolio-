@@ -8,11 +8,11 @@ fontsize: 10pt
 
 **Data Scientist Jr | Python | Machine Learning | SQL | Modelado Predictivo**
 
-GitHub: <https://github.com/JuanPa7799>  
-LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>  
-Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>\
-Email: <juanpablogarciachavez7799@gmail.com>  
-Portafolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
+- GitHub: <https://github.com/JuanPa7799>
+- LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>
+- Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>
+- Email: <juanpablogarciachavez7799@gmail.com>
+- Portafolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
 
 ## Perfil
 
@@ -64,4 +64,7 @@ Data Scientist Jr con formacion en Ingenieria Mecatronica y Maestria en Ingenier
 ## Enlaces
 
 - Dashboard Data Scientist: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/dashboards/data-scientist/>
+- CV web Data Scientist ES: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/cv/data-scientist/es/>
+- Proyecto Interconnect: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/projects/interconnect-churn/>
+- Proyecto Taxi Forecasting: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/projects/sweet-lift-taxi-forecasting/>
 - Portafolio general: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>

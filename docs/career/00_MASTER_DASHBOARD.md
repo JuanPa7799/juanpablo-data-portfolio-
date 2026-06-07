@@ -1,45 +1,39 @@
 # Master Dashboard del Portafolio
 
-Este archivo define la estructura de trabajo antes de seguir creando HTML. La idea es que LinkedIn apunte a una pagina principal publica y esa pagina redirija a tres rutas profesionales claras.
+Este archivo resume la estructura actual del portafolio publico y la documentacion de carrera asociada.
 
 ## Objetivo
 
-Construir un sistema de portafolio publico, seguro y bilingue para tres roles:
+Mantener un portafolio publico, seguro y bilingue para tres rutas profesionales:
 
-1. Data Analyst Jr
-2. Data Scientist Jr
-3. Machine Learning Jr
+1. Data Analyst Jr.
+2. Data Scientist Jr.
+3. Machine Learning Jr.
 
-Cada ruta debe tener:
+Cada ruta tiene dashboard visual, CV web, PDF descargable, proyectos relevantes y documentos de busqueda laboral.
 
-- roadmap de habilidades y proyectos;
-- plan de busqueda de empleo;
-- CV enfocado al rol, en espanol e ingles;
-- dashboard visual con proyectos relevantes;
-- lista de proyectos actuales y proyectos faltantes;
-- criterio de seguridad para publicar solo material curado.
-
-## Arquitectura publica propuesta
+## Arquitectura publica
 
 ```text
 index.html
-  -> dashboard principal publico
-  -> selector de idioma ES/EN
-  -> rutas por rol
-
 dashboards/data-analyst/
 dashboards/data-scientist/
 dashboards/machine-learning/
-
 projects/
-  -> paginas individuales curadas
+cv/
 assets/pdf/
-  -> CVs publicos finales por rol
 docs/career/
-  -> markdowns de planeacion editables
 ```
 
-## Mapa de documentos actuales
+## Entrada recomendada desde LinkedIn
+
+```text
+https://JuanPa7799.github.io/juanpablo-data-portfolio-/
+```
+
+Ese link permite elegir ruta por rol, revisar proyectos, descargar CVs y contactar por GitHub, LinkedIn, Upwork o email.
+
+## Documentos actuales
 
 - `docs/career/README.md`: indice de trabajo.
 - `docs/career/data-analyst/`: CV, job search y dashboard del rol.
@@ -48,61 +42,38 @@ docs/career/
 - `docs/career/06_LINKEDIN_MASTER_FLOW.md`: ruta desde LinkedIn.
 - `docs/career/07_PUBLIC_SITE_SPEC.md`: especificacion de la experiencia web.
 - `docs/career/08_PROJECTS_BY_ROLE.md`: asignacion de proyectos por dashboard.
-- `docs/career/09_APPROVAL_BEFORE_HTML.md`: checklist antes de codificar HTML.
+- `docs/career/09_APPROVAL_BEFORE_HTML.md`: checklist de publicacion.
 - `docs/career/05_DAILY_SYSTEM.md`: panel diario interno, no publicado como pagina del portafolio.
-
-## Entrada recomendada desde LinkedIn
-
-LinkedIn debe apuntar al dashboard principal:
-
-```text
-https://JuanPa7799.github.io/juanpablo-data-portfolio-/
-```
-
-Ese dashboard debe dejar claro en menos de 10 segundos:
-
-- quien eres;
-- que roles buscas;
-- que proyectos prueban tu capacidad;
-- como contactarte;
-- como cambiar idioma.
-
-## Prioridad de trabajo
-
-1. Cerrar markdowns por rol.
-2. Revisar seguridad de proyectos y archivos.
-3. Definir contenido bilingue de CVs.
-4. Disenar dashboards por rol en markdown.
-5. Convertir markdowns aprobados a HTML.
-6. Linkear proyectos y CVs.
-7. Activar GitHub Pages cuando todo este revisado.
 
 ## Estado actual
 
-- Home publica inicial: creada.
-- Dashboard general de proyectos: creado.
+- Home publica: creada.
+- Dashboards por rol: creados.
 - Paginas individuales de proyectos: creadas con contenido curado.
-- Dashboards HTML por rol: primera version creada.
-- Selector ES/EN: primera version funcional en dashboards por rol.
-- Falta: CVs por rol ES/EN, traduccion completa del home, PDFs finales y activacion de GitHub Pages.
+- Selector ES/EN: funcional en Home, dashboards, proyectos y CVs.
+- CVs por rol ES/EN: creados en Markdown, web y PDF.
+- Imagenes de proyectos: curadas y locales.
+- Pendiente operativo: activar GitHub Pages desde `main` y `/(root)`.
 
 ## Regla de seguridad
 
-No se publica ninguna carpeta completa de trabajo. Solo entra al repo publico:
+Solo entra al repo publico material curado:
 
-- resumen curado;
+- resumenes profesionales;
 - metricas verificadas;
 - imagenes o graficas revisadas;
-- notebooks limpios si no tienen rutas locales ni salidas sensibles;
-- datos de muestra anonimos;
-- CVs finales sin errores de formato.
+- paginas de proyecto limpias;
+- CVs finales sin telefono;
+- documentos de planeacion sin datos sensibles.
 
 No entra:
 
 - `EXAMPLES/`;
+- `private/`;
 - archivos `.pem`;
+- `.env`;
 - credenciales JSON;
-- datasets completos pesados;
+- datasets completos;
 - notebooks crudos;
 - rutas locales;
-- material con feedback privado sin curar.
+- feedback privado sin curar.

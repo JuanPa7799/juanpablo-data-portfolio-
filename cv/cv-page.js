@@ -118,6 +118,35 @@ const contactCopy = {
   }
 };
 
+const cvProjectSlugMap = {
+  "Riesgo y rentabilidad petrolera": "oilygiant-risk-profit",
+  "Oil risk and profitability": "oilygiant-risk-profit",
+  "Interconnect Churn": "interconnect-churn",
+  "Interconnect churn": "interconnect-churn",
+  "Precio de autos usados": "rusty-bargain-car-pricing",
+  "Used car pricing": "rusty-bargain-car-pricing",
+  "Recomendacion de planes moviles": "megaline-plan-recommendation",
+  "Mobile plan recommendation": "megaline-plan-recommendation",
+  "Churn bancario": "bank-churn-balanced",
+  "Bank churn": "bank-churn-balanced",
+  "Recuperacion de oro Zyfra": "gold-recovery-zyfra",
+  "Zyfra gold recovery": "gold-recovery-zyfra",
+  "Forecast de taxi": "sweet-lift-taxi-forecasting",
+  "Taxi forecasting": "sweet-lift-taxi-forecasting",
+  "Clasificacion de perturbaciones electricas": "calidad-energia",
+  "Electrical disturbance classification": "calidad-energia",
+  "Estimacion de edad con vision": "good-seed-age-vision",
+  "Age estimation with vision": "good-seed-age-vision",
+  "Sentimiento IMDB": "imdb-sentiment-nlp",
+  "IMDB sentiment": "imdb-sentiment-nlp"
+};
+
+function cvProjectTitle(title) {
+  const slug = cvProjectSlugMap[title];
+  if (!slug) return title;
+  return `<a href="../../../projects/${slug}/">${title}</a>`;
+}
+
 function renderCv() {
   const role = document.body.dataset.role;
   const lang = document.body.dataset.lang;
@@ -167,7 +196,7 @@ function renderCv() {
         <section class="content-block">
           <h2>${lang === "es" ? "Proyectos destacados" : "Selected projects"}</h2>
           <div class="cv-project-list">
-            ${data.projects.map(([title, text]) => `<article><h3>${title}</h3><p>${text}</p></article>`).join("")}
+            ${data.projects.map(([title, text]) => `<article><h3>${cvProjectTitle(title)}</h3><p>${text}</p></article>`).join("")}
           </div>
         </section>
       </div>

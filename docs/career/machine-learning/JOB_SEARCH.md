@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Conseguir entrevistas en roles junior de ML donde se valore Python, modelos aplicados, pipelines, TensorFlow, scikit-learn y capacidad de productizar progresivamente.
+Conseguir entrevistas en roles junior de ML donde se valore Python, modelos aplicados, TensorFlow, scikit-learn, pipelines y capacidad de productizar progresivamente.
 
 ## Puestos objetivo
 
@@ -15,9 +15,9 @@ Conseguir entrevistas en roles junior de ML donde se valore Python, modelos apli
 
 ## Keywords principales
 
-Python, scikit-learn, TensorFlow, Keras, ML pipeline, feature engineering, model deployment, FastAPI, Docker, REST API, computer vision, NLP, time series, model evaluation.
+Python, scikit-learn, TensorFlow, Keras, LightGBM, ML pipeline, feature engineering, model evaluation, computer vision, NLP, forecasting, signal processing, FastAPI, Docker.
 
-## Empresas y sectores recomendados
+## Sectores recomendados
 
 - Startups de IA.
 - Empresas industriales con automatizacion.
@@ -32,38 +32,25 @@ Python, scikit-learn, TensorFlow, Keras, ML pipeline, feature engineering, model
 |---|---:|
 | Postulaciones ML filtradas | 5 |
 | Mejoras tecnicas a proyectos | 3 |
-| Script/API reutilizable | 1 |
+| Script/pipeline reutilizable | 1 |
 | Practica tecnica ML | 1 |
 | Publicacion tecnica corta | 1 |
 
 ## Filtro antes de aplicar
 
-Aplicar si la vacante menciona al menos tres:
+Aplicar si la vacante menciona al menos tres: Python, scikit-learn, TensorFlow/PyTorch, pipelines, model deployment, computer vision, NLP, feature engineering.
 
-- Python
-- scikit-learn
-- TensorFlow o PyTorch
-- pipelines
-- model deployment
-- computer vision
-- NLP
-- feature engineering
-
-Evitar por ahora si exige:
-
-- Kubernetes avanzado.
-- Infraestructura cloud senior.
-- 5+ anos como ML Engineer.
-- LLM production systems como requisito principal sin aceptar junior.
+Evitar por ahora si exige Kubernetes avanzado, infraestructura cloud senior, 5+ anos como ML Engineer o sistemas LLM productivos como requisito central sin apertura junior.
 
 ## Mensaje corto para reclutador
 
-Hola, soy Juan Pablo Garcia Chavez. Tengo formacion en ingenieria y proyectos de ML aplicados a senales electricas, vision computacional, NLP y forecasting. Estoy fortaleciendo pipelines y despliegue ligero para llevar modelos de notebook a soluciones reutilizables. Portafolio: https://JuanPa7799.github.io/juanpablo-data-portfolio-/
+Hola, soy Juan Pablo Garcia Chavez. Tengo formacion en ingenieria y proyectos de ML aplicados a senales electricas, vision computacional, NLP, pricing y forecasting. Me interesa avanzar hacia soluciones reutilizables con Python, scikit-learn y TensorFlow. Portafolio: https://JuanPa7799.github.io/juanpablo-data-portfolio-/
 
-## Evidencia que debe estar lista
+## Evidencia lista para compartir
 
-- Dashboard Machine Learning publico.
-- CV ML ES.
-- CV ML EN.
-- Proyecto de calidad de energia curado.
-- Al menos una API o pipeline reproducible como siguiente release.
+- Dashboard Machine Learning: `dashboards/machine-learning/`
+- CV ES: `assets/pdf/cv-machine-learning-es.pdf`
+- CV EN: `assets/pdf/cv-machine-learning-en.pdf`
+- Proyecto Calidad de energia: `projects/calidad-energia/`
+- Proyecto Good Seed: `projects/good-seed-age-vision/`
+- Proyecto IMDB NLP: `projects/imdb-sentiment-nlp/`

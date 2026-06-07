@@ -31,11 +31,26 @@ html {
 body {
   margin: 0;
   color: var(--text);
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   line-height: 1.6;
   background:
-    radial-gradient(circle at top left, rgba(59, 130, 246, 0.28), transparent 34rem),
-    radial-gradient(circle at 78% 16%, rgba(139, 92, 246, 0.2), transparent 26rem),
+    radial-gradient(
+      circle at top left,
+      rgba(59, 130, 246, 0.28),
+      transparent 34rem
+    ),
+    radial-gradient(
+      circle at 78% 16%,
+      rgba(139, 92, 246, 0.2),
+      transparent 26rem
+    ),
     linear-gradient(180deg, var(--bg), #07142b 48%, #050c1b);
 }
 
@@ -104,7 +119,11 @@ input {
   border: 1px solid rgba(103, 232, 249, 0.48);
   border-radius: var(--radius);
   color: var(--cyan);
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.28), rgba(139, 92, 246, 0.22));
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.28),
+    rgba(139, 92, 246, 0.22)
+  );
 }
 
 .nav-links {
@@ -267,7 +286,11 @@ h3 {
 .project-dashboard-panel {
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: linear-gradient(180deg, rgba(16, 43, 92, 0.92), rgba(7, 20, 43, 0.92));
+  background: linear-gradient(
+    180deg,
+    rgba(16, 43, 92, 0.92),
+    rgba(7, 20, 43, 0.92)
+  );
   box-shadow: var(--shadow);
 }
 
@@ -348,9 +371,11 @@ h3 {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background:
-    linear-gradient(rgba(255,255,255,0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px);
-  background-size: 100% 25%, 20% 100%;
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size:
+    100% 25%,
+    20% 100%;
 }
 
 .dashboard-chart {
@@ -360,7 +385,12 @@ h3 {
 .chart-bar {
   min-height: 18px;
   border-radius: 6px 6px 0 0;
-  background: linear-gradient(180deg, var(--cyan), var(--blue) 55%, var(--purple));
+  background: linear-gradient(
+    180deg,
+    var(--cyan),
+    var(--blue) 55%,
+    var(--purple)
+  );
   position: relative;
 }
 
@@ -397,10 +427,15 @@ h3 {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 22px;
-  background:
-    linear-gradient(180deg, rgba(21, 54, 111, 0.94), rgba(7, 20, 43, 0.94));
+  background: linear-gradient(
+    180deg,
+    rgba(21, 54, 111, 0.94),
+    rgba(7, 20, 43, 0.94)
+  );
   box-shadow: var(--shadow);
-  transition: transform 180ms ease, border-color 180ms ease;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
 }
 
 .role-entry-card:hover {
@@ -470,7 +505,7 @@ h3 {
   display: block;
   height: 9px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   grid-row: 2;
 }
 
@@ -498,7 +533,9 @@ h3 {
 .project-card {
   overflow: hidden;
   min-height: 100%;
-  transition: transform 180ms ease, border-color 180ms ease;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
 }
 
 .project-card:hover {
@@ -514,7 +551,11 @@ h3 {
   min-height: 174px;
   padding: 18px;
   background:
-    radial-gradient(circle at 18% 10%, rgba(103, 232, 249, 0.22), transparent 12rem),
+    radial-gradient(
+      circle at 18% 10%,
+      rgba(103, 232, 249, 0.22),
+      transparent 12rem
+    ),
     linear-gradient(135deg, rgba(37, 99, 235, 0.26), rgba(139, 92, 246, 0.16));
 }
 
@@ -721,9 +762,14 @@ h3 {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 18px;
-  background:
-    linear-gradient(135deg, rgba(21, 54, 111, 0.7), rgba(255, 255, 255, 0.035));
-  transition: transform 180ms ease, border-color 180ms ease;
+  background: linear-gradient(
+    135deg,
+    rgba(21, 54, 111, 0.7),
+    rgba(255, 255, 255, 0.035)
+  );
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
 }
 
 .role-project-card:hover {
@@ -829,7 +875,11 @@ h3 {
   padding: 18px;
   background:
     linear-gradient(180deg, rgba(21, 54, 111, 0.92), rgba(8, 26, 56, 0.92)),
-    radial-gradient(circle at top right, rgba(103, 232, 249, 0.22), transparent 12rem);
+    radial-gradient(
+      circle at top right,
+      rgba(103, 232, 249, 0.22),
+      transparent 12rem
+    );
   box-shadow: var(--shadow);
 }
 
@@ -1030,7 +1080,7 @@ h3 {
   flex: 1;
   height: 10px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   overflow: hidden;
 }
 
@@ -1153,8 +1203,7 @@ h3 {
 /* Friendly visual refresh inspired by editorial portfolio layouts */
 body {
   color: #172033;
-  background:
-    linear-gradient(180deg, #f6f9ff 0%, #eef5ff 38%, #f9fbff 100%);
+  background: linear-gradient(180deg, #f6f9ff 0%, #eef5ff 38%, #f9fbff 100%);
 }
 
 .site-header {
@@ -1183,7 +1232,12 @@ body {
 .friendly-hero {
   min-height: calc(100vh - 72px);
   background:
-    linear-gradient(90deg, rgba(246, 249, 255, 0.96) 0%, rgba(246, 249, 255, 0.9) 42%, rgba(246, 249, 255, 0.18) 100%),
+    linear-gradient(
+      90deg,
+      rgba(246, 249, 255, 0.96) 0%,
+      rgba(246, 249, 255, 0.9) 42%,
+      rgba(246, 249, 255, 0.18) 100%
+    ),
     url("assets/img/hero-analytics.png") center right / cover no-repeat;
 }
 
@@ -1308,7 +1362,9 @@ body {
   padding: 11px;
   color: #172033;
   background: #f6f9ff;
-  transition: transform 180ms ease, border-color 180ms ease;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
 }
 
 .contact-row:hover {
@@ -1466,9 +1522,15 @@ body {
   background: linear-gradient(90deg, #1d4ed8, #67e8f9);
 }
 
-.model-curve i:nth-child(1) { width: 48%; }
-.model-curve i:nth-child(2) { width: 76%; }
-.model-curve i:nth-child(3) { width: 100%; }
+.model-curve i:nth-child(1) {
+  width: 48%;
+}
+.model-curve i:nth-child(2) {
+  width: 76%;
+}
+.model-curve i:nth-child(3) {
+  width: 100%;
+}
 
 .pipeline-dots {
   display: flex;
@@ -1617,7 +1679,11 @@ body {
 
 .role-page .role-hero {
   background:
-    linear-gradient(90deg, rgba(246, 249, 255, 0.98), rgba(246, 249, 255, 0.86)),
+    linear-gradient(
+      90deg,
+      rgba(246, 249, 255, 0.98),
+      rgba(246, 249, 255, 0.86)
+    ),
     var(--role-image) center right / cover no-repeat;
 }
 
@@ -1648,7 +1714,11 @@ body {
 @media (max-width: 860px) {
   .friendly-hero {
     background:
-      linear-gradient(180deg, rgba(246, 249, 255, 0.96), rgba(246, 249, 255, 0.94)),
+      linear-gradient(
+        180deg,
+        rgba(246, 249, 255, 0.96),
+        rgba(246, 249, 255, 0.94)
+      ),
       url("assets/img/hero-analytics.png") center / cover no-repeat;
   }
 
@@ -1760,7 +1830,11 @@ body {
 .executive-project-hero {
   padding: 6.6rem 0 3.2rem;
   background:
-    radial-gradient(circle at 18% 12%, rgba(37, 99, 235, 0.18), transparent 32%),
+    radial-gradient(
+      circle at 18% 12%,
+      rgba(37, 99, 235, 0.18),
+      transparent 32%
+    ),
     linear-gradient(135deg, #f8fbff 0%, #eef5ff 48%, #ffffff 100%);
   color: #0f172a;
 }
@@ -2116,7 +2190,11 @@ body {
 
 .cv-hero {
   background:
-    radial-gradient(circle at 20% 10%, rgba(37, 99, 235, 0.17), transparent 32%),
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(37, 99, 235, 0.17),
+      transparent 32%
+    ),
     linear-gradient(135deg, #f8fbff, #eef5ff 50%, #ffffff);
 }
 
@@ -2165,6 +2243,15 @@ body {
 
 .cv-project-list h3 {
   margin-bottom: 0.35rem;
+}
+
+.cv-project-list h3 a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.cv-project-list h3 a:hover {
+  text-decoration: underline;
 }
 
 .cv-project-list p {
@@ -2225,8 +2312,16 @@ body {
   gap: 1rem;
   color: #0f172a;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(239, 246, 255, 0.92)),
-    radial-gradient(circle at top right, rgba(37, 99, 235, 0.18), transparent 13rem);
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.94),
+      rgba(239, 246, 255, 0.92)
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(37, 99, 235, 0.18),
+      transparent 13rem
+    );
   border-color: rgba(37, 99, 235, 0.18);
   box-shadow: 0 22px 55px rgba(15, 23, 42, 0.16);
 }
@@ -2417,5 +2512,43 @@ body {
   .cv-page .actions .btn {
     width: 100%;
     justify-content: center;
+  }
+}
+/* Foto principal del hero: circular, grande y estilo dashboard por rol */
+.hero-profile-card .profile-image-wrap {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  padding: 7px;
+  margin: 0 auto 28px auto;
+  background: linear-gradient(135deg, #2454ff, #7c3aed);
+  box-shadow: 0 18px 45px rgba(36, 84, 255, 0.28);
+  overflow: hidden;
+}
+
+.hero-profile-card .profile-image-wrap img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 28%;
+  border: 6px solid #ffffff;
+}
+
+/* Centrar mejor el contenido de la tarjeta principal */
+.hero-profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+/* En celular que no se vea exagerada */
+@media (max-width: 768px) {
+  .hero-profile-card .profile-image-wrap {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 22px;
   }
 }
