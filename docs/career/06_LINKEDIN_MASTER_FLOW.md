@@ -9,7 +9,7 @@ Que cualquier persona que llegue desde LinkedIn pueda elegir rapidamente la ruta
 LinkedIn debe apuntar a:
 
 ```text
-https://JuanPa7799.github.io/juanpablo-data-portfolio-/
+https://juanpa7799.github.io/juanpablo-data-portfolio-/
 ```
 
 Ese link no debe mandar directo a un proyecto aislado. Debe mandar al dashboard principal.

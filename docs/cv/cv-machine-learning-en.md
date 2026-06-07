@@ -12,7 +12,7 @@ fontsize: 10pt
 - LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>
 - Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>
 - Email: <juanpablogarciachavez7799@gmail.com>
-- Portfolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
+- Portfolio: <https://juanpa7799.github.io/juanpablo-data-portfolio-/>
 
 ## Profile
 
@@ -63,8 +63,8 @@ Junior Machine Learning practitioner with a background in Mechatronics Engineeri
 
 ## Links
 
-- Machine Learning dashboard: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/dashboards/machine-learning/>
-- Machine Learning web CV EN: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/cv/machine-learning/en/>
-- Electrical disturbance project: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/projects/calidad-energia/>
-- Computer vision project: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/projects/good-seed-age-vision/>
-- Main portfolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
+- Machine Learning dashboard: <https://juanpa7799.github.io/juanpablo-data-portfolio-/dashboards/machine-learning/>
+- Machine Learning web CV EN: <https://juanpa7799.github.io/juanpablo-data-portfolio-/cv/machine-learning/en/>
+- Electrical disturbance project: <https://juanpa7799.github.io/juanpablo-data-portfolio-/projects/calidad-energia/>
+- Computer vision project: <https://juanpa7799.github.io/juanpablo-data-portfolio-/projects/good-seed-age-vision/>
+- Main portfolio: <https://juanpa7799.github.io/juanpablo-data-portfolio-/>

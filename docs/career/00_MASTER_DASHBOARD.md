@@ -28,7 +28,7 @@ docs/career/
 ## Entrada recomendada desde LinkedIn
 
 ```text
-https://JuanPa7799.github.io/juanpablo-data-portfolio-/
+https://juanpa7799.github.io/juanpablo-data-portfolio-/
 ```
 
 Ese link permite elegir ruta por rol, revisar proyectos, descargar CVs y contactar por GitHub, LinkedIn, Upwork o email.

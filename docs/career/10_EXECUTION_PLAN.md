@@ -83,7 +83,7 @@ Objetivo:
 Que LinkedIn mande a una sola pagina principal:
 
 ```text
-https://JuanPa7799.github.io/juanpablo-data-portfolio-/
+https://juanpa7799.github.io/juanpablo-data-portfolio-/
 ```
 
 Esa pagina debe tener:

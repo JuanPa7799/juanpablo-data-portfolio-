@@ -44,7 +44,7 @@ Evitar por ahora si exige deep learning avanzado como responsabilidad central, M
 
 ## Mensaje corto para reclutador
 
-Hola, soy Juan Pablo Garcia Chavez. Soy Data Scientist Jr con formacion en ingenieria y proyectos aplicados de churn, forecasting, regresion industrial y clasificacion de senales. Me interesa la vacante porque combina Python, modelado predictivo y analisis de negocio. Portafolio: https://JuanPa7799.github.io/juanpablo-data-portfolio-/
+Hola, soy Juan Pablo Garcia Chavez. Soy Data Scientist Jr con formacion en ingenieria y proyectos aplicados de churn, forecasting, regresion industrial y clasificacion de senales. Me interesa la vacante porque combina Python, modelado predictivo y analisis de negocio. Portafolio: https://juanpa7799.github.io/juanpablo-data-portfolio-/
 
 ## Evidencia lista para compartir
 

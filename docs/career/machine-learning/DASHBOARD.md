@@ -3,7 +3,7 @@
 ## Ruta publica
 
 - Local: `dashboards/machine-learning/`
-- GitHub Pages: `https://JuanPa7799.github.io/juanpablo-data-portfolio-/dashboards/machine-learning/`
+- GitHub Pages: `https://juanpa7799.github.io/juanpablo-data-portfolio-/dashboards/machine-learning/`
 
 ## Objetivo
 

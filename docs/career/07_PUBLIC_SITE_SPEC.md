@@ -18,7 +18,7 @@ La pagina principal debe responder rapido:
 ## URL principal
 
 ```text
-https://JuanPa7799.github.io/juanpablo-data-portfolio-/
+https://juanpa7799.github.io/juanpablo-data-portfolio-/
 ```
 
 ## Arquitectura publica propuesta

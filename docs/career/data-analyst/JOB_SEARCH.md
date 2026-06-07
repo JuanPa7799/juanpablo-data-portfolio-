@@ -43,7 +43,7 @@ Evitar por ahora si exige 5+ anos de experiencia, administracion productiva comp
 
 ## Mensaje corto para reclutador
 
-Hola, soy Juan Pablo Garcia Chavez. Tengo formacion en ingenieria y un portafolio de analisis de datos con proyectos de KPIs, retencion, pricing y decision analytics. Me interesa la vacante de Data Analyst Jr porque combina SQL, visualizacion y analisis de negocio. Portafolio: https://JuanPa7799.github.io/juanpablo-data-portfolio-/
+Hola, soy Juan Pablo Garcia Chavez. Tengo formacion en ingenieria y un portafolio de analisis de datos con proyectos de KPIs, retencion, pricing y decision analytics. Me interesa la vacante de Data Analyst Jr porque combina SQL, visualizacion y analisis de negocio. Portafolio: https://juanpa7799.github.io/juanpablo-data-portfolio-/
 
 ## Evidencia lista para compartir
 

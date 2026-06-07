@@ -6,7 +6,7 @@ Portafolio profesional en español e ingles para roles Junior de Data Analyst, D
 
 URL publica esperada al activar GitHub Pages:
 
-https://JuanPa7799.github.io/juanpablo-data-portfolio-/
+https://juanpa7799.github.io/juanpablo-data-portfolio-/
 
 Publicacion recomendada:
 

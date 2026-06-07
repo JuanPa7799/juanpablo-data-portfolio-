@@ -12,7 +12,7 @@ fontsize: 10pt
 - LinkedIn: <https://www.linkedin.com/in/juan-pablo-garcia-chavez/>
 - Upwork: <https://www.upwork.com/freelancers/~01c64dd314ad35adc5>
 - Email: <juanpablogarciachavez7799@gmail.com>
-- Portfolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
+- Portfolio: <https://juanpa7799.github.io/juanpablo-data-portfolio-/>
 
 ## Profile
 
@@ -63,8 +63,8 @@ Junior Data Analyst with a background in Mechatronics Engineering and a Master's
 
 ## Links
 
-- Data Analyst dashboard: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/dashboards/data-analyst/>
-- Data Analyst web CV EN: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/cv/data-analyst/en/>
-- OilyGiant project: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/projects/oilygiant-risk-profit/>
-- Interconnect project: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/projects/interconnect-churn/>
-- Main portfolio: <https://JuanPa7799.github.io/juanpablo-data-portfolio-/>
+- Data Analyst dashboard: <https://juanpa7799.github.io/juanpablo-data-portfolio-/dashboards/data-analyst/>
+- Data Analyst web CV EN: <https://juanpa7799.github.io/juanpablo-data-portfolio-/cv/data-analyst/en/>
+- OilyGiant project: <https://juanpa7799.github.io/juanpablo-data-portfolio-/projects/oilygiant-risk-profit/>
+- Interconnect project: <https://juanpa7799.github.io/juanpablo-data-portfolio-/projects/interconnect-churn/>
+- Main portfolio: <https://juanpa7799.github.io/juanpablo-data-portfolio-/>

@@ -44,7 +44,7 @@ Evitar por ahora si exige Kubernetes avanzado, infraestructura cloud senior, 5+ 
 
 ## Mensaje corto para reclutador
 
-Hola, soy Juan Pablo Garcia Chavez. Tengo formacion en ingenieria y proyectos de ML aplicados a senales electricas, vision computacional, NLP, pricing y forecasting. Me interesa avanzar hacia soluciones reutilizables con Python, scikit-learn y TensorFlow. Portafolio: https://JuanPa7799.github.io/juanpablo-data-portfolio-/
+Hola, soy Juan Pablo Garcia Chavez. Tengo formacion en ingenieria y proyectos de ML aplicados a senales electricas, vision computacional, NLP, pricing y forecasting. Me interesa avanzar hacia soluciones reutilizables con Python, scikit-learn y TensorFlow. Portafolio: https://juanpa7799.github.io/juanpablo-data-portfolio-/
 
 ## Evidencia lista para compartir
 

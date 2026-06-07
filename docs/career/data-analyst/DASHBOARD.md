@@ -3,7 +3,7 @@
 ## Ruta publica
 
 - Local: `dashboards/data-analyst/`
-- GitHub Pages: `https://JuanPa7799.github.io/juanpablo-data-portfolio-/dashboards/data-analyst/`
+- GitHub Pages: `https://juanpa7799.github.io/juanpablo-data-portfolio-/dashboards/data-analyst/`
 
 ## Objetivo
 

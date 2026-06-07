@@ -58,4 +58,4 @@ rg -n "C:\\Users|C:/Users|TOKEN|API_KEY|password|contrase|secret|private_key|Ope
 5. Seleccionar branch `main`.
 6. Seleccionar folder `/(root)`.
 7. Guardar y esperar el build.
-8. Revisar `https://JuanPa7799.github.io/juanpablo-data-portfolio-/`.
+8. Revisar `https://juanpa7799.github.io/juanpablo-data-portfolio-/`.

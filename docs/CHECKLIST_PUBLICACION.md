@@ -12,4 +12,4 @@ Antes de activar o actualizar GitHub Pages:
 - [ ] Probar descarga de `assets/pdf/Portafolio_de_evidencias_V2.pdf`.
 - [ ] Probar links externos a GitHub, LinkedIn y email.
 - [ ] Confirmar que `EXAMPLES/` no este trackeado.
-- [ ] Confirmar que la URL final use guion: `https://JuanPa7799.github.io/juanpablo-data-portfolio-/`.
+- [ ] Confirmar que la URL final use guion: `https://juanpa7799.github.io/juanpablo-data-portfolio-/`.

@@ -3,7 +3,7 @@
 ## Ruta publica
 
 - Local: `dashboards/data-scientist/`
-- GitHub Pages: `https://JuanPa7799.github.io/juanpablo-data-portfolio-/dashboards/data-scientist/`
+- GitHub Pages: `https://juanpa7799.github.io/juanpablo-data-portfolio-/dashboards/data-scientist/`
 
 ## Objetivo
 
