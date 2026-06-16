@@ -4,7 +4,7 @@ const projectDetails = {
     eyebrow: "Proyecto estrella | Machine Learning aplicado a ingenieria",
     lead: "Sistema de clasificacion para senales electricas orientado a diagnostico de calidad de energia. Es el proyecto que mejor conecta mi perfil de ingenieria con ciencia de datos aplicada.",
     context: "Las perturbaciones electricas pueden afectar estabilidad, eficiencia y monitoreo de sistemas energeticos. El objetivo fue convertir senales complejas en informacion accionable mediante modelos de machine learning.",
-    data: "Senales electricas y caracteristicas derivadas para distinguir eventos de calidad de energia. En esta version publica se muestra el resumen curado, no los datos completos.",
+    data: "Senales electricas y caracteristicas derivadas para distinguir eventos de calidad de energia. La version publica muestra el flujo y las metricas confirmadas.",
     stack: ["Python", "NumPy", "Pandas", "Scikit-learn", "TensorFlow", "Procesamiento de senales"],
     metrics: [
       ["Precision reportada", "96%+"],
@@ -548,6 +548,515 @@ const projectEnhancements = {
   }
 };
 
+const projectRecruiterNotes = {
+  "calidad-energia": {
+    problem: {
+      es: "Clasificar perturbaciones electricas a partir de senales para apoyar diagnostico de calidad de energia.",
+      en: "Classify electrical disturbances from signals to support power quality diagnosis."
+    },
+    importance: {
+      es: "En sistemas energeticos, detectar eventos de forma rapida ayuda a reducir tiempos de revision y mejora el monitoreo tecnico.",
+      en: "In energy systems, detecting events quickly helps reduce review time and improves technical monitoring."
+    },
+    dataTarget: {
+      es: "Senales electricas y caracteristicas derivadas; el objetivo es distinguir clases de perturbaciones.",
+      en: "Electrical signals and derived features; the target is the disturbance class."
+    },
+    approach: {
+      es: "Converti senales en variables modelables, compare el flujo baseline contra versiones con mejores caracteristicas y optimice el procesamiento.",
+      en: "I turned signals into model-ready variables, compared the baseline workflow against improved feature sets, and optimized processing."
+    },
+    modeling: {
+      es: "Modelos supervisados con Python, scikit-learn y TensorFlow para evaluar separabilidad entre eventos.",
+      en: "Supervised models with Python, scikit-learn, and TensorFlow to evaluate event separability."
+    },
+    evaluation: {
+      es: "Precision reportada superior al 96% y reduccion aproximada del 80% en procesamiento.",
+      en: "Reported accuracy above 96% and roughly 80% processing reduction."
+    },
+    baseline: {
+      es: "La comparacion principal fue contra el flujo inicial de procesamiento y versiones previas de caracteristicas.",
+      en: "The main comparison was against the initial processing workflow and previous feature versions."
+    },
+    validation: {
+      es: "Validacion experimental sobre el conjunto preparado para el proyecto; las metricas publicas se limitan a resultados confirmados.",
+      en: "Experimental validation on the prepared project dataset; public metrics are limited to confirmed results."
+    },
+    decisions: {
+      es: "Priorice precision y velocidad porque el caso exige diagnostico tecnico util, no solo una metrica alta.",
+      en: "I prioritized accuracy and speed because the case needs useful technical diagnosis, not only a high metric."
+    },
+    limitations: {
+      es: "No se publican los datos completos; el siguiente nivel seria liberar un reporte tecnico reproducible con muestras seguras.",
+      en: "The full data is not public; the next level would be a reproducible technical report with safe samples."
+    },
+    nextStep: {
+      es: "Preparar una version publica del articulo/reporte con ejemplos anonimizados y una matriz de confusion explicada.",
+      en: "Prepare a public article/report version with anonymized examples and an explained confusion matrix."
+    }
+  },
+  "interconnect-churn": {
+    problem: {
+      es: "Identificar clientes con riesgo de cancelacion antes de que abandonen el servicio.",
+      en: "Identify customers at risk of cancellation before they leave the service."
+    },
+    importance: {
+      es: "El modelo ayuda a priorizar acciones de retencion y a enfocar recursos comerciales donde hay mayor riesgo.",
+      en: "The model helps prioritize retention actions and focus commercial resources where risk is higher."
+    },
+    dataTarget: {
+      es: "7043 clientes integrados desde contract, personal, internet y phone; target de churn definido por finalizacion de contrato.",
+      en: "7043 customers merged from contract, personal, internet, and phone; churn target defined from contract end status."
+    },
+    approach: {
+      es: "Integre fuentes, trate nulos, codifique variables y compare modelos con una metrica adecuada para ranking de riesgo.",
+      en: "I merged sources, handled missing values, encoded features, and compared models with a metric suited for risk ranking."
+    },
+    modeling: {
+      es: "Regresion logistica, Random Forest y Gradient Boosting; el modelo final fue GradientBoostingClassifier.",
+      en: "Logistic Regression, Random Forest, and Gradient Boosting; the final model was GradientBoostingClassifier."
+    },
+    evaluation: {
+      es: "AUC-ROC test 0.8963 y accuracy test 0.8538.",
+      en: "Test ROC-AUC 0.8963 and test accuracy 0.8538."
+    },
+    baseline: {
+      es: "Gradient Boosting mejoro la comparacion frente a LogReg (0.8261 AUC) y Random Forest (0.8651 AUC).",
+      en: "Gradient Boosting improved over LogReg (0.8261 AUC) and Random Forest (0.8651 AUC)."
+    },
+    validation: {
+      es: "Evaluacion final en conjunto test despues de preparar el pipeline de integracion y codificacion.",
+      en: "Final evaluation on the test set after preparing the integration and encoding pipeline."
+    },
+    decisions: {
+      es: "Use AUC-ROC como metrica principal porque importa ordenar clientes por riesgo, no solo acertar clases.",
+      en: "I used ROC-AUC as the main metric because ranking customers by risk matters more than only class accuracy."
+    },
+    limitations: {
+      es: "Caso academico sin despliegue; en produccion haria calibracion, monitoreo de drift y analisis de errores por segmento.",
+      en: "Academic case without deployment; in production I would add calibration, drift monitoring, and segment-level error analysis."
+    },
+    nextStep: {
+      es: "Agregar interpretabilidad por variables y una matriz de confusion orientada a decisiones de retencion.",
+      en: "Add feature interpretability and a confusion matrix framed around retention decisions."
+    }
+  },
+  "megaline-plan-recommendation": {
+    problem: {
+      es: "Recomendar el plan Smart o Ultra segun comportamiento mensual de usuarios.",
+      en: "Recommend the Smart or Ultra plan from monthly user behavior."
+    },
+    importance: {
+      es: "Una recomendacion de plan puede mejorar la experiencia del usuario y apoyar migraciones comerciales.",
+      en: "A plan recommendation can improve user experience and support commercial migrations."
+    },
+    dataTarget: {
+      es: "Uso mensual de llamadas, mensajes e internet; target: plan recomendado.",
+      en: "Monthly calls, messages, and internet usage; target: recommended plan."
+    },
+    approach: {
+      es: "Explore variables de comportamiento, dividi datos en train/valid/test y compare modelos simples.",
+      en: "I explored behavioral variables, split data into train/validation/test, and compared simple models."
+    },
+    modeling: {
+      es: "Decision Tree, Random Forest y Logistic Regression; el final fue Random Forest.",
+      en: "Decision Tree, Random Forest, and Logistic Regression; the final model was Random Forest."
+    },
+    evaluation: {
+      es: "Accuracy test 0.8149, por encima del objetivo minimo y de la prueba de cordura.",
+      en: "Test accuracy 0.8149, above the minimum target and sanity check."
+    },
+    baseline: {
+      es: "Baseline dummy 0.6967; Random Forest llego a 0.8149.",
+      en: "Dummy baseline 0.6967; Random Forest reached 0.8149."
+    },
+    validation: {
+      es: "Division train/valid/test para ajustar hiperparametros y evaluar en test final.",
+      en: "Train/validation/test split to tune hyperparameters and evaluate on the final test set."
+    },
+    decisions: {
+      es: "Elegir un modelo interpretable y suficientemente estable fue mas importante que complicar el pipeline.",
+      en: "Choosing a simple and stable model mattered more than overcomplicating the pipeline."
+    },
+    limitations: {
+      es: "El caso no incluye costo de recomendacion ni experimentacion A/B para medir efecto comercial real.",
+      en: "The case does not include recommendation cost or A/B testing to measure real commercial impact."
+    },
+    nextStep: {
+      es: "Probar una matriz de confusion por plan y reglas de negocio para evitar recomendaciones poco rentables.",
+      en: "Add a confusion matrix by plan and business rules to avoid low-value recommendations."
+    }
+  },
+  "bank-churn-balanced": {
+    problem: {
+      es: "Detectar clientes bancarios que probablemente abandonen, aun con clase positiva minoritaria.",
+      en: "Detect bank customers likely to leave, despite the positive class being a minority."
+    },
+    importance: {
+      es: "En retencion, perder clientes de riesgo suele costar mas que contactar de forma preventiva.",
+      en: "In retention, losing at-risk customers usually costs more than proactive outreach."
+    },
+    dataTarget: {
+      es: "10000 registros bancarios; target Exited con abandono cercano al 20%.",
+      en: "10000 banking records; target Exited with churn close to 20%."
+    },
+    approach: {
+      es: "Trate el desbalance, compare modelos y ajuste el umbral para mejorar F1 sin ignorar recall.",
+      en: "I handled imbalance, compared models, and tuned the threshold to improve F1 without ignoring recall."
+    },
+    modeling: {
+      es: "Logistic Regression y Random Forest con estrategias de balanceo; final con Random Forest balanceado.",
+      en: "Logistic Regression and Random Forest with balancing strategies; final balanced Random Forest."
+    },
+    evaluation: {
+      es: "F1 test 0.6365, AUC-ROC 0.865 y recall churn 0.6904.",
+      en: "Test F1 0.6365, ROC-AUC 0.865, and churn recall 0.6904."
+    },
+    baseline: {
+      es: "Se comparo contra dummy y regresion logistica; accuracy sola no era confiable por desbalance.",
+      en: "Compared against dummy and logistic regression; accuracy alone was unreliable because of imbalance."
+    },
+    validation: {
+      es: "Particion estratificada train/valid/test y ajuste de umbral en validacion.",
+      en: "Stratified train/validation/test split and threshold tuning on validation."
+    },
+    decisions: {
+      es: "Priorice F1 y recall porque el negocio necesita encontrar clientes en riesgo, no solo acertar la clase mayoritaria.",
+      en: "I prioritized F1 and recall because the business needs to find at-risk customers, not only predict the majority class."
+    },
+    limitations: {
+      es: "Faltaria calibrar probabilidades y analizar falsos positivos/falsos negativos con costo de negocio.",
+      en: "Probability calibration and business-cost analysis of false positives/negatives would be needed."
+    },
+    nextStep: {
+      es: "Agregar interpretabilidad y una recomendacion de umbral segun presupuesto de retencion.",
+      en: "Add interpretability and a threshold recommendation based on retention budget."
+    }
+  },
+  "oilygiant-risk-profit": {
+    problem: {
+      es: "Elegir una region para abrir 200 pozos sin exceder el riesgo maximo de perdida.",
+      en: "Choose a region for 200 new wells without exceeding the maximum loss risk."
+    },
+    importance: {
+      es: "La decision combina prediccion, inversion y riesgo; una region rentable puede no ser aceptable si el riesgo es alto.",
+      en: "The decision combines prediction, investment, and risk; a profitable region may be unacceptable if risk is high."
+    },
+    dataTarget: {
+      es: "Tres regiones con 100000 puntos cada una; target: volumen de reservas.",
+      en: "Three regions with 100000 points each; target: reserve volume."
+    },
+    approach: {
+      es: "Entrene regresion lineal por region, seleccione top-200 y use bootstrap para estimar beneficio y riesgo.",
+      en: "I trained linear regression by region, selected top-200 wells, and used bootstrap to estimate profit and risk."
+    },
+    modeling: {
+      es: "Regresion lineal por requerimiento del caso y simulacion bootstrap con 1000 muestras.",
+      en: "Linear regression as required by the case and bootstrap simulation with 1000 samples."
+    },
+    evaluation: {
+      es: "region_1: beneficio promedio 4.52M USD y riesgo de perdida 1.5%.",
+      en: "region_1: average profit 4.52M USD and 1.5% loss risk."
+    },
+    baseline: {
+      es: "Criterio de negocio: riesgo de perdida menor a 2.5%; region_1 fue la opcion elegible.",
+      en: "Business criterion: loss risk below 2.5%; region_1 was the eligible option."
+    },
+    validation: {
+      es: "Bootstrap de 1000 muestras para estimar distribucion de beneficio e incertidumbre.",
+      en: "1000-sample bootstrap to estimate the profit distribution and uncertainty."
+    },
+    decisions: {
+      es: "La recomendacion no fue la prediccion maxima aislada, sino la mejor decision ajustada por riesgo.",
+      en: "The recommendation was not the isolated maximum prediction, but the best risk-adjusted decision."
+    },
+    limitations: {
+      es: "Variables anonimizadas y caso academico; un caso real necesitaria costos, restricciones geologicas y sensibilidad.",
+      en: "Anonymized variables and academic case; a real case would require costs, geological constraints, and sensitivity analysis."
+    },
+    nextStep: {
+      es: "Agregar escenarios de costo y sensibilidad para explicar cuando cambiaria la region recomendada.",
+      en: "Add cost and sensitivity scenarios to explain when the recommended region would change."
+    }
+  },
+  "gold-recovery-zyfra": {
+    problem: {
+      es: "Predecir recuperacion de oro sin usar variables que no existen al momento de prediccion.",
+      en: "Predict gold recovery without using variables unavailable at prediction time."
+    },
+    importance: {
+      es: "En procesos industriales, una fuga de informacion produce un modelo inutil aunque la metrica parezca buena.",
+      en: "In industrial processes, leakage creates a useless model even if the metric looks good."
+    },
+    dataTarget: {
+      es: "Datos metalurgicos por etapa; targets de recuperacion rougher y final.",
+      en: "Metallurgical process data by stage; rougher and final recovery targets."
+    },
+    approach: {
+      es: "Compare train/test/full, valide formula oficial, elimine fuga e impute faltantes.",
+      en: "I compared train/test/full, validated the official formula, removed leakage, and imputed missing values."
+    },
+    modeling: {
+      es: "Modelos de regresion evaluados con sMAPE rougher, final y total.",
+      en: "Regression models evaluated with rougher, final, and total sMAPE."
+    },
+    evaluation: {
+      es: "EAM de formula 0.0000 y sMAPE total 8.49%.",
+      en: "Formula MAE 0.0000 and total sMAPE 8.49%."
+    },
+    baseline: {
+      es: "La comparacion clave fue contra la formula oficial y la disponibilidad real de variables en test.",
+      en: "The key comparison was against the official formula and real feature availability in test."
+    },
+    validation: {
+      es: "Evaluacion separada por etapas y test final respetando columnas disponibles.",
+      en: "Stage-level evaluation and final test while respecting available columns."
+    },
+    decisions: {
+      es: "Preferi un modelo metodologicamente valido antes que usar variables filtradas que inflaran resultados.",
+      en: "I preferred a methodologically valid model over leaked variables that would inflate results."
+    },
+    limitations: {
+      es: "No incluye despliegue ni monitoreo de proceso; requiere revision con expertos de planta para produccion.",
+      en: "No deployment or process monitoring is included; production would require plant expert review."
+    },
+    nextStep: {
+      es: "Explicar variables mas importantes por etapa y errores por condiciones de proceso.",
+      en: "Explain the most important variables by stage and errors under process conditions."
+    }
+  },
+  "sure-tomorrow-insurance": {
+    problem: {
+      es: "Resolver similitud de clientes, prediccion de beneficios y proteccion de datos personales.",
+      en: "Solve customer similarity, benefit prediction, and personal data protection."
+    },
+    importance: {
+      es: "Muestra como ML tambien debe considerar privacidad y uso responsable de datos.",
+      en: "Shows how ML must also consider privacy and responsible data use."
+    },
+    dataTarget: {
+      es: "Datos de asegurados: sexo, edad, salario, familiares y beneficios recibidos.",
+      en: "Insurance customer data: sex, age, salary, family members, and received benefits."
+    },
+    approach: {
+      es: "Aplique escalado, distancia, clasificacion, regresion y transformacion matricial.",
+      en: "I applied scaling, distance, classification, regression, and matrix transformation."
+    },
+    modeling: {
+      es: "KNN para similitud, modelos predictivos para beneficios y algebra lineal para ofuscacion.",
+      en: "KNN for similarity, predictive models for benefits, and linear algebra for obfuscation."
+    },
+    evaluation: {
+      es: "Cuatro tareas resueltas; el foco fue conservar utilidad analitica al transformar datos.",
+      en: "Four tasks solved; the focus was preserving analytical utility after transforming data."
+    },
+    baseline: {
+      es: "Comparacion conceptual entre datos originales y transformados para verificar que el modelo mantuviera utilidad.",
+      en: "Conceptual comparison between original and transformed data to verify model utility."
+    },
+    validation: {
+      es: "Pruebas de comportamiento antes y despues del escalado/ofuscacion.",
+      en: "Behavior checks before and after scaling/obfuscation."
+    },
+    decisions: {
+      es: "No reduje el caso a una sola metrica porque el aprendizaje central era matematico y de privacidad.",
+      en: "I did not reduce the case to a single metric because the main learning was mathematical and privacy-oriented."
+    },
+    limitations: {
+      es: "No sustituye una estrategia formal de privacidad; es una demostracion tecnica de transformacion de datos.",
+      en: "It does not replace a formal privacy strategy; it is a technical demonstration of data transformation."
+    },
+    nextStep: {
+      es: "Agregar evaluacion cuantitativa antes/despues y explicar escenarios donde la ofuscacion no basta.",
+      en: "Add quantitative before/after evaluation and explain scenarios where obfuscation is not enough."
+    }
+  },
+  "rusty-bargain-car-pricing": {
+    problem: {
+      es: "Estimar precio de autos usados considerando calidad predictiva y velocidad para una app.",
+      en: "Estimate used-car prices while considering predictive quality and app response speed."
+    },
+    importance: {
+      es: "En producto, el modelo debe predecir bien y responder rapido; el menor error absoluto no siempre gana.",
+      en: "In product, the model must predict well and respond quickly; the smallest absolute error does not always win."
+    },
+    dataTarget: {
+      es: "Historial de autos con caracteristicas tecnicas y target precio.",
+      en: "Used-car history with technical features and price as target."
+    },
+    approach: {
+      es: "Limpie datos, prepare variables y compare error, entrenamiento y prediccion.",
+      en: "I cleaned data, prepared features, and compared error, training time, and prediction time."
+    },
+    modeling: {
+      es: "Regresion lineal como baseline, Random Forest y LightGBM.",
+      en: "Linear Regression as baseline, Random Forest, and LightGBM."
+    },
+    evaluation: {
+      es: "Random Forest RMSE 1747.77; LightGBM RMSE 1776.60 con entrenamiento mucho mas rapido.",
+      en: "Random Forest RMSE 1747.77; LightGBM RMSE 1776.60 with much faster training."
+    },
+    baseline: {
+      es: "Regresion lineal como referencia inicial y comparacion de modelos por RMSE/tiempo.",
+      en: "Linear regression as the initial reference and model comparison by RMSE/time."
+    },
+    validation: {
+      es: "Evaluacion final con particion de prueba y medicion de tiempos de entrenamiento/prediccion.",
+      en: "Final evaluation on a test split and measurement of training/prediction time."
+    },
+    decisions: {
+      es: "LightGBM fue una decision fuerte por balance calidad-velocidad, aunque Random Forest tuvo RMSE menor.",
+      en: "LightGBM was a strong quality-speed decision, even though Random Forest had lower RMSE."
+    },
+    limitations: {
+      es: "Faltaria validar drift de mercado, valores extremos y comportamiento por marca/modelo.",
+      en: "Market drift, outliers, and brand/model-level behavior would still need validation."
+    },
+    nextStep: {
+      es: "Agregar analisis de error por segmento y recomendaciones para umbrales de precio confiable.",
+      en: "Add segment-level error analysis and recommendations for reliable price thresholds."
+    }
+  },
+  "sweet-lift-taxi-forecasting": {
+    problem: {
+      es: "Predecir pedidos de taxi para la siguiente hora en aeropuertos.",
+      en: "Predict taxi orders for the next hour at airports."
+    },
+    importance: {
+      es: "Anticipar demanda ayuda a asignar conductores en horas pico y reducir esperas.",
+      en: "Anticipating demand helps assign drivers during peak hours and reduce waiting times."
+    },
+    dataTarget: {
+      es: "Serie historica remuestreada por hora; target: num_orders de la siguiente hora.",
+      en: "Historical series resampled hourly; target: next-hour num_orders."
+    },
+    approach: {
+      es: "Transforme la serie en problema supervisado con lags, media movil, dia y hora.",
+      en: "I transformed the series into a supervised problem with lags, rolling mean, weekday, and hour."
+    },
+    modeling: {
+      es: "Regresion lineal, Random Forest y Gradient Boosting; final Random Forest.",
+      en: "Linear Regression, Random Forest, and Gradient Boosting; final Random Forest."
+    },
+    evaluation: {
+      es: "RMSE test 43.21, cumpliendo el objetivo operacional de RMSE <= 48.",
+      en: "Test RMSE 43.21, meeting the operational target of RMSE <= 48."
+    },
+    baseline: {
+      es: "Comparacion contra modelos supervisados y criterio de negocio RMSE <= 48.",
+      en: "Comparison against supervised models and the business criterion RMSE <= 48."
+    },
+    validation: {
+      es: "Test cronologico con el 10% final para evitar fuga temporal.",
+      en: "Chronological test using the final 10% to avoid time leakage."
+    },
+    decisions: {
+      es: "Respete el orden temporal; mezclar futuro en train habria dado resultados no confiables.",
+      en: "I respected chronological order; mixing future data into training would make results unreliable."
+    },
+    limitations: {
+      es: "No incluye clima, eventos externos ni calendario operativo que podrian mejorar picos de demanda.",
+      en: "Weather, external events, and operational calendars are not included and could improve peak prediction."
+    },
+    nextStep: {
+      es: "Agregar variables externas y revisar errores en horas pico/extremos.",
+      en: "Add external variables and review errors during peaks/extreme hours."
+    }
+  },
+  "imdb-sentiment-nlp": {
+    problem: {
+      es: "Clasificar resenas IMDB como positivas o negativas para detectar opinion negativa.",
+      en: "Classify IMDB reviews as positive or negative to detect negative sentiment."
+    },
+    importance: {
+      es: "Automatizar sentimiento ayuda a monitorear percepcion y priorizar revision de contenido.",
+      en: "Automated sentiment helps monitor perception and prioritize content review."
+    },
+    dataTarget: {
+      es: "Resenas etiquetadas con sentimiento binario; target: positivo/negativo.",
+      en: "Reviews labeled with binary sentiment; target: positive/negative."
+    },
+    approach: {
+      es: "Limpieza de texto, TF-IDF con n-gramas, comparacion de modelos y pruebas con resenas propias.",
+      en: "Text cleaning, TF-IDF with n-grams, model comparison, and tests with custom reviews."
+    },
+    modeling: {
+      es: "Regresion logistica, LightGBM y prueba controlada con BERT.",
+      en: "Logistic Regression, LightGBM, and a controlled BERT test."
+    },
+    evaluation: {
+      es: "El flujo alcanzo el umbral F1 >= 0.85; TF-IDF + regresion logistica fue el enfoque mas estable.",
+      en: "The workflow reached the F1 >= 0.85 threshold; TF-IDF + Logistic Regression was the most stable approach."
+    },
+    baseline: {
+      es: "Comparacion contra baseline conceptual de clase/azar y modelos mas pesados.",
+      en: "Comparison against a class/random conceptual baseline and heavier models."
+    },
+    validation: {
+      es: "Particion train/test y pruebas adicionales con textos personalizados.",
+      en: "Train/test split and additional checks with custom texts."
+    },
+    decisions: {
+      es: "Preferi una solucion lineal explicable y barata antes de depender de modelos mas pesados.",
+      en: "I preferred an explainable and cheap linear solution before depending on heavier models."
+    },
+    limitations: {
+      es: "El contexto de sarcasmo, dominio y lenguaje fuera de IMDB puede requerir datos adicionales.",
+      en: "Sarcasm, domain shift, and non-IMDB language may require additional data."
+    },
+    nextStep: {
+      es: "Agregar matriz de confusion y analisis de errores por tipo de resena.",
+      en: "Add a confusion matrix and error analysis by review type."
+    }
+  },
+  "good-seed-age-vision": {
+    problem: {
+      es: "Estimar edad desde imagenes para apoyar controles de venta de alcohol.",
+      en: "Estimate age from images to support alcohol-sale controls."
+    },
+    importance: {
+      es: "Es un caso sensible: el modelo puede apoyar, pero no debe reemplazar una decision humana u operativa.",
+      en: "It is a sensitive case: the model can support, but should not replace human or operational decisions."
+    },
+    dataTarget: {
+      es: "7600 fotografias con edad real; target: edad numerica.",
+      en: "7600 photos with real age labels; target: numeric age."
+    },
+    approach: {
+      es: "Analice distribucion de edades, prepare generadores y use transferencia de aprendizaje.",
+      en: "I analyzed age distribution, prepared image generators, and used transfer learning."
+    },
+    modeling: {
+      es: "ResNet50 preentrenada con GlobalAveragePooling2D y capa Dense(1).",
+      en: "Pretrained ResNet50 with GlobalAveragePooling2D and Dense(1)."
+    },
+    evaluation: {
+      es: "MAE de validacion 7.03.",
+      en: "Validation MAE 7.03."
+    },
+    baseline: {
+      es: "Comparacion con entrenamiento inicial por epocas y referencia de error absoluto medio.",
+      en: "Comparison through training epochs and mean absolute error reference."
+    },
+    validation: {
+      es: "Validacion con generadores de imagenes y evaluacion por MAE.",
+      en: "Validation with image generators and MAE evaluation."
+    },
+    decisions: {
+      es: "Reporte MAE y advertencia operativa porque el error tiene consecuencias diferentes cerca de umbrales de edad.",
+      en: "I reported MAE and operational caution because errors have different consequences near age thresholds."
+    },
+    limitations: {
+      es: "No se publican rostros del dataset; el modelo requiere politicas humanas, sesgo y revision de privacidad.",
+      en: "Dataset faces are not published; the model requires human policies, bias review, and privacy checks."
+    },
+    nextStep: {
+      es: "Analizar errores por rangos de edad y casos cercanos al umbral legal.",
+      en: "Analyze errors by age ranges and cases near the legal threshold."
+    }
+  }
+};
+
 const detailCopy = {
   es: {
     navProjects: "Casos aplicados",
@@ -559,9 +1068,19 @@ const detailCopy = {
     impact: "Impacto",
     technical: "Como lo resolvi",
     evidence: "Evidencia visual",
-    tabsMethod: "Metodologia",
-    tabsResults: "Resultados",
-    tabsCriteria: "Criterio",
+    problem: "Problema",
+    importance: "Por que importa",
+    dataTarget: "Datos y objetivo",
+    approach: "Enfoque",
+    modeling: "Modelado",
+    evaluation: "Evaluacion",
+    baseline: "Baseline o comparacion",
+    validation: "Validacion",
+    keyDecisions: "Decisiones clave",
+    limitations: "Limitaciones",
+    nextStep: "Siguiente paso",
+    workflow: "Flujo de trabajo",
+    findings: "Resultados y aprendizajes",
     resources: "Recursos",
     roles: "Rutas relacionadas",
     cv: "Ver CV PDF",
@@ -588,9 +1107,19 @@ const detailCopy = {
     impact: "Impact",
     technical: "How I solved it",
     evidence: "Visual evidence",
-    tabsMethod: "Method",
-    tabsResults: "Results",
-    tabsCriteria: "Judgment",
+    problem: "Problem",
+    importance: "Why it matters",
+    dataTarget: "Data and target",
+    approach: "Approach",
+    modeling: "Modeling",
+    evaluation: "Evaluation",
+    baseline: "Baseline or comparison",
+    validation: "Validation",
+    keyDecisions: "Key decisions",
+    limitations: "Limitations",
+    nextStep: "Next step",
+    workflow: "Workflow",
+    findings: "Results and learnings",
     resources: "Resources",
     roles: "Related paths",
     cv: "View CV PDF",
@@ -709,6 +1238,37 @@ function localizedProject(slug, lang) {
     metrics: (base.metrics || []).map(([label, value]) => [metricLabelsEn[label] || label, value]),
     chartTitle: extra.chartTitleEn || chartTitlesEn[base.chartTitle] || base.chartTitle
   };
+}
+
+function localizedNote(slug, key, lang) {
+  const note = projectRecruiterNotes[slug]?.[key];
+  if (note && note[lang]) return note[lang];
+  return "";
+}
+
+function projectChecklist(slug, project, copy, lang) {
+  return [
+    [copy.problem, localizedNote(slug, "problem", lang) || project.context],
+    [copy.importance, localizedNote(slug, "importance", lang) || project.businessImpact],
+    [copy.dataTarget, localizedNote(slug, "dataTarget", lang) || project.data],
+    [copy.approach, localizedNote(slug, "approach", lang) || project.methodology?.[0]],
+    [copy.modeling, localizedNote(slug, "modeling", lang) || project.technicalSummary],
+    [copy.evaluation, localizedNote(slug, "evaluation", lang) || project.results?.[0]],
+    [copy.baseline, localizedNote(slug, "baseline", lang) || (lang === "en" ? "Compared against simpler models or a business target when available." : "Comparado contra modelos mas simples o criterio de negocio cuando estaba disponible.")],
+    [copy.validation, localizedNote(slug, "validation", lang) || (lang === "en" ? "Validation follows the split or evaluation strategy documented in the workflow." : "La validacion sigue la particion o estrategia de evaluacion documentada en el flujo.")],
+    [copy.keyDecisions, localizedNote(slug, "decisions", lang) || project.insight],
+    [copy.limitations, localizedNote(slug, "limitations", lang) || (lang === "en" ? "Academic/applied case without production deployment; external validation would be needed before operational use." : "Caso academico/aplicado sin despliegue productivo; antes de usarlo en operacion haria validacion externa.")],
+    [copy.nextStep, localizedNote(slug, "nextStep", lang) || (lang === "en" ? "Add a public README with reproducible steps and a short error analysis." : "Agregar README publico con pasos reproducibles y un analisis breve de errores.")]
+  ];
+}
+
+function checklistMarkup(items) {
+  return items.map(([label, value]) => `
+    <article class="project-check-card">
+      <span>${label}</span>
+      <p>${value}</p>
+    </article>
+  `).join("");
 }
 
 function roleLabel(role, lang) {
@@ -840,6 +1400,7 @@ function enhanceProjectHeader(lang, sourceRole = "") {
 function renderProjectPage(slug, lang = currentLanguage()) {
   const project = localizedProject(slug, lang);
   const copy = detailCopy[lang];
+  const checklist = projectChecklist(slug, project, copy, lang);
   const sourceRole = getSourceRole();
   const sourceLabel = sourceRole ? roleLabel(sourceRole, lang) : copy.backHome;
   const sourceHref = sourceRoleHref(sourceRole);
@@ -880,20 +1441,32 @@ function renderProjectPage(slug, lang = currentLanguage()) {
         <div class="content-stack">
           <section class="executive-grid">
             <article class="content-block narrative-block">
-              <span class="panel-label">${copy.summary}</span>
+              <span class="panel-label">${copy.decision}</span>
               <h2>${project.decision}</h2>
-              <p>${project.context}</p>
+              <p>${localizedNote(slug, "problem", lang) || project.context}</p>
             </article>
             <article class="content-block narrative-block">
               <span class="panel-label">${copy.impact}</span>
               <h2>${project.metrics[0]?.[1] || ""}</h2>
-              <p>${project.businessImpact}</p>
+              <p>${localizedNote(slug, "importance", lang) || project.businessImpact}</p>
             </article>
             <article class="content-block narrative-block">
               <span class="panel-label">${copy.technical}</span>
               <h2>${project.stack.slice(0, 2).join(" + ")}</h2>
-              <p>${project.technicalSummary}</p>
+              <p>${localizedNote(slug, "evaluation", lang) || project.technicalSummary}</p>
             </article>
+          </section>
+
+          <section class="content-block project-case-block">
+            <div class="panel-top">
+              <div>
+                <span class="panel-label">${copy.summary}</span>
+                <h2>${copy.problem} -> ${copy.evaluation}</h2>
+              </div>
+            </div>
+            <div class="project-checklist-grid">
+              ${checklistMarkup(checklist)}
+            </div>
           </section>
 
           <section class="project-dashboard-panel">
@@ -906,12 +1479,36 @@ function renderProjectPage(slug, lang = currentLanguage()) {
             ${visualMarkup(project, copy)}
           </section>
 
-          <section class="content-block">
-            <div class="tab-controls" role="tablist" aria-label="Detalle del proyecto">
-              <button class="tab-btn active" type="button" data-tab="metodo">${copy.tabsMethod}</button>
-              <button class="tab-btn" type="button" data-tab="resultados">${copy.tabsResults}</button>
-              <button class="tab-btn" type="button" data-tab="aprendizaje">${copy.tabsCriteria}</button>
+          <section class="content-block project-flow-block">
+            <div class="panel-top">
+              <div>
+                <span class="panel-label">${copy.workflow}</span>
+                <h2>${project.chartTitle}</h2>
+              </div>
             </div>
+            <div class="flow-results-grid">
+              <div>
+                <ol class="timeline-list">${listMarkup(project.methodology)}</ol>
+              </div>
+              <div>
+                <h3>${copy.findings}</h3>
+                <ul class="insight-list">${listMarkup(project.results)}</ul>
+                <p class="pull-quote">${project.insight}</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content-block project-resource-block">
+            <span class="panel-label">${copy.resources}</span>
+            <h2>${copy.resources}</h2>
+            <div class="resource-button-grid">
+              <a class="btn primary" href="${sourceHref}">${sourceRole ? copy.sourceDashboard : copy.backHome}</a>
+              <a class="btn" href="${cvHref}" target="_blank" rel="noreferrer">${copy.cv}</a>
+              <a class="btn" href="https://github.com/JuanPa7799" target="_blank" rel="noreferrer">${copy.github}</a>
+            </div>
+          </section>
+
+          <section class="content-block legacy-project-detail" hidden>
             <div class="tab-panel active" data-panel="metodo">
               <ol class="timeline-list">${listMarkup(project.methodology)}</ol>
             </div>

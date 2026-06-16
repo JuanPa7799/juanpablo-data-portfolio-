@@ -9,8 +9,8 @@ const roleDashboards = {
       en: "SQL | KPIs | Dashboards | Decision analytics"
     },
     lead: {
-      es: "Transformo datos en indicadores claros, dashboards y recomendaciones accionables. Esta ruta prioriza negocio, visualizacion, reporting y comunicacion ejecutiva.",
-      en: "I turn data into clear indicators, dashboards, and actionable recommendations. This path emphasizes business analysis, visualization, reporting, and executive communication."
+      es: "Esta ruta muestra como convierto datos en indicadores, comparaciones y recomendaciones de negocio. El foco esta en explicar que esta pasando, cuanto importa y que decision conviene tomar.",
+      en: "This path shows how I turn data into indicators, comparisons, and business recommendations. The focus is explaining what is happening, why it matters, and what decision makes sense."
     },
     cv: {
       es: "../../assets/pdf/Portafolio_de_evidencias_V2.pdf",
@@ -101,8 +101,8 @@ const roleDashboards = {
       en: "Python | Machine Learning | Statistics | SQL"
     },
     lead: {
-      es: "Construyo proyectos de ciencia de datos de punta a punta: problema, datos, EDA, features, modelos, validacion, metricas y comunicacion de resultados.",
-      en: "I build end-to-end data science projects: problem framing, data, EDA, features, models, validation, metrics, and result communication."
+      es: "Esta ruta reune mis casos end-to-end: plantear el problema, preparar datos, comparar modelos, validar resultados y traducir la metrica a una decision entendible.",
+      en: "This path brings together my end-to-end cases: framing the problem, preparing data, comparing models, validating results, and translating metrics into an understandable decision."
     },
     cv: {
       es: "../../assets/pdf/Portafolio_de_evidencias_V2.pdf",
@@ -204,8 +204,8 @@ const roleDashboards = {
       en: "Signals | Vision | NLP | Pipelines | TensorFlow"
     },
     lead: {
-      es: "Esta ruta muestra modelos aplicados y el camino hacia soluciones reutilizables: estructura, validacion, pipelines, APIs ligeras y despliegue progresivo.",
-      en: "This path presents applied models and the path toward reusable solutions: structure, validation, pipelines, lightweight APIs, and progressive deployment."
+      es: "Esta ruta se centra en modelos aplicados a senales, texto, imagenes, precios y demanda. Me interesa que el resultado sea evaluable, reproducible y util fuera del notebook.",
+      en: "This path focuses on models applied to signals, text, images, pricing, and demand. I care that the result is measurable, reproducible, and useful beyond the notebook."
     },
     cv: {
       es: "../../assets/pdf/Portafolio_de_evidencias_V2.pdf",
@@ -328,7 +328,7 @@ const languageLabels = {
     linkedin: "Ver LinkedIn",
     upwork: "Ver Upwork",
     github: "GitHub",
-    note: "CV y proyectos alineados con esta ruta profesional.",
+    note: "Abre un caso, revisa la metrica y descarga el CV de esta ruta.",
     flow: "Flujo de trabajo",
     cvStatus: "CV de esta ruta",
     currentCv: "Pagina web",
@@ -357,7 +357,7 @@ const languageLabels = {
     linkedin: "View LinkedIn",
     upwork: "View Upwork",
     github: "GitHub",
-    note: "CV and projects aligned with this professional path.",
+    note: "Open a case, review the metric, and download the CV for this path.",
     flow: "Workflow",
     cvStatus: "Role CV",
     currentCv: "Web page",
